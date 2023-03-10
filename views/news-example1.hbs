@@ -1,0 +1,610 @@
+<script type="text/javascript">//<![CDATA[
+__wm.bt(700,27,25,2,"web","http://www.runescape.com/title.ws","20120709052134",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+__wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript">
+    if ($("#fb-root").length == 0){
+        $("body").prepend('<div id="fb-root"></div>');
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '174823375888281',
+                status: false,
+                cookie: true,
+                xfbml: true,
+                oauth: true
+            });
+            if($.browser.msie){
+                FB.UIServer.setLoadedNode = function (a,b) { FB.UIServer._loadedNodes[a.id] = b; }
+            }
+        };
+        (function() {
+            var e = document.createElement('script');
+            e.async = true;
+            e.src = document.location.protocol + '//web.archive.org/web/20120709052134/http://connect.facebook.net/en_US/all.js';
+            document.getElementById('fb-root').appendChild(e);
+        }());
+    }
+</script>
+<a style="display:none" id="SNbuttonLink" class="thickbox"></a>
+<script type="text/javascript">
+    function fbLoginRedirect(buttonName, loginUrl, destUrl, destStr, _target){
+        $.getJSON('https://web.archive.org/web/20120709052134/http://services.runescape.com/m=sn-integration/l=3/checkLogin.ws?json=?', {"tps":0, "token":FB.getAuthResponse().accessToken, "expiry":FB.getAuthResponse().expiresIn, "signed":FB.getAuthResponse().signedRequest}, function(data) {
+            if(typeof(_target) != 'undefined' && _target != '') $("#SNbuttonLink").attr('target',_target);
+            if (data['sso']<0) {
+
+
+                alert("Houve um problema ao verificar o login. Tente novamente.");
+            } else if (data['sso'].length > 1){
+
+                if(data['sna']>-1) {
+
+
+                    $("#SNbuttonLink").attr('href',loginUrl+'key='+data['sso']+'&tps=0&'+destStr+'&KeepThis=true&TB_iframe=true&height=500&width=560');
+
+                    $("#SNbuttonLink").click();
+                    $("#TB_iframeContent").attr("allowTransparency", "true");
+
+                    $("#TB_iframeContent").css("padding-left", "50px");
+
+                } else {
+
+                    var loc = destUrl+'?key='+data['sso']+'?'+destStr;
+                    if(typeof(_target) != 'undefined' && _target != ''){
+                        window.parent.location = loc;
+                    }
+                    else {
+                        window.location = loc;
+                    }
+                }
+            } else {
+
+
+                $("#SNbuttonLink").attr('href',loginUrl+'?'+destStr+'&KeepThis=true&TB_iframe=true&height=400&width=442');
+
+                $("#SNbuttonLink").click();
+                $("#TB_iframeContent").attr("allowTransparency", "true");
+            }
+        });
+        return false;
+    }
+</script>
+<div id="Background">
+    <div id="TopBackground">
+        <div id="BottomBackground">
+            <div id="HeaderBg">
+                <div id="HeaderLeft"><div id="HeaderLeftInner"></div></div>
+                <div id="HeaderCentre"></div>
+                <div id="HeaderRight"><div id="HeaderRightInner"></div></div>
+            </div>
+
+            <div id="Header">
+                <a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/" id="HeaderLogo"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/logos/runescape.png" alt="RuneScape" title=""></a>
+                <div id="Nav">
+                    <nav>
+                        <ul class="MainMenu">
+                            <li class="News">
+                                <a class="HoverImgJs" href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=news/">
+                                    <img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/header/nav/News.jpg" alt="News" title=""><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/header/nav/News.jpg" class="HoverImgJsFg">
+                                </a>
+                            </li>
+                            <li class="TheGame CSS3">
+                                <a class="HoverImgJs" href="https://web.archive.org/web/20120704185400/http://www.runescape.com/gameguide.ws">
+                                    <img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/header/nav/GameInfo.jpg" alt="Game Info" title=""><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/header/nav/GameInfo.jpg" class="HoverImgJsFg">
+                                </a>
+                                <div class="Mask"></div>
+                                <div class="DropDown Kingthings"><div>
+                                    <ul>
+                                        <li><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/media.ws">Media</a></li>
+                                        <li><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/gameguide.ws">Game Guide</a></li>
+                                        <li><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/beginnersguide.ws">Beginner's Guide</a></li>
+                                        <li><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/world_locations.ws">The World</a></li>
+                                        <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=rswiki/en/">RuneScape Wiki</a></li>
+                                        <li><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/downloads.ws">Downloads</a></li>
+                                    </ul>
+                                </div></div>
+                            </li>
+                            <li class="Community CSS3">
+                                <a class="HoverImgJs" href="https://web.archive.org/web/20120704185400/http://www.runescape.com/title.ws">
+                                    <img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/header/nav/Community.jpg" alt="Community" title=""><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/header/nav/Community.jpg" class="HoverImgJsFg">
+                                </a>
+                                <div class="Mask"></div>
+                                <div class="DropDown Kingthings"><div>
+                                    <ul>
+                                        <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=rswiki/en/Customer_Support">Support</a></li>
+                                        <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=clan-home/">Clans</a></li>
+                                        <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=hiscore/heroes.ws">Hiscores</a></li>
+                                        <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=itemdb_rs/frontpage.ws">Grand Exchange</a></li>
+                                        <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=adventurers-log/">Adventurer's Log</a></li>
+                                        <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=loyalty-points/">Loyalty Programme</a></li>
+                                        <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=friend-referral/">Refer a Friend</a></li>
+                                    </ul>
+                                </div></div>
+                            </li>
+                            <li class="Forum">
+                                <a class="HoverImgJs" href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=forum/forums.ws">
+                                    <img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/header/nav/Forum.jpg" alt="Forum" title=""><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/header/nav/Forum.jpg" class="HoverImgJsFg">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="Login" class="">
+                    <a class="LoginX LoginXtop"></a>
+                    <div class="LoginXbottom"></div>
+                    <a href="#" class="Button Button29" id="LoginButton1"><span><span><span class=""><b>Login</b></span></span></span></a>
+                    <a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/game.ws?autocreate=true&amp;j=1" class="Button Button29 GameLink" id="RegisterButton"><span><span><span class=""><b>Register</b></span></span></span></a>
+                    <div id="LoginMask"></div>
+                    <div id="LoginPanel">
+                        <form class="LoginForm" action="https://web.archive.org/web/20120704185400/https://secure.runescape.com/m=weblogin/login.ws" method="post" autocomplete="off">
+                            <label for="Username" class="username Kingthing">Login:
+                                <input type="text" id="Username" class="Username placeholder" title="Username/Email address" name="username" value="" tabindex="1">
+                            </label>
+                            <label for="Password" class="password Kingthing">Password:<input type="password" id="Password" class="Password" name="password" title="Password" tabindex="2" maxlength="20" style="display: none;"><input class="Password placeholder" type="text" tabindex="2"></label>
+                            <a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/loginapplet/loginapplet.ws?mod=accountappeal&amp;dest=beginappeal.ws" class="forgot">Forgot Password?</a>
+                            <span class="Button Button29" id="LoginButton2"><span><span><span class=""><b>Login</b></span><input value="login" name="submit" type="submit" title="Login"></span></span></span>
+                            <input type="hidden" value="news" name="mod">
+                            <input type="hidden" value="0" name="ssl">
+                            <input type="hidden" value="behind-the-scenes-july" name="dest">
+                        </form>
+                        <p id="Or1">or&nbsp;</p>
+                        <p id="GetAccess">Get access and start playing free!</p>
+                        <p id="Or2">or</p>
+
+                        <div id="SocialNetworkingLogin">
+                            <a id="facebooklogin" class="Facebooklogin HoverImgJs" href="https://web.archive.org/web/20120704185400/https://secure.runescape.com/m=sn-integration/facebook/gamelogin.ws">
+                                <img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/login/modalLoginFB.png" alt="Facebook" title="Facebook"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/login/modalLoginFB.png" class="HoverImgJsFg">
+                                <span>Sign in with <b>Facebook</b></span>
+                            </a>
+                            <script type="text/javascript">
+                                $("#facebooklogin").live('click',function(ev){
+                                    ev.preventDefault();
+                                    if(typeof(FB) == 'undefined' || typeof(FB.getAuthResponse) != 'function'){
+                                        /*
+
+                                        JAGEX.socialnetworks.SNNotification("Couldn't contact Facebook. Please try again later.");
+                                        */
+                                    }
+                                    else if(FB.getAuthResponse()==null) {
+
+
+
+
+
+                                        FB.login(function(response) {
+                                                    if(response.authResponse) {
+                                                        // Logged in
+                                                        fbLoginRedirect("facebooklogin", "https://web.archive.org/web/20120704185400/https://secure.runescape.com/m=sn-integration/facebook/gamelogin.ws?","https://web.archive.org/web/20120704185400/https://secure.runescape.com/m=weblogin/login.ws","mod=news&ssl=0&dest=behind-the-scenes-july","");
+                                                    }else{
+                                                        // No session notification
+
+                                                        alert("Authentication with Facebook failed. Please try again.");
+                                                    }
+                                                }
+
+                                                , {scope:''});
+
+                                    }else{
+                                        // Already has all settings
+                                        fbLoginRedirect("facebooklogin", "https://web.archive.org/web/20120704185400/https://secure.runescape.com/m=sn-integration/facebook/gamelogin.ws?", "https://web.archive.org/web/20120704185400/https://secure.runescape.com/m=weblogin/login.ws","mod=news&ssl=0&dest=behind-the-scenes-july","");
+                                    }
+                                });
+                            </script>
+
+
+                        </div>
+
+                    </div>
+                    <a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/game.ws?j=1" id="PlayNowFree" class="HoverImgCss3Js GameLink"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/header/login/PlayFreeNow.png" alt="Play Free Now"></a>
+                </div>
+                <div id="SearchPanel">
+                    <form action="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=rswiki/en/Special:Search" method="get">
+                        <span class="Button Button29" id="SearchButton"><span><span><span class=""><b>Find</b></span><input value="Search" name="search" type="submit" title="Find"></span></span></span>
+                        <input type="text" id="Search" name="text" title="Search the RuneScape Wiki" class="placeholder">
+                    </form>
+                </div>
+                <div id="PlayerCount" style="display: block;"><p class="top" style="display: none;"><span>93,530</span> people currently online</p><p class="bottom" style="display: block;"><span>93,398</span> people currently online</p></div>
+                <div id="CrumbTrail">
+                    <div id="Trail">
+                        <span>//</span><a class="first" href="https://web.archive.org/web/20120704185400/http://www.runescape.com/title.ws"><span>Home</span></a>
+                        <span>/</span>
+                        <a class="first" href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=news/list.ws"><span>News</span></a>
+                        <span>/</span>
+                        Behind the Scenes: July
+                    </div>
+                </div>
+            </div>
+
+            <div id="MainContentOuter">
+                <div class="MainContentBg">
+                    <div class="MainContentTopBg">
+                        <div class="MainContentBottomBg">
+                            <div id="MainContent">
+                                <div id="MainTitle">
+                                    <div class="Centre1">
+                                        <div class="Centre2">
+
+                                            <h3 class="Gradient DoubleFlourish"><span class="spacing" aria-hidden="true">News</span>
+                                                <span class="G0">News</span>
+                                                <span class="G1" aria-hidden="true">News</span>
+                                                <span class="G2" aria-hidden="true">News</span>
+                                                <span class="G3" aria-hidden="true">News</span>
+                                                <span class="G4" aria-hidden="true">News</span>
+                                                <span class="G5" aria-hidden="true">News</span>
+                                                <span class="G6" aria-hidden="true">News</span>
+                                                <span class="mask"><span class="spacing" aria-hidden="true">News</span>
+<span class="leftInnerFlourish"></span><span class="centreFlourish"></span><span class="rightInnerFlourish"></span>
+</span>
+                                                <span class="rightUnderscore">
+<img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/flourish_outer_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">News</span>
+</span>
+                                                <span class="leftUnderscore"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/flourish_outer_left.png" class="left" alt=""></span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="rightColumn">
+                                    <script type="text/javascript" src="https://web.archive.org/web/20120704185400js_/http://www.jagex.com/js/jagex/jagex_twitter2_0_2-4.js"></script>
+                                    <div id="SNcontainer">
+                                        <div id="YouTubePanel">
+
+                                            <h3 class="Gradient">
+                                                <span class="G0">YouTube</span>
+                                                <span class="G1" aria-hidden="true">YouTube</span>
+                                                <span class="G2" aria-hidden="true">YouTube</span>
+                                                <span class="G3" aria-hidden="true">YouTube</span>
+                                                <span class="G4" aria-hidden="true">YouTube</span>
+                                                <span class="G5" aria-hidden="true">YouTube</span>
+                                                <span class="G6" aria-hidden="true">YouTube</span>
+                                                <span class="mask"><span class="spacing">YouTube</span>
+<span class="middleUnderscore"><span class="spacing" aria-hidden="true">YouTube</span></span>
+</span>
+                                                <span class="rightUnderscore">
+<img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/underscore_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">YouTube</span>
+</span>
+                                                <span class="leftUnderscore"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/underscore_flourish_left.png" class="left" alt=""></span>
+                                            </h3>
+                                            <iframe id="YouTubeEmbed" width="246" height="159" src="https://web.archive.org/web/20120704185400if_/http://www.youtube.com/embed/videoseries?list=PL05126FA13EDBEB7E&amp;hl=en_GB&amp;controls=0&amp;wmode=opaque" frameborder="0" allowfullscreen=""></iframe>
+                                            <a target="_blank" href="https://web.archive.org/web/20120704185400/http://www.youtube.com/RuneScape" class="Button Button29" id="YouTubeLink"><span><span><span class=""><b>View the RuneScape Channel</b></span></span></span></a>
+                                        </div>
+                                        <div id="FacebookPanel">
+
+                                            <h3 class="Gradient">
+                                                <span class="G0">Facebook</span>
+                                                <span class="G1" aria-hidden="true">Facebook</span>
+                                                <span class="G2" aria-hidden="true">Facebook</span>
+                                                <span class="G3" aria-hidden="true">Facebook</span>
+                                                <span class="G4" aria-hidden="true">Facebook</span>
+                                                <span class="G5" aria-hidden="true">Facebook</span>
+                                                <span class="G6" aria-hidden="true">Facebook</span>
+                                                <span class="mask"><span class="spacing">Facebook</span>
+<span class="middleUnderscore"><span class="spacing" aria-hidden="true">Facebook</span></span>
+</span>
+                                                <span class="rightUnderscore">
+<img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/underscore_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">Facebook</span>
+</span>
+                                                <span class="leftUnderscore"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/underscore_flourish_left.png" class="left" alt=""></span>
+                                            </h3>
+                                            <a target="_blank" href="https://web.archive.org/web/20120704185400/http://www.facebook.com/RuneScape" class="Button Button29" id="FacebookWallLink"><span><span><span class=""><b>View Facebook Wall</b></span></span></span></a>
+                                            <script type="text/javascript" src="https://web.archive.org/web/20120704185400js_/http://connect.facebook.net/en_US/all.js"></script>
+                                            <div id="FacebookFeedHolder" class="scroll-pane webkit" style="overflow-y: auto;">
+                                                <p class="error">Sorry, The Facebook feed is currently unavailable.</p>
+                                            </div>
+                                            <script>
+                                                // Ready function
+                                                $(function(){
+                                                    //
+                                                    var FBpane;
+                                                    var FBapi;
+                                                    if ( $.browser.webkit ){
+                                                        //alert("Webkit!");
+                                                    } else {
+                                                        FBpane=$("#FacebookFeedHolder.scroll-pane");
+                                                        FBapi=FBpane.data('jsp');
+                                                    }
+                                                    $.getJSON("https://web.archive.org/web/20120704185400/http://services.runescape.com/m=sn-integration/rsfeed.ws?json=?", function (response) {
+                                                        var oFacebookFeedHolder = $("#FacebookFeedHolder");//document.getElementById("FacebookFeedHolder");
+                                                        //
+                                                        var data=response.data;
+                                                        var out = "";
+                                                        nPosts=Math.min(data.length,5)
+                                                        for (var i = 0; i < nPosts; i++) {
+                                                            out += "<div class='article'>";
+                                                            if (data[i].link != undefined) {
+                                                                out += "<a href='"+data[i].link + "' target='_blank'>";
+                                                            }
+                                                            out += "<img src='https://web.archive.org/web/20120704185400/https://graph.facebook.com/" + data[i].from.id +"/picture' alt='' title='" + data[i].from.name + "' class='avatar'/>";
+                                                            //out += " <img src='./picture.jpg' alt='' title='" + data[i].from.name + "' class='avatar'/>";
+                                                            out += " <div class='AuthorAndTime'><h6 class='author'>"+data[i].from.name + "</h6>";
+                                                            //
+                                                            strD= data[i].created_time.split("+")[0];
+                                                            //
+                                                            // Format date as days and hours Ago.
+                                                            d=new Date(strD);
+                                                            n=new Date();
+                                                            a=new Date(n-d);
+                                                            days = a.getDate();
+                                                            strPast="";
+                                                            if (days>0)strPast+=days+" day";
+                                                            if (days>1)strPast+="s";
+                                                            if (days>0)strPast+=" ";
+                                                            h=a.getHours();
+                                                            if (h>0)strPast+=h+" hour";
+                                                            if (h>1)strPast+="s";
+                                                            //m=a.getMinutes();
+                                                            //
+                                                            out += " <span class='date'>"+strPast+" ago</span></div>";
+                                                            if (data[i].picture != undefined)
+                                                                out += "<img src="+data[i].picture + " class='picture'/>";
+                                                            if (data[i].message != undefined)
+                                                                out += " <p>"+data[i].message + "</p>";
+                                                            //out += " <img src="+data[i].picture + "/>"
+                                                            //out += " <a href="+data[i].link + " target='_blank'>LINK</a>";
+                                                            //out += " <img src="+data[i].icon + "/>";
+                                                            if (data[i].link != undefined) {
+                                                                out += "</a>";
+                                                            }
+                                                            out += "</div>";
+                                                            if (i<nPosts-1)out += "<div class='HrOneThird'></div>";
+                                                        }
+                                                        //var $repoppedHolder = oFacebookFeedHolder.find(".jspPane").empty().append(out);
+                                                        if ( $.browser.webkit ){
+                                                            //alert("Webkit!");
+                                                            var $repoppedHolder = oFacebookFeedHolder.empty().append(out);
+                                                        }else{
+                                                            FBapi.getContentPane().empty().append(out);
+                                                            FBapi.reinitialise();
+                                                        }
+                                                        //$('#FacebookFeedHolder').tinyscrollbar();
+                                                    })
+                                                });
+                                            </script>
+                                        </div>
+                                        <div id="TwitterPanel">
+
+                                            <h3 class="Gradient">
+                                                <span class="G0">Twitter</span>
+                                                <span class="G1" aria-hidden="true">Twitter</span>
+                                                <span class="G2" aria-hidden="true">Twitter</span>
+                                                <span class="G3" aria-hidden="true">Twitter</span>
+                                                <span class="G4" aria-hidden="true">Twitter</span>
+                                                <span class="G5" aria-hidden="true">Twitter</span>
+                                                <span class="G6" aria-hidden="true">Twitter</span>
+                                                <span class="mask"><span class="spacing">Twitter</span>
+<span class="middleUnderscore"><span class="spacing" aria-hidden="true">Twitter</span></span>
+</span>
+                                                <span class="rightUnderscore">
+<img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/underscore_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">Twitter</span>
+</span>
+                                                <span class="leftUnderscore"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/underscore_flourish_left.png" class="left" alt=""></span>
+                                            </h3>
+                                            <a target="_blank" href="https://web.archive.org/web/20120704185400/http://www.twitter.com/RuneScape" class="Button Button29" id="TwitterFeedLink"><span><span><span class=""><b>View Twitter Feed</b></span></span></span></a>
+                                            <div id="TwitterFeedHolder" class="scroll-pane webkit" style="overflow-y: auto;"><p class="error">Sorry, the Twitter feed is currently unavailable.</p></div>
+                                            <script>
+                                                // Ready function
+                                                $(function(){
+                                                    var TWpane;
+                                                    var TWapi;
+                                                    if ( !$.browser.webkit ){
+                                                        TWpane=$("#TwitterFeedHolder.scroll-pane");
+                                                        TWapi=TWpane.data('jsp');
+                                                    }
+                                                    // Output display function
+                                                    var showTweets = function(tweets){
+                                                        var out = "";
+                                                        for(var i = 0; i < tweets.length; i++){
+                                                            var t = tweets[i];
+                                                            out += "<div class='tweet'>";
+                                                            out +=  "<img src='" + t.user.image + "' alt='' title='" + escape(t.user.description) + "' class='avatar' />";//" alt='' title='" + t.user.description + "' class='avatar'/>";
+                                                            out +=  "<div class='AuthorAndTime'><h6 class='author'>" + t.user.name + "</h6>";
+                                                            out +=  "<span class='date'>" + t.time_ago + " ago</span></div>";
+                                                            out +=  "<p>" + t.tweet + "</p>";
+                                                            out += "</div>";
+                                                            if (i<tweets.length-1) out+= "<div class='HrOneThird'></div>";
+                                                        }
+                                                        if ( $.browser.webkit ){
+                                                            $('#TwitterFeedHolder').empty().append(out);
+                                                        }else{
+                                                            TWapi.getContentPane().empty().append(out);
+                                                            TWapi.reinitialise();
+                                                        }
+                                                    }
+                                                    var showFail = function(){
+                                                        var out = "<p class='error'>Sorry, the Twitter feed is currently unavailable.</p>";
+                                                        if ( $.browser.webkit ){
+                                                            $('#TwitterFeedHolder').empty().append(out);
+                                                        }else{
+                                                            TWapi.getContentPane().empty().append(out);
+                                                            TWapi.reinitialise();
+                                                        }
+                                                    }
+                                                    // Create new Tweety object with username and callback
+                                                    var rsTwitterFeed = new JAGEX.Twitter2({
+                                                        user: 'RuneScape',
+                                                        show: 5,
+                                                        success: showTweets,
+                                                        error: showFail
+                                                    });
+                                                    setInterval(function(){rsTwitterFeed.update();}, 600000);
+                                                });
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/news/deviceTL.png" alt="" class="deviceTL">
+                                <div id="NewsArticles" class="singleArticle">
+                                    <div class="Article ArticleImage">
+                                        <div class="NewsHeaderImage">
+                                            <img src="https://web.archive.org/web/20120704185400im_/http://services.runescape.com/m=news/img/runescape/behind-the-scenes.jpg" alt="Behind the Scenes: July" title="Behind the Scenes: July">
+                                            <div></div>
+                                        </div>
+                                        <img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/news/categories/Cat_6.png" alt="Behind the Scenes" title="Behind the Scenes" class="Category">
+                                        <div class="Title">
+                                            <h4 class="FlatHeader">Behind the Scenes: July</h4>
+                                            <br style="clear:both">
+                                            <span>2 days ago</span>
+                                        </div>
+                                        <div class="Content">
+                                            <p><b>Carnillean Rising (members only)</b></p>
+
+                                            <p>In <i>Carnillean Rising</i>, the very idea of a quest is turned upside down and shaken about like a badly mixed potion. You see, Sir Ceril Carnillean is very disappointed in his young son, and he wants you to turn him into a brave, handsome and daring adventurer, just like you. Ceril’s really proud of a quest that he has written for Philipe, and he needs you to make it happen. After all, who knows more about clambering over obstacles, disarming traps, rescuing prisoners and saving the day than you, the greatest hero that RuneScape will ever see? </p>
+
+                                            <div style="float:right; margin:5px;"><a target="_blank" href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=rswikiimages/en/2012/7/CR_phillipe-02163240.jpg"><img src="https://web.archive.org/web/20120704185400im_/http://services.runescape.com/m=rswikiimages/en/2012/7/CR_phillipe_thumb-02163346.png"></a></div>
+
+                                            <p>Of course, it can't be anything as simple as chasing sheep around a field, or rounding up a few imps to kill for beads. In this - our latest fully voiced piece of content - you’ll need to find actors to play the characters according to Ceril’s quest specification, tie up the damsel in distress and set up the whole experience in the sewers beneath the Carnillean family mansion. In this quest, the adventurer’s destiny is in your hands. Can you deal with Philipe’s arrogance and lack of discipline, or will you feed him to the wolves like the nubcake he is? Can you coax him into facing down a dragon? Can you make him wear a dress?</p>
+
+                                            <p>This is a rib-tickling, Intermediate-level quest with skill requirements of 33 Thieving and 31 Construction,  and a quest point requirement of 50. As well as a healthy, summery dollop of XP sauce, you’ll get your own, personal treasure chest that you can use to set up and run treasure hunts for your friends. You'll also get access to a bunch of other rewards if you're an experienced player.</p>
+
+
+                                            <p><b>Social Slayer (members only)</b></p>
+
+                                            <p>It’s fair to say that some of the best friends I have made in RuneScape were found deep underground or high up in desolate towers while I was training my Slayer skill. Friends who slay together, stay together, but it’s also annoying when people appear and camp out at the very spot you had earmarked for your next few hundred Slayer kills. What if you could be social and also complete your Slayer task, buddying up with another player to make kills together? Well, in this upcoming update, you can.</p>
+
+                                            <p>Players can now pair up into Slayer duos, and can join up if they're on the same task already, or start new tasks together. Any kills you make when you’re together count towards each other’s kill counts (XP isn't shared, though), making it quicker to get through those assignments you hate, and more fun going through the ones  you like.  Players who complete tasks together will earn points to spend in their local Slayer master’s shop, with awesome rewards to buy, such as shared potion effects and awesome new pets.</p>
+
+                                            <p><b>10-Year Veteran's Cape (members only)</b></p>
+
+                                            <p>While we celebrated our 10-year anniversary last year (mmm, that cake was good!) we’ve only just been able to award our players with this brand new, fantastic cape. Now, you can celebrate your own anniversary too! Much like the 5 year veteran cape, you’ll be able to buy it from Hans (outside Lumbridge Castle), but - obviously - only if your character was created 10 years ago.</p>
+
+                                            <p>After listening to the feedback on the forums, red is out and deep red is in and boy, does it look good! The themes from the veteran cape continue on with all things “X”... but you’ll just have to wait and see what the 10-year celebratory emote is.</p>
+
+                                            <p><b>Gielinor Games Pre-release Event (free and members)</b></p>
+
+                                            This summer, the denizens of RuneScape will come together to witness and compete in RuneScape's premier sporting event: The Gielinor Games. Humans, gnomes, werewolves, goblins, elves and monkeys will be showing off their athletic skills in a variety of suitably RuneScapey sports.<p></p>
+
+                                            <p>Before the games can begin, though, they  need your help to build the stadiums, make the medals, and cook up a tasty storm to sell to the visiting dignitaries using a host of multi-cultural ingredients. With a large workshop set up in the centre of Varrock (run by a friendly gnome called Oomad Arrow), helping out will be easy and rewarding, with some generous XP for each of the areas you assist with. Even better, you’ll be able to earn points to spend when the Gielinor Games themselves begin!</p>
+
+                                            <p>This pre-release event will only last for a few weeks, to be replaced with the Gielinor Games themselves. If you want to earn all you can from the games, make sure you get involved!</p>
+
+                                            <div style="text-align:center;"><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=rswikiimages/en/2012/7/GG-02163427.jpg" target="_blank"><img src="https://web.archive.org/web/20120704185400im_/http://services.runescape.com/m=rswikiimages/en/2012/7/GG_thumb-02163452.png"></a></div>
+
+                                            <p><b>The Gielinor Games (free and members) </b></p>
+
+                                            <p>Once everything's prepared, you'll be encouraged to affiliate yourselves with one of the competing groups, and then to take part in the events themselves. You'll demonstrate your sporting prowess in games such as Cheese Wheel Rolling, where you'll chase wheel-shaped lumps of dairy down a hill at high speed; and Athletics, where you'll need to plan carefully, taking advantage of how the other competitors are doing. Skill-orientated players among you will be able to show off your most efficient resource-collecting methods and take part in the Resource Race. Perhaps you'll want to show off your Strength, Magic or Ranged, in the Accurate Attack game. Finally, there will be regular Marathons of varying levels of difficulty, where players will race each other around the open world. One of these races will even be held in the Wilderness, making this an extreme sport indeed. </p>
+
+                                            <p>Free players will have access to Cheese Wheel Rolling, Beginner's Marathon and the Resource Race events (with access only to free skills in the latter), whereas members will have access to everything that the Gielinor Games have to offer. </p>
+
+                                            <p>Not only will you be rewarded with XP, but you'll also be able to access a store which sports a number of Gielinor Games-themed prizes, such as an ancient athletics outfit, flaming torches, and special rings that will boost your rewards in the Gielinor Games. </p>
+
+                                            <div style="float:right; margin:5px;"><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=rswikiimages/en/2012/7/demon-02163527.jpg" target="_blank"><img src="https://web.archive.org/web/20120704185400im_/http://services.runescape.com/m=rswikiimages/en/2012/7/demon_thumb-02163609.png"></a></div>
+
+                                            <p><b>Parties, and Celebrations (free and members)</b></p>
+
+                                            <p>As you have no doubt noticed on the front page, our countdown to 200 million accounts will soon reach its target, and we have a celebration planned for everyone who is around when the moment happens. I won’t spoil the surprise, but we have all sorts of fun things planned for the big day, and the days following. You’ll have heard the phrase ’party animal‘, but how about a party demon? What wonders lay in wait for you? Suffice to say that there will be rewards.</p>
+
+                                            <p><b>Combat Beta Events</b></p>
+
+                                            <p>The calendar of events for the beta worlds is rapidly filling up and we have some great things planned to help us test out this latest and greatest addition to the game. We might even have some unique rewards for the live accounts of those who get involved! Keep a watch on the combat beta pages for more information.</p>
+
+                                            <p><b>And So Much More!</b></p>
+
+                                            <p>For those of you interested in swaggering about in the latest and greatest fashions - whatever the slimy, critter-ridden dungeon or sun-swept fishing spot you find yourself in - we have a really special update planned for July. Sometimes it’s not all about the XP, it’s about looking good while earning it. More to follow in the next few weeks!</p>
+
+                                            <p>Talking of cosmetic makeovers, Yelps and his Squeal of Fortune are also getting updates in July, including a brand new wheel, aimed just at the free game.</p>
+
+                                            <p>Have fun!</p>
+
+                                            <p><b><i>Mod Mark<br>
+                                                Lead Designer – RuneScape</i></b></p>
+
+                                            <p><i>Discuss this <a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=forum/l=0/sl=0/forums.ws?16,17,936,63847654">here</a>.</i></p>
+
+                                            <hr="width:33%">
+
+                                            <p><i>What is a 'Behind the Scenes' article?</i></p>
+
+                                            <p><i>Behind the Scenes is a sneak peek at the planned game updates that we hope to launch in the coming month.</i></p>
+
+                                            <p><i>This, however, is only a plan, not a promise that a particular update will be released in a particular way or at a particular time. To get you the highest quality updates as quickly as possible, we usually keep on tweaking and testing right up until the moment before release, so, sometimes things change or take a bit longer than expected. We aren’t afraid to change our plan if necessary, as we will never launch an update before it is ready.</i></p>
+
+                                            </hr="width:33%"></div>
+                                        <span class="SNbutton"><span class="left"></span><span class="middle"><span class="contentHolder"><a class="facebook SB_link" href="https://web.archive.org/web/20120704185400/http://facebook.com/sharer.php?u=http%3A%2F%2Fservices.runescape.com%2Fm%3Dnews%2Fbehind-the-scenes-july" target="_blank" title="Add this page to Facebook"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/social/SNfacebook.png" alt="Facebook" title="Facebook"><span class="SB_label">Facebook</span></a><a href="https://web.archive.org/web/20120704185400/http://twitter.com/share?text=Behind the Scenes: July&amp;url=http%3A%2F%2Fservices.runescape.com%2Fm%3Dnews%2Fbehind-the-scenes-july" target="_blank" class="twitter SB_link"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/social/SNtwitter.png" alt="Twitter" title="Twitter"><span class="SB_label">Twitter</span></a></span><span class="right">Share</span></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Footer" class="Kingthings">
+                    <ul class="Main">
+                        <li>
+                            <a href="https://web.archive.org/web/20120704185400/https://www.runescape.com/account_settings.ws">Account</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120704185400/https://www.runescape.com/account_settings.ws">Profile &amp; Settings</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/members_benefits.ws">Upgrade</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=loyalty-points/">Loyalty Programme</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=friend-referral/">Refer a Friend</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/store_locator.ws">Membership Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=rswiki/en/Customer_Support">Support</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=rswiki/en/Customer_Support">Customer Support</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/loginapplet/loginapplet.ws?mod=accountappeal&amp;dest=passwordchoice.ws">Password Recovery</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=rswiki/en/Technical_Help">Tech Support</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=rswiki/en/Billing_Advice">Billing Support</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=rswiki/en/Safety_%26_Security">Safety &amp; Security</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=bugtracker_v4/">Submit a Bug Report</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/gameguide.ws">Game</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/gameguide.ws">Game Guide</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/beginnersguide.ws">Beginner's Guide</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/world_locations.ws">Locations</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=rswiki/en/">RuneScape Wiki</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/title.ws">Community</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=forum/forums.ws">Forums</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=clan-home/">Clans</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=adventurers-log/">Adventurer's Log</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/events.ws">Events</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=hiscore/heroes.ws">Hiscores</a></li>
+                                <li><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/downloads.ws">Downloads</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2 id="RuneScapeLogo"><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/logos/runescape.png" alt="RuneScape" title=""></a></h2>
+                    <div class="FooterBottom">
+                        <a href="https://web.archive.org/web/20120704185400/http://www.jagex.com/g=runescape/p=2sA9c0-ltlLB7H6LqG1ya8HsfouobXJr4Av4RGYIPRo/" id="JagexLogo"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/logos/jagex.png" alt="Jagex" title=""></a>
+                        <p>This website and its contents are copyright © 1999 - 2012 Jagex Ltd<br>Use of this website is subject to our <a href="https://web.archive.org/web/20120704185400/http://www.jagex.com/g=runescape/terms/terms.ws" target="_blank">Terms &amp; Conditions</a> and <a href="https://web.archive.org/web/20120704185400/http://www.jagex.com/g=runescape/privacy/privacy.ws" target="_blank">Privacy Policy</a>. <br><a href="https://web.archive.org/web/20120704185400/http://www.jagex.com/g=runescape/terms/cookies.ws">Change Cookie Settings</a></p>
+
+                        <div class="LanguageButtonSurround">
+                            <div class="LanguageButton"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/language_selector/en.png" title="en" alt="en" class="SelectedLang"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/language_selector/LanguageButtonFg.png" class="foreground">
+                                <div class="LanguagePanel">
+                                    <div class="bottom">
+                                        <ul>
+                                            <li class="flag"><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/?set_lang=0" title="English"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/language_selector/en.png" alt="English" class="flag"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/language_selector/LanguageArrow.png" class="LanguageArrow" alt=""></a></li>
+                                            <li class="flag"><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/l=1/?set_lang=1" title="Deutsch"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/language_selector/de.png" alt="Deutsch" class="flag"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/language_selector/LanguageArrow.png" class="LanguageArrow" alt=""></a></li>
+                                            <li class="flag"><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/l=2/?set_lang=2" title="Français"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/language_selector/fr.png" alt="Français" class="flag"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/language_selector/LanguageArrow.png" class="LanguageArrow" alt=""></a></li>
+                                            <li class="flag"><a href="https://web.archive.org/web/20120704185400/http://www.runescape.com/l=3/?set_lang=3" title="Português (BR)"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/language_selector/pt.png" alt="Português (BR)" class="flag"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/language_selector/LanguageArrow.png" class="LanguageArrow" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="BottomNavigationFlag">
+
+                            <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://www.facebook.com/RuneScape" data-send="false" data-layout="button_count" data-width="45" data-show-faces="false" data-colorscheme="dark"><span style="height: 21px; width: 90px;"><iframe id="f1babca5782b438" name="f3f6b98e5cd9294" scrolling="no" title="Like this content on Facebook." class="fb_ltr" style="border: none; overflow: hidden; height: 21px; width: 90px;" allow="autoplay 'self'; fullscreen 'self'" src="https://web.archive.org/web/20120704185616/http://www.facebook.com/plugins/like.php?api_key=174823375888281&amp;channel_url=https%3A%2F%2Fweb.archive.org%2Fweb%2F20120704185616%2Fhttp%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D9%23cb%3Df3dc05e64b6e322%26origin%3Dhttp%253A%252F%252Fservices.runescape.com%252Ff271ccbad1ff4c4%26domain%3Dservices.runescape.com%26relation%3Dparent.parent&amp;colorscheme=dark&amp;extended_social_context=false&amp;href=http%3A%2F%2Fwww.facebook.com%2FRuneScape&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90"></iframe></span></div></div>
+                        <div id="SnLinks">
+                            <a href="https://web.archive.org/web/20120704185400/http://services.runescape.com/m=news/latest_news.rss" title="RSS" target="_blank" class="HoverImg NoFade"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/logos/MediumRss.png" alt="RSS"></a>
+
+                            <a href="https://web.archive.org/web/20120704185400/http://www.facebook.com/RuneScape" title="Follow us on Facebook" target="_blank" class="HoverImg NoFade AddButtons"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/social/MediumFacebook.png" alt="Facebook"></a>
+
+                            <a href="https://web.archive.org/web/20120704185400/http://twitter.com/RuneScape" title="Follow us on Twitter" target="_blank" class="HoverImg NoFade AddButtons"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/social/MediumTwitter.png" alt="Twitter"></a>
+
+                            <a href="https://web.archive.org/web/20120704185400/http://www.youtube.com/RuneScape" title="Follow us on YouTube" target="_blank" class="HoverImg NoFade AddButtons"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/social/MediumYoutube.png" alt="YouTube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

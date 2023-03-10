@@ -1,0 +1,653 @@
+<script type="text/javascript">//<![CDATA[
+__wm.bt(700,27,25,2,"web","http://www.runescape.com/title.ws","20120709052134",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+__wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript">
+    if ($("#fb-root").length == 0){
+        $("body").prepend('<div id="fb-root"></div>');
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '174823375888281',
+                status: false,
+                cookie: true,
+                xfbml: true,
+                oauth: true
+            });
+            if($.browser.msie){
+                FB.UIServer.setLoadedNode = function (a,b) { FB.UIServer._loadedNodes[a.id] = b; }
+            }
+        };
+        (function() {
+            var e = document.createElement('script');
+            e.async = true;
+            e.src = document.location.protocol + '//web.archive.org/web/20120709052134/http://connect.facebook.net/en_US/all.js';
+            document.getElementById('fb-root').appendChild(e);
+        }());
+    }
+</script>
+<a style="display:none" id="SNbuttonLink" class="thickbox"></a>
+<script type="text/javascript">
+    function fbLoginRedirect(buttonName, loginUrl, destUrl, destStr, _target){
+        $.getJSON('https://web.archive.org/web/20120709052134/http://services.runescape.com/m=sn-integration/l=3/checkLogin.ws?json=?', {"tps":0, "token":FB.getAuthResponse().accessToken, "expiry":FB.getAuthResponse().expiresIn, "signed":FB.getAuthResponse().signedRequest}, function(data) {
+            if(typeof(_target) != 'undefined' && _target != '') $("#SNbuttonLink").attr('target',_target);
+            if (data['sso']<0) {
+
+
+                alert("Houve um problema ao verificar o login. Tente novamente.");
+            } else if (data['sso'].length > 1){
+
+                if(data['sna']>-1) {
+
+
+                    $("#SNbuttonLink").attr('href',loginUrl+'key='+data['sso']+'&tps=0&'+destStr+'&KeepThis=true&TB_iframe=true&height=500&width=560');
+
+                    $("#SNbuttonLink").click();
+                    $("#TB_iframeContent").attr("allowTransparency", "true");
+
+                    $("#TB_iframeContent").css("padding-left", "50px");
+
+                } else {
+
+                    var loc = destUrl+'?key='+data['sso']+'?'+destStr;
+                    if(typeof(_target) != 'undefined' && _target != ''){
+                        window.parent.location = loc;
+                    }
+                    else {
+                        window.location = loc;
+                    }
+                }
+            } else {
+
+
+                $("#SNbuttonLink").attr('href',loginUrl+'?'+destStr+'&KeepThis=true&TB_iframe=true&height=400&width=442');
+
+                $("#SNbuttonLink").click();
+                $("#TB_iframeContent").attr("allowTransparency", "true");
+            }
+        });
+        return false;
+    }
+</script>
+<div id="Background">
+    <div id="TopBackground">
+        <div id="BottomBackground">
+            <div id="HeaderBg">
+                <div id="HeaderLeft">
+                    <div id="HeaderLeftInner"></div>
+                </div>
+                <div id="HeaderCentre"></div>
+                <div id="HeaderRight">
+                    <div id="HeaderRightInner"></div>
+                </div>
+            </div>
+            <div id="Header">
+                <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/" id="HeaderLogo"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/logos/runescape.png" alt="RuneScape" title=""></a>
+                <div id="Nav">
+                    <nav>
+                        <ul class="MainMenu">
+                            <li class="News">
+                                <a class="HoverImgJs" href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/">
+                                    <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/header/nav/News.jpg" alt="Notícias" title=""><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/header/nav/News.jpg" class="HoverImgJsFg">
+                                </a>
+                            </li>
+                            <li class="TheGame CSS3">
+                                <a class="HoverImgJs" href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/gameguide.ws">
+                                    <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/header/nav/GameInfo.jpg" alt="Informações do Jogo" title=""><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/header/nav/GameInfo.jpg" class="HoverImgJsFg">
+                                </a>
+                                <div class="Mask"></div>
+                                <div class="DropDown Kingthings"><div>
+                                    <ul>
+                                        <li><a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/media.ws">Mídia</a></li>
+                                        <li><a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/gameguide.ws">Guia do Jogo</a></li>
+                                        <li><a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/beginnersguide.ws">Guia do Iniciante</a></li>
+                                        <li><a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/world_locations.ws">O Mundo</a></li>
+                                        <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=rswiki/pt/">Wiki do RuneScape</a></li>
+                                        <li><a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/downloads.ws">Downloads</a></li>
+                                    </ul>
+                                </div></div>
+                            </li>
+                            <li class="Community CSS3">
+                                <a class="HoverImgJs" href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/title.ws">
+                                    <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/header/nav/Community.jpg" alt="Comunidade" title=""><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/header/nav/Community.jpg" class="HoverImgJsFg" style="">
+                                </a>
+                                <div class="Mask"></div>
+                                <div class="DropDown Kingthings"><div>
+                                    <ul>
+                                        <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=rswiki/pt/Customer_Support">Suporte</a></li>
+                                        <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=clan-home/l=3/">Clãs</a></li>
+                                        <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=hiscore/l=3/heroes.ws">Recordes</a></li>
+                                        <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=itemdb_rs/l=3/frontpage.ws">Mercado Geral</a></li>
+                                        <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=adventurers-log/l=3/">Diário de Aventuras</a></li>
+                                        <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=loyalty-points/l=3/">Programa de Lealdade</a></li>
+                                        <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=friend-referral/l=3/">Indique um Amigo</a></li>
+                                    </ul>
+                                </div></div>
+                            </li>
+                            <li class="Forum">
+                                <a class="HoverImgJs" href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=forum/l=3/forums.ws">
+                                    <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/header/nav/Forum.jpg" alt="Fórum" title=""><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/header/nav/Forum.jpg" class="HoverImgJsFg">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="Login" class="">
+                    <a class="LoginX LoginXtop"></a>
+                    <div class="LoginXbottom"></div>
+                    <a href="#" class="Button Button29" id="LoginButton1"><span><span><span class=""><b>Entrar</b></span></span></span></a>
+                    <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/game.ws?autocreate=true&amp;j=1" class="Button Button29 GameLink" id="RegisterButton"><span><span><span class=""><b>Cadastrar</b></span></span></span></a>
+                    <div id="LoginMask"></div>
+                    <div id="LoginPanel">
+                        <form class="LoginForm" action="https://web.archive.org/web/20120709052134/https://secure.runescape.com/m=weblogin/l=3/login.ws" method="post" autocomplete="off">
+                            <label for="Username" class="username Kingthing">Login: <input type="text" id="Username" class="Username placeholder" title="Nome de usuário/E-mail" name="username" value="" tabindex="1">
+                            </label>
+                            <label for="Password" class="password Kingthing">Senha:<input type="password" id="Password" class="Password" name="password" title="Senha" tabindex="2" maxlength="20" style="display: none;"><input class="Password placeholder" type="text" tabindex="2"></label>
+                            <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/loginapplet/loginapplet.ws?mod=accountappeal&amp;dest=beginappeal.ws" class="forgot">Esqueceu sua senha?</a>
+                            <span class="Button Button29" id="LoginButton2"><span><span><span class=""><b>Entrar</b></span><input value="login" name="submit" type="submit" title="Entrar"></span></span></span>
+                            <input type="hidden" value="www" name="mod">
+                            <input type="hidden" value="0" name="ssl">
+                            <input type="hidden" value="title.ws" name="dest">
+                        </form>
+                        <p id="Or1">ou&nbsp;</p>
+                        <p id="GetAccess">Entre e jogue grátis!</p>
+                        <p id="Or2">ou</p>
+
+                        <div id="SocialNetworkingLogin">
+                            <a id="facebooklogin" class="Facebooklogin HoverImgJs" href="https://web.archive.org/web/20120709052134/https://secure.runescape.com/m=sn-integration/l=3/facebook/gamelogin.ws">
+                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/login/modalLoginFB.png" alt="Facebook" title="Facebook"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/login/modalLoginFB.png" class="HoverImgJsFg">
+                                <span>Entre com <b>Facebook</b></span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/game.ws?j=1" id="PlayNowFree" class="HoverImgCss3Js GameLink"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/header/login/PlayFreeNow.png" alt="Jogue Já"></a>
+                </div>
+                <div id="SearchPanel">
+                    <form action="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=rswiki/pt/Special:Search" method="get">
+                        <span class="Button Button29" id="SearchButton"><span><span><span class=""><b>Buscar</b></span><input value="Search" name="search" type="submit" title="Buscar"></span></span></span>
+                        <input type="text" id="Search" name="text" title="Pesquise na Wiki do RuneScape" class="placeholder">
+                    </form>
+                </div>
+                <div id="PlayerCount" style="display: block;"><p class="top"><span>129.874</span> jogadores on-line</p><p class="bottom"><span>129.874</span> jogadores on-line</p></div>
+            </div>
+            <div id="bannerContainer">
+                <div id="headerMask"></div>
+                <div id="banner">
+                    <a id="bannerPrevious" class="HoverImgJs" href="?banner=3">
+                        <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/prev-button.png?2" alt="" title=""><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/prev-button.png?2" class="HoverImgJsFg">
+                    </a>
+                    <div id="bannerReel">
+                        <a href="https://web.archive.org/web/20120709052134/https://www.runescape.com/l=3/combat"><img src="https://web.archive.org/web/20120709052134im_/http://services.runescape.com/m=rswikiimages/pt/2012/7/combat_beta_weekend_access-06110933.jpg" alt="" title=""></a>
+                        <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/o-despertar-de-carnillean"><img src="https://web.archive.org/web/20120709052134im_/http://services.runescape.com/m=rswikiimages/pt/2012/7/carnillean_rising_banner-04125838.jpg" alt="" title=""></a>
+                        <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/novo-cacador-de-recompensas-the-crucible"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/img/main/community/banners/crucible_pt.jpg" alt="" title=""></a>
+                        <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/dragoa-negra-rainha-jubileu-de-diamante-e-festival-de-enigmas"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/img/main/community/banners/qbd_pt.jpg" alt="" title=""></a>
+                    </div>
+                    <a id="bannerNext" class="HoverImgJs" href="?banner=1">
+                        <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/next-button.png?2" alt="" title=""><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/next-button.png?2" class="HoverImgJsFg">
+                    </a>
+                </div>
+                <div id="bannerBorder"></div>
+                <div id="ctaOuterContainer" class="PTout">
+                    <div id="ctaPlayContainer">
+                        <a id="ctaPlayNow" href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/game.ws?j=1" class="GameLink HoverImgJs">
+                            <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/cta-play-free-now.jpg" title="" alt="Jogue Grátis"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/cta-play-free-now.jpg" class="HoverImgJsFg" style="">
+                        </a>
+                        <div id="SN_links" style="display: block;">
+                            <a id="ctaPlayNowFB" href="https://web.archive.org/web/20120709052134/https://secure.runescape.com/m=sn-integration/l=3/facebook/gamelogin.ws" class="HoverImgJs"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/cta-play-facebook.jpg" alt="Jogue Já com Facebook"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/cta-play-facebook.jpg" class="HoverImgJsFg" style=""></a>
+                        </div>
+                    </div>
+                    <div id="ctaInnerContainer" class="PTin">
+                        <a class="ctaHover" id="ctaMembers" href="https://web.archive.org/web/20120709052134/https://ecommweb3.levelupgames.com.br/multivendas/frmVitrine.aspx?cdProvider=16&amp;cdGame=30"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/cta-members-hover-levelup.jpg?2"></a>
+                        <a class="ctaHover" id="ctaClans" href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=clan-hiscores/l=3/landing.ws"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/cta-clans-hover.jpg?2"></a>
+                        <a class="ctaHover" id="ctaCombat" href="https://web.archive.org/web/20120709052134/https://www.runescape.com/l=3/combat"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/cta-combat-hover.jpg?2"></a>
+                        <a class="ctaHover" id="ctaMembership" href="https://web.archive.org/web/20120709052134/https://secure.runescape.com/m=billing_core/l=3/voucher.ws"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/cta-membership-hover-levelup.jpg?2"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="MainContentOuter">
+                <div class="MainContentBg">
+                    <div class="MainContentTopBg">
+                        <div class="MainContentBottomBg">
+                            <div class="counter" id="community_counter" style="display: none;">
+                                <div class="numerals"></div>
+                                <div class="blocks"></div>
+                                <img class="accounts" src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/members_counter/community/players.png?1" alt="" title="">
+                            </div>
+                            <script src="https://web.archive.org/web/20120709052134js_/http://www.runescape.com/l=3/js/members_counter-0.js"></script>
+                            <div id="MainContent">
+                                <div id="leftColumn">
+                                    <h3 class="Gradient" id="mainTitle">
+                                        <span class="G0">Últimas Notícias</span>
+                                        <span class="G1" aria-hidden="true">Últimas Notícias</span>
+                                        <span class="G2" aria-hidden="true">Últimas Notícias</span>
+                                        <span class="G3" aria-hidden="true">Últimas Notícias</span>
+                                        <span class="G4" aria-hidden="true">Últimas Notícias</span>
+                                        <span class="G5" aria-hidden="true">Últimas Notícias</span>
+                                        <span class="G6" aria-hidden="true">Últimas Notícias</span>
+                                        <span class="mask">
+                                            <span class="spacing">Últimas Notícias</span>
+                                            <span class="middleUnderscore">
+                                                <span class="spacing" aria-hidden="true">Últimas Notícias</span>
+                                            </span>
+                                        </span>
+                                        <span class="rightUnderscore">
+                                            <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/gradient_header/underscore_right.png" class="right" alt="">
+                                            <span class="spacing" aria-hidden="true">Últimas Notícias</span>
+                                        </span>
+                                        <span class="leftUnderscore">
+                                            <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/gradient_header/underscore_flourish_left.png" class="left" alt="">
+                                        </span>
+                                    </h3>
+                                    <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/list.ws" class="Button Button29"><span><span><span class=""><b>Ver Todas as Notícias</b></span></span></span></a>
+                                    <div id="NewsArticles">
+                                        <div class="Article" style="height: 195px;"><div>
+                                            <div class="NewsHeaderImage">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/NoImage.jpg" alt="" title="">
+                                                <div></div>
+                                            </div>
+                                            <a class="ArticleControl ControlMinus HoverImgJs">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Minus.png" alt="Fechar" title="Fechar"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Minus.png" class="HoverImgJsFg" style="">
+                                            </a>
+                                            <a class="ArticleControl ControlPlus HoverImgJs">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Plus.png" alt="Abrir" title="Abrir"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Plus.png" class="HoverImgJsFg" style="">
+                                            </a>
+                                            <div class="CollapsedMask"></div>
+                                            <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/categories/Cat_3.png" alt="Suporte ao Cliente" title="Suporte ao Cliente" class="Category">
+                                            <div class="Title">
+                                                <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/fins-de-semana-de-combate-beta-eventos-especiais-e-informacoes-importantes"><h4 class="FlatHeader">Fins de Semana de Combate Beta: Eventos Especiais e Informações Importantes!</h4></a>
+                                                <br style="clear:both">
+                                                <span>há 4 dias</span>
+                                            </div>
+                                            <div class="Content">
+                                                Prepare-se para uma onda de Combate este fim se semana, quando todos os membros de RuneScape poderão liberar seu guerreiro interior nos servidores de Combate Beta pela primeira vez!
+                                            </div>
+                                            <span class="SNbutton"><span class="left"></span><span class="middle"><span class="contentHolder"><a class="facebook SB_link" href="https://web.archive.org/web/20120709052134/http://facebook.com/sharer.php?u=http%3A%2F%2Fservices.runescape.com%2Fm%3Dnews%2Fl%3D3%2Ffins-de-semana-de-combate-beta-eventos-especiais-e-informacoes-importantes" target="_blank" title="Adicionar esta página ao Facebook"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/SNfacebook.png" alt="Facebook" title="Facebook"><span class="SB_label">Facebook</span></a><a href="https://web.archive.org/web/20120709052134/http://twitter.com/share?text=Fins de Semana de Combate Beta: Eventos Especiais e Informações Importantes!&amp;url=http%3A%2F%2Fservices.runescape.com%2Fm%3Dnews%2Fl%3D3%2Ffins-de-semana-de-combate-beta-eventos-especiais-e-informacoes-importantes" target="_blank" class="twitter SB_link"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/SNtwitter.png" alt="Twitter" title="Twitter"><span class="SB_label">Twitter</span></a></span><span class="right">Compartilhar</span></span></span>
+                                            <a class="More HoverImgJs" href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/fins-de-semana-de-combate-beta-eventos-especiais-e-informacoes-importantes"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/ReadMore.png" alt="" title=""><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/ReadMore.png" class="HoverImgJsFg"></a>
+                                        </div></div>
+
+                                        <div class="Article ArticleCollapsed" style="height: 65px;"><div>
+                                            <div class="NewsHeaderImage">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/NoImage.jpg" alt="" title="">
+                                                <div></div>
+                                            </div>
+                                            <a class="ArticleControl ControlMinus HoverImgJs">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Minus.png" alt="Fechar" title="Fechar"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Minus.png" class="HoverImgJsFg" style="">
+                                            </a>
+                                            <a class="ArticleControl ControlPlus HoverImgJs">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Plus.png" alt="Abrir" title="Abrir"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Plus.png" class="HoverImgJsFg" style="">
+                                            </a>
+                                            <div class="CollapsedMask"></div>
+                                            <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/categories/Cat_1.png" alt="Atualizações" title="Atualizações" class="Category">
+                                            <div class="Title">
+                                                <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/bastidores-em-video---exterminio-sociavel-e-jogos-de-guilenor"><h4 class="FlatHeader">Bastidores em Vídeo - Extermínio Sociável e Jogos de Guilenor</h4></a>
+                                                <br style="clear:both">
+                                                <span>há 3 dias</span>
+                                            </div>
+                                            <div class="Content">
+                                                Nesta semana, confira Extermínio Sociável e veja pela primeira vez como serão os Jogos de Guilenor.
+                                            </div>
+                                            <span class="SNbutton"><span class="left"></span><span class="middle"><span class="contentHolder"><a class="facebook SB_link" href="https://web.archive.org/web/20120709052134/http://facebook.com/sharer.php?u=http%3A%2F%2Fservices.runescape.com%2Fm%3Dnews%2Fl%3D3%2Fbastidores-em-video---exterminio-sociavel-e-jogos-de-guilenor" target="_blank" title="Adicionar esta página ao Facebook"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/SNfacebook.png" alt="Facebook" title="Facebook"><span class="SB_label">Facebook</span></a><a href="https://web.archive.org/web/20120709052134/http://twitter.com/share?text=Bastidores em Vídeo - Extermínio Sociável e Jogos de Guilenor&amp;url=http%3A%2F%2Fservices.runescape.com%2Fm%3Dnews%2Fl%3D3%2Fbastidores-em-video---exterminio-sociavel-e-jogos-de-guilenor" target="_blank" class="twitter SB_link"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/SNtwitter.png" alt="Twitter" title="Twitter"><span class="SB_label">Twitter</span></a></span><span class="right">Compartilhar</span></span></span>
+                                            <a class="More HoverImgJs" href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/bastidores-em-video---exterminio-sociavel-e-jogos-de-guilenor"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/ReadMore.png" alt="" title=""><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/ReadMore.png" class="HoverImgJsFg"></a>
+                                        </div></div>
+
+                                        <div class="Article ArticleImage ArticleCollapsed" style="height: 65px;"><div>
+                                            <div class="NewsHeaderImage">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://services.runescape.com/m=news/l=3/img/runescape/squeal.jpg" alt="EXP para Aventureiros - Quase Acabando!" title="EXP para Aventureiros - Quase Acabando!">
+                                                <div></div>
+                                            </div>
+                                            <a class="ArticleControl ControlMinus HoverImgJs">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Minus.png" alt="Fechar" title="Fechar"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Minus.png" class="HoverImgJsFg">
+                                            </a>
+                                            <a class="ArticleControl ControlPlus HoverImgJs">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Plus.png" alt="Abrir" title="Abrir"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Plus.png" class="HoverImgJsFg">
+                                            </a>
+                                            <div class="CollapsedMask"></div>
+                                            <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/categories/Cat_1.png" alt="Atualizações" title="Atualizações" class="Category">
+                                            <div class="Title">
+                                                <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/exp-para-aventureiros---quase-acabando"><h4 class="FlatHeader">EXP para Aventureiros - Quase Acabando!</h4></a>
+                                                <br style="clear:both">
+                                                <span>há 3 dias</span>
+                                            </div>
+                                            <div class="Content">
+                                                Não perca tempo! Suas chances de ganhar mais lâmpadas de EXP Agilidade, Roubo e Dungeon estão prestes a diminuir, já que a oferta acaba hoje, às 23h59min (horário do fórum)!
+                                            </div>
+                                            <span class="SNbutton"><span class="left"></span><span class="middle"><span class="contentHolder"><a class="facebook SB_link" href="https://web.archive.org/web/20120709052134/http://facebook.com/sharer.php?u=http%3A%2F%2Fservices.runescape.com%2Fm%3Dnews%2Fl%3D3%2Fexp-para-aventureiros---quase-acabando" target="_blank" title="Adicionar esta página ao Facebook"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/SNfacebook.png" alt="Facebook" title="Facebook"><span class="SB_label">Facebook</span></a><a href="https://web.archive.org/web/20120709052134/http://twitter.com/share?text=EXP para Aventureiros - Quase Acabando!&amp;url=http%3A%2F%2Fservices.runescape.com%2Fm%3Dnews%2Fl%3D3%2Fexp-para-aventureiros---quase-acabando" target="_blank" class="twitter SB_link"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/SNtwitter.png" alt="Twitter" title="Twitter"><span class="SB_label">Twitter</span></a></span><span class="right">Compartilhar</span></span></span>
+                                            <a class="More HoverImgJs" href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/exp-para-aventureiros---quase-acabando"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/ReadMore.png" alt="" title=""><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/ReadMore.png" class="HoverImgJsFg"></a>
+                                        </div></div>
+
+                                        <div class="Article ArticleCollapsed" style="height: 65px;"><div>
+                                            <div class="NewsHeaderImage">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/NoImage.jpg" alt="" title="">
+                                                <div></div>
+                                            </div>
+                                            <a class="ArticleControl ControlMinus HoverImgJs">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Minus.png" alt="Fechar" title="Fechar"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Minus.png" class="HoverImgJsFg">
+                                            </a>
+                                            <a class="ArticleControl ControlPlus HoverImgJs">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Plus.png" alt="Abrir" title="Abrir"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Plus.png" class="HoverImgJsFg">
+                                            </a>
+                                            <div class="CollapsedMask"></div>
+                                            <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/categories/Cat_1.png" alt="Atualizações" title="Atualizações" class="Category">
+                                            <div class="Title">
+                                                <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/o-despertar-de-carnillean"><h4 class="FlatHeader">O Despertar de Carnillean</h4></a>
+                                                <br style="clear:both">
+                                                <span>há 6 dias</span>
+                                            </div>
+                                            <div class="Content">
+                                                Ajude Philipe Carnillean a embarcar num rito de passagem para se transformar em um aventureiro nesta missão de nível intermediário, dublada em inglês e com um toque especial – nela, você é quem faz tudo acontecer! Dentre as recompensas estão lâmpadas de EXP, materiais de Construção e uma arca do tesouro, que você pode encher com o que quiser e esconder para ser o prêmio da sua própria caça ao tesouro!
+                                            </div>
+                                            <span class="SNbutton"><span class="left"></span><span class="middle"><span class="contentHolder"><a class="facebook SB_link" href="https://web.archive.org/web/20120709052134/http://facebook.com/sharer.php?u=http%3A%2F%2Fservices.runescape.com%2Fm%3Dnews%2Fl%3D3%2Fo-despertar-de-carnillean" target="_blank" title="Adicionar esta página ao Facebook"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/SNfacebook.png" alt="Facebook" title="Facebook"><span class="SB_label">Facebook</span></a><a href="https://web.archive.org/web/20120709052134/http://twitter.com/share?text=O Despertar de Carnillean&amp;url=http%3A%2F%2Fservices.runescape.com%2Fm%3Dnews%2Fl%3D3%2Fo-despertar-de-carnillean" target="_blank" class="twitter SB_link"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/SNtwitter.png" alt="Twitter" title="Twitter"><span class="SB_label">Twitter</span></a></span><span class="right">Compartilhar</span></span></span>
+                                            <a class="More HoverImgJs" href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/o-despertar-de-carnillean"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/ReadMore.png" alt="" title=""><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/ReadMore.png" class="HoverImgJsFg"></a>
+                                        </div></div>
+
+                                        <div class="Article ArticleImage ArticleCollapsed" style="height: 65px;"><div>
+                                            <div class="NewsHeaderImage">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://services.runescape.com/m=news/l=3/img/runescape/behind-the-scenes.jpg" alt="Bastidores - Julho" title="Bastidores - Julho">
+                                                <div></div>
+                                            </div>
+                                            <a class="ArticleControl ControlMinus HoverImgJs">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Minus.png" alt="Fechar" title="Fechar"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Minus.png" class="HoverImgJsFg">
+                                            </a>
+                                            <a class="ArticleControl ControlPlus HoverImgJs">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Plus.png" alt="Abrir" title="Abrir"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Plus.png" class="HoverImgJsFg">
+                                            </a>
+                                            <div class="CollapsedMask"></div>
+                                            <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/categories/Cat_6.png" alt="Bastidores" title="Bastidores" class="Category">
+                                            <div class="Title">
+                                                <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/bastidores---julho"><h4 class="FlatHeader">Bastidores - Julho</h4></a>
+                                                <br style="clear:both">
+                                                <span>há 1 semana</span>
+                                            </div>
+                                            <div class="Content">
+                                                No mês de julho teremos uma missão novinha em folha, Extermínio com amigos, uma capa do conhecimento de 10 anos, eventos espetaculares... e mais um monte de coisas legais! Você está preparado?
+                                            </div>
+                                            <span class="SNbutton"><span class="left"></span><span class="middle"><span class="contentHolder"><a class="facebook SB_link" href="https://web.archive.org/web/20120709052134/http://facebook.com/sharer.php?u=http%3A%2F%2Fservices.runescape.com%2Fm%3Dnews%2Fl%3D3%2Fbastidores---julho" target="_blank" title="Adicionar esta página ao Facebook"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/SNfacebook.png" alt="Facebook" title="Facebook"><span class="SB_label">Facebook</span></a><a href="https://web.archive.org/web/20120709052134/http://twitter.com/share?text=Bastidores - Julho&amp;url=http%3A%2F%2Fservices.runescape.com%2Fm%3Dnews%2Fl%3D3%2Fbastidores---julho" target="_blank" class="twitter SB_link"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/SNtwitter.png" alt="Twitter" title="Twitter"><span class="SB_label">Twitter</span></a></span><span class="right">Compartilhar</span></span></span>
+                                            <a class="More HoverImgJs" href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/bastidores---julho"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/ReadMore.png" alt="" title=""><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/ReadMore.png" class="HoverImgJsFg"></a>
+                                        </div></div>
+
+                                        <div class="Article ArticleImage ArticleCollapsed" style="height: 65px;"><div>
+                                            <div class="NewsHeaderImage">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://services.runescape.com/m=news/l=3/img/runescape/squeal.jpg" alt="EXP de Sobra para Aventureiros!" title="EXP de Sobra para Aventureiros!">
+                                                <div></div>
+                                            </div>
+                                            <a class="ArticleControl ControlMinus HoverImgJs">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Minus.png" alt="Fechar" title="Fechar"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Minus.png" class="HoverImgJsFg">
+                                            </a>
+                                            <a class="ArticleControl ControlPlus HoverImgJs">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Plus.png" alt="Abrir" title="Abrir"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/Plus.png" class="HoverImgJsFg">
+                                            </a>
+                                            <div class="CollapsedMask"></div>
+                                            <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/categories/Cat_1.png" alt="Atualizações" title="Atualizações" class="Category">
+                                            <div class="Title">
+                                                <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/exp-de-sobra-para-aventureiros"><h4 class="FlatHeader">EXP de Sobra para Aventureiros!</h4></a>
+                                                <br style="clear:both">
+                                                <span>há 1 semana</span>
+                                            </div>
+                                            <div class="Content">
+                                                Está querendo libertar o seu espírito de aventura? Pois temos um montão de lâmpadas de EXP na Roleta Maluca essa semana, com duas vezes mais lâmpadas de Agilidade, Roubo e Dungeon para ajudar em suas façanhas heróicas.
+                                            </div>
+                                            <span class="SNbutton"><span class="left"></span><span class="middle"><span class="contentHolder"><a class="facebook SB_link" href="https://web.archive.org/web/20120709052134/http://facebook.com/sharer.php?u=http%3A%2F%2Fservices.runescape.com%2Fm%3Dnews%2Fl%3D3%2Fexp-de-sobra-para-aventureiros" target="_blank" title="Adicionar esta página ao Facebook"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/SNfacebook.png" alt="Facebook" title="Facebook"><span class="SB_label">Facebook</span></a><a href="https://web.archive.org/web/20120709052134/http://twitter.com/share?text=EXP de Sobra para Aventureiros!&amp;url=http%3A%2F%2Fservices.runescape.com%2Fm%3Dnews%2Fl%3D3%2Fexp-de-sobra-para-aventureiros" target="_blank" class="twitter SB_link"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/SNtwitter.png" alt="Twitter" title="Twitter"><span class="SB_label">Twitter</span></a></span><span class="right">Compartilhar</span></span></span>
+                                            <a class="More HoverImgJs" href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/exp-de-sobra-para-aventureiros"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/ReadMore.png" alt="" title=""><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/news/ReadMore.png" class="HoverImgJsFg"></a>
+                                        </div></div>
+                                        <div id="newsArticleFooter">
+                                            <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/list.ws" class="Button Button29"><span><span><span class=""><b>Ver Todas as Notícias</b></span></span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="rightColumn">
+                                    <div id="social">
+                                        <div id="socialInner">
+                                            <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=news/l=3/latest_news.rss" title="RSS" target="_blank" class="HoverImg NoFade"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/logos/MediumRss.png" alt="RSS"></a>
+
+                                            <a href="https://web.archive.org/web/20120709052134/http://www.facebook.com/pages/RuneScapeBrasil/133577723339641" title="Siga-nos no Facebook" target="_blank" class="HoverImg NoFade AddButtons"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/MediumFacebook.png" alt="Facebook"></a>
+
+                                            <a href="https://web.archive.org/web/20120709052134/http://twitter.com/JagexBR" title="Siga-nos no Twitter" target="_blank" class="HoverImg NoFade AddButtons"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/MediumTwitter.png" alt="Twitter"></a>
+
+                                            <a href="https://web.archive.org/web/20120709052134/http://www.youtube.com/RuneScape" title="Siga-nos no YouTube" target="_blank" class="HoverImg NoFade AddButtons"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/social/MediumYoutube.png" alt="YouTube"></a>
+                                            <div id="bottomNavigationFlag">
+
+                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://www.facebook.com/RuneScapeBrasil" data-send="false" data-layout="button_count" data-width="45" data-show-faces="false" data-colorscheme="dark"><span style="height: 21px; width: 90px;"><iframe id="f3786a314dbf86a" name="f15d9ef00e9bc7" scrolling="no" title="Like this content on Facebook." class="fb_ltr" style="border: none; overflow: hidden; height: 21px; width: 90px;" allow="autoplay 'self'; fullscreen 'self'" src="https://web.archive.org/web/20120709052047/http://www.facebook.com/plugins/like.php?api_key=174823375888281&amp;channel_url=https%3A%2F%2Fweb.archive.org%2Fweb%2F20120709052047%2Fhttp%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D9%23cb%3Df2bf5d0f19a297%26origin%3Dhttp%253A%252F%252Fwww.runescape.com%252Ff5ff0448c2f7a48%26domain%3Dwww.runescape.com%26relation%3Dparent.parent&amp;colorscheme=dark&amp;extended_social_context=false&amp;href=http%3A%2F%2Fwww.facebook.com%2FRuneScapeBrasil&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90"></iframe></span></div></div>
+                                        </div>
+                                    </div>
+                                    <div id="events">
+                                        <div id="eventsInner">
+
+                                            <h3 class="Gradient">
+                                                <span class="G0">Eventos</span>
+                                                <span class="G1" aria-hidden="true">Eventos</span>
+                                                <span class="G2" aria-hidden="true">Eventos</span>
+                                                <span class="G3" aria-hidden="true">Eventos</span>
+                                                <span class="G4" aria-hidden="true">Eventos</span>
+                                                <span class="G5" aria-hidden="true">Eventos</span>
+                                                <span class="G6" aria-hidden="true">Eventos</span>
+                                                <span class="mask"><span class="spacing">Eventos</span>
+    <span class="middleUnderscore"><span class="spacing" aria-hidden="true">Eventos</span></span>
+    </span>
+                                                <span class="rightUnderscore">
+    <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/gradient_header/underscore_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">Eventos</span>
+    </span>
+                                                <span class="leftUnderscore"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/gradient_header/underscore_flourish_left.png" class="left" alt=""></span>
+                                            </h3>
+                                            <div id="eventsContent">
+                                                <div id="mapkeytext"> <img class="mapkeyjewels" src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/events/flag-official_small.png" alt="Bandeira"><p>Oficial</p>
+                                                    <img class="mapkeyjewels" src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/events/flag-user_small.png" alt="Bandeira"><p>Jogador</p>
+                                                    <img class="mapkeyjewels" src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/events/flag-clan_small.png" alt="Bandeira"><p>Clã</p>
+                                                </div>
+                                                <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/events.ws" class="Button Button29"><span><span><span class=""><b>Ver Todos os Eventos</b></span></span></span></a>
+                                                <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/events.ws" class="event">
+                                                    <h4 class="FlatHeader"><span class="eventsTitle" style="width: auto;"><span style="display: block; width: 200%;"><span>Copa do Clã 2012</span></span></span><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/events/flag-official_small.png" alt="" title=""></h4>
+                                                    <span class="key">Onde:</span> <span class="value"><span style="display: block; width: 200%;"><span>Vários locais</span></span></span>
+                                                    <span class="key">Quando: </span> <span class="value blue"><span style="display: block; width: 200%;"><span>13-06 a 19-08-2012 </span></span></span>
+                                                    <div class="eventsDivider"></div>
+                                                </a>
+                                                <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/events.ws" class="event">
+                                                    <h4 class="FlatHeader"><span class="eventsTitle" style="width: auto;"><span style="display: block; width: 200%;"><span>P&amp;R com os Desenvolvedores</span></span></span><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/events/flag-official_small.png" alt="" title=""></h4>
+                                                    <span class="key">Onde:</span> <span class="value"><span style="display: block; width: 200%;"><span>Fórum</span></span></span>
+                                                    <span class="key">Quando: </span> <span class="value blue"><span style="display: block; width: 200%;"><span>09-07-2012 - 20h (Fórum)</span></span></span>
+                                                    <div class="eventsDivider"></div>
+                                                </a>
+                                                <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/events.ws" class="event">
+                                                    <h4 class="FlatHeader"><span class="eventsTitle" style="width: auto;"><span style="display: block; width: 200%;"><span>SkIlLiNg em Al-Kh@riD com WcA</span></span></span><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/events/flag-user_small.png" alt="" title=""></h4>
+                                                    <span class="key">Onde:</span> <span class="value"><span style="display: block; width: 200%;"><span>Banco de Al-Kharid</span></span></span>
+                                                    <span class="key">Quando: </span> <span class="value blue"><span style="display: block; width: 200%;"><span>11-07-2012 - 17:00 (Fórum)</span></span></span>
+                                                    <div class="eventsDivider"></div>
+                                                </a>
+                                                <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/events.ws" class="event">
+                                                    <h4 class="FlatHeader"><span class="eventsTitle" style="width: auto;"><span style="display: block; width: 200%;"><span>Exposição de Roubo de WFE</span></span></span><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/events/flag-user_small.png" alt="" title=""></h4>
+                                                    <span class="key">Onde:</span> <span class="value"><span style="display: block; width: 200%;"><span>Palácio de Varrock</span></span></span>
+                                                    <span class="key">Quando: </span> <span class="value blue"><span style="display: block; width: 200%;"><span>14-07-2012 - O dia todo</span></span></span>
+                                                    <div class="eventsDivider"></div>
+                                                </a>
+                                                <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/events.ws" class="event">
+                                                    <h4 class="FlatHeader"><span class="eventsTitle" style="width: auto;"><span style="display: block; width: 200%;"><span>Encontro no Runiverso e Prática de ...</span></span></span><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/events/flag-user_small.png" alt="" title=""></h4>
+                                                    <span class="key">Onde:</span> <span class="value"><span style="display: block; width: 200%;"><span>Runiverso, perto do Mago Finix, 1º n...</span></span></span>
+                                                    <span class="key">Quando: </span> <span class="value blue"><span style="display: block; width: 200%;"><span>17-07-2012 - 21h (Fórum)</span></span></span>
+                                                    <div class="eventsDivider"></div>
+                                                </a>
+                                                <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/events.ws" class="event">
+                                                    <h4 class="FlatHeader"><span class="eventsTitle" style="width: auto;"><span style="display: block; width: 200%;"><span>Evento Campo Germinado de WFE</span></span></span><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/events/flag-user_small.png" alt="" title=""></h4>
+                                                    <span class="key">Onde:</span> <span class="value"><span style="display: block; width: 200%;"><span>Terreno de agricultura do Palácio de...</span></span></span>
+                                                    <span class="key">Quando: </span> <span class="value blue"><span style="display: block; width: 200%;"><span>18-07-2012 - 19h (Fórum)</span></span></span>
+                                                    <div class="eventsDivider"></div>
+                                                </a>
+                                                <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/events.ws" class="event">
+                                                    <h4 class="FlatHeader"><span class="eventsTitle" style="width: auto;"><span style="display: block; width: 200%;"><span>~ Treino em Yanille ~</span></span></span><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/events/flag-user_small.png" alt="" title=""></h4>
+                                                    <span class="key">Onde:</span> <span class="value"><span style="display: block; width: 200%;"><span>Banco de Yanille</span></span></span>
+                                                    <span class="key">Quando: </span> <span class="value blue"><span style="display: block; width: 200%;"><span>19-07-2012 - 21h (Fórum)</span></span></span>
+                                                    <div class="eventsDivider"></div>
+                                                </a>
+                                                <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/events.ws" class="event">
+                                                    <h4 class="FlatHeader"><span class="eventsTitle" style="width: auto;"><span style="display: block; width: 200%;"><span>Evento de Avanço de Habilidade F2P</span></span></span><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/events/flag-user_small.png" alt="" title=""></h4>
+                                                    <span class="key">Onde:</span> <span class="value"><span style="display: block; width: 200%;"><span>Bate-Papo Entre Amigos: RS outreach </span></span></span>
+                                                    <span class="key">Quando: </span> <span class="value blue"><span style="display: block; width: 200%;"><span>20-07-2012 - 18h (Fórum)</span></span></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="communityBoxes">
+                                    <div id="hotTopics">
+
+                                        <h3 class="Gradient">
+                                            <span class="G0">Top Tópicos</span>
+                                            <span class="G1" aria-hidden="true">Top Tópicos</span>
+                                            <span class="G2" aria-hidden="true">Top Tópicos</span>
+                                            <span class="G3" aria-hidden="true">Top Tópicos</span>
+                                            <span class="G4" aria-hidden="true">Top Tópicos</span>
+                                            <span class="G5" aria-hidden="true">Top Tópicos</span>
+                                            <span class="G6" aria-hidden="true">Top Tópicos</span>
+                                            <span class="mask"><span class="spacing">Top Tópicos</span>
+    <span class="middleUnderscore"><span class="spacing" aria-hidden="true">Top Tópicos</span></span>
+    </span>
+                                            <span class="rightUnderscore">
+    <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/gradient_header/underscore_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">Top Tópicos</span>
+    </span>
+                                            <span class="leftUnderscore"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/gradient_header/underscore_flourish_left.png" class="left" alt=""></span>
+                                        </h3>
+                                        <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=forum_pt/l=3/forums.ws?40,41,126,40284" class="hot">
+                                            <div class="img">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/forum/icons/combat_forum_icon.png" title="" alt="">
+                                            </div>
+                                            <h4 class="FlatHeader">Fins de Semana e Eventos</h4> Criado: <span>há 2 dias</span>
+                                        </a>
+                                        <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=forum_pt/l=3/forums.ws?4,5,517,39450" class="hot">
+                                            <div class="img">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/forum/icons/assist.png" title="" alt="">
+                                            </div>
+                                            <h4 class="FlatHeader">Pensadores de Guilenor</h4> Criado: <span>há 3 semanas</span>
+                                        </a>
+                                        <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=forum_pt/l=3/forums.ws?0,1,8,35460" class="hot">
+                                            <div class="img">
+                                                <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/forum/icons/quest.png" title="" alt="">
+                                            </div>
+                                            <h4 class="FlatHeader">Qual missão você mais gosta??</h4> Criado: <span>há 4 meses</span>
+                                        </a>
+                                        <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=forum/l=3/forums.ws" class="Button Button29"><span><span><span class=""><b>Visite o Fórum</b></span></span></span></a>
+                                    </div>
+                                    <div id="poll">
+
+                                        <h3 class="Gradient">
+                                            <span class="G0">Enquete</span>
+                                            <span class="G1" aria-hidden="true">Enquete</span>
+                                            <span class="G2" aria-hidden="true">Enquete</span>
+                                            <span class="G3" aria-hidden="true">Enquete</span>
+                                            <span class="G4" aria-hidden="true">Enquete</span>
+                                            <span class="G5" aria-hidden="true">Enquete</span>
+                                            <span class="G6" aria-hidden="true">Enquete</span>
+                                            <span class="mask"><span class="spacing">Enquete</span>
+    <span class="middleUnderscore"><span class="spacing" aria-hidden="true">Enquete</span></span>
+    </span>
+                                            <span class="rightUnderscore">
+    <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/gradient_header/underscore_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">Enquete</span>
+    </span>
+                                            <span class="leftUnderscore"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/gradient_header/underscore_flourish_left.png" class="left" alt=""></span>
+                                        </h3>
+                                        <form action="accept_vote.ws" method="post">
+                                            <input type="hidden" value="1340804547643" name="pollid">
+                                            Que seção da Copa de Clãs 2012 você está aguardando mais ansiosamente?
+                                            <ul>
+                                                <li>
+                                                    <span class="Radio" id="pollVote0"><span></span></span><input class="pollRadio" type="radio" name="voteid" id="pollVote0" value="0" style="display: none;">
+                                                    <label for="pollVote0">Combate</label>
+                                                </li>
+                                                <li>
+                                                    <span class="Radio" id="pollVote1"><span></span></span><input class="pollRadio" type="radio" name="voteid" id="pollVote1" value="1" style="display: none;">
+                                                    <label for="pollVote1">Combinado</label>
+                                                </li>
+                                                <li>
+                                                    <span class="Radio" id="pollVote2"><span></span></span><input class="pollRadio" type="radio" name="voteid" id="pollVote2" value="2" style="display: none;">
+                                                    <label for="pollVote2">Minitorneios</label>
+                                                </li>
+                                                <li>
+                                                    <span class="Radio" id="pollVote3"><span></span></span><input class="pollRadio" type="radio" name="voteid" id="pollVote3" value="3" style="display: none;">
+                                                    <label for="pollVote3">Habilidades</label>
+                                                </li>
+                                            </ul>
+                                            <span class="Button Button29"><span><span><span class=""><b>Votar</b></span><input type="submit" title="Votar"></span></span></span>
+                                        </form>
+                                    </div>
+                                    <div id="store">
+
+                                        <h3 class="Gradient">
+                                            <span class="G0">Loja da Jagex</span>
+                                            <span class="G1" aria-hidden="true">Loja da Jagex</span>
+                                            <span class="G2" aria-hidden="true">Loja da Jagex</span>
+                                            <span class="G3" aria-hidden="true">Loja da Jagex</span>
+                                            <span class="G4" aria-hidden="true">Loja da Jagex</span>
+                                            <span class="G5" aria-hidden="true">Loja da Jagex</span>
+                                            <span class="G6" aria-hidden="true">Loja da Jagex</span>
+                                            <span class="mask"><span class="spacing">Loja da Jagex</span>
+    <span class="middleUnderscore"><span class="spacing" aria-hidden="true">Loja da Jagex</span></span>
+    </span>
+                                            <span class="rightUnderscore">
+    <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/gradient_header/underscore_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">Loja da Jagex</span>
+    </span>
+                                            <span class="leftUnderscore"><img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/gradient_header/underscore_flourish_left.png" class="left" alt=""></span>
+                                        </h3>
+                                        <a href="https://web.archive.org/web/20120709052134/http://runescape-us-designer.spreadshirt.com/" target="_blank">
+                                            <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/main/community/jagex-store.jpg" alt="" title="">
+                                        </a> Gosta de dar e receber presentes? Dê uma olhada na nova Loja da Jagex. <br style="clear: both">
+                                        <a target="_blank" href="https://web.archive.org/web/20120709052134/http://runescape-us-designer.spreadshirt.com/" class="Button Button29"><span><span><span class=""><b>Visite a Loja</b></span></span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Footer" class="Kingthings">
+                    <img class="PtRatingImgSpl" src="https://web.archive.org/web/20120620145610im_/http://www.runescape.com/l=3/img/global/page/ptrating.png" alt="NÃO RECOMENDADO PARA MENORES DE 12 ANOS - Tema: Estratégia - Contém: Agressão Física">
+                    <ul class="Main">
+                        <li>
+                            <a href="https://web.archive.org/web/20120709052134/https://www.runescape.com/l=3/account_settings.ws">Conta</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120709052134/https://www.runescape.com/l=3/account_settings.ws">Perfil &amp; Configurações</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/members_benefits.ws">Assine</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=loyalty-points/l=3/">Lealdade</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=friend-referral/l=3/">Indique um Amigo</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/store_locator.ws">Cartões de Assinatura</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=rswiki/pt/Customer_Support">Suporte</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=rswiki/pt/Customer_Support">Suporte ao Cliente</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/loginapplet/loginapplet.ws?mod=accountappeal&amp;dest=passwordchoice.ws">Recuperação de Senha</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=rswiki/pt/Technical_Help">Suporte Técnico</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=rswiki/pt/Billing_Advice">Suporte à Cobrança</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=rswiki/pt/Safety_%26_Security">Segurança</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=bugtracker_v4/l=3/">Enviar Relatório de Erro</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/gameguide.ws">Jogo</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/gameguide.ws">Guia do Jogo</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/beginnersguide.ws">Guia do Iniciante</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/world_locations.ws">Locais</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=rswiki/pt/">Wiki do RuneScape</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/title.ws">Comunidade</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=forum/l=3/forums.ws">Fórum</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=clan-home/l=3/">Clãs</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=adventurers-log/l=3/">Diário de Aventuras</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/events.ws">Eventos</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://services.runescape.com/m=hiscore/l=3/heroes.ws">Recordes</a></li>
+                                <li><a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/downloads.ws">Downloads</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2 id="RuneScapeLogo">
+                        <a href="https://web.archive.org/web/20120709052134/http://www.runescape.com/l=3/">
+                            <img src="https://web.archive.org/web/20120709052134im_/http://www.runescape.com/l=3/img/global/logos/runescape.png" alt="RuneScape" title="">
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
