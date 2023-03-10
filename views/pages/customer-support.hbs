@@ -1,0 +1,526 @@
+<script type="text/javascript">//<![CDATA[
+__wm.bt(700,27,25,2,"web","http://services.runescape.com/m%3Drswiki/en/Customer_Support","20120620024434",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+__wm.rw(1);
+//]]></script>
+<script type="text/javascript">
+    Shadowbox.init({
+        // let's skip the automatic setup because we don't have any
+        // properly configured link elements on the page
+        skipSetup: true,
+        enableKeys: false
+    });
+</script>
+<script type="text/javascript" src="https://web.archive.org/web/20120620024434js_/http://www.jagex.com/js/jquery/jquery_thickbox_3.js"></script>
+<link type="text/css" rel="stylesheet" href="https://web.archive.org/web/20120620024434cs_/http://www.jagex.com/css/jquery/jquery_thickbox_3-0.css">
+<script type="text/javascript">
+    if ($("#fb-root").length == 0){
+        $("body").prepend('<div id="fb-root"></div>');
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '174823375888281',
+                status: false,
+                cookie: true,
+                xfbml: true,
+                oauth: true
+            });
+            if($.browser.msie){
+                FB.UIServer.setLoadedNode = function (a,b) { FB.UIServer._loadedNodes[a.id] = b; }
+            }
+        };
+        (function() {
+            var e = document.createElement('script');
+            e.async = true;
+            e.src = document.location.protocol + '//web.archive.org/web/20120620024434/http://connect.facebook.net/en_US/all.js';
+            document.getElementById('fb-root').appendChild(e);
+        }());
+    }
+</script>
+<a style="display:none" id="SNbuttonLink" class="thickbox"></a>
+<script type="text/javascript">
+    function fbLoginRedirect(buttonName, loginUrl, destUrl, destStr, _target){
+        $.getJSON('https://web.archive.org/web/20120620024434/http://services.runescape.com/m=sn-integration/checkLogin.ws?json=?', {"tps":0, "token":FB.getAuthResponse().accessToken, "expiry":FB.getAuthResponse().expiresIn, "signed":FB.getAuthResponse().signedRequest}, function(data) {
+            if(typeof(_target) != 'undefined' && _target != '') $("#SNbuttonLink").attr('target',_target);
+            if (data['sso']<0) {
+
+
+                alert("There was a problem verifying your login. Please try again.");
+            } else if (data['sso'].length > 1){
+
+                if(data['sna']>-1) {
+
+
+                    $("#SNbuttonLink").attr('href',loginUrl+'key='+data['sso']+'&tps=0&'+destStr+'&KeepThis=true&TB_iframe=true&height=500&width=560');
+
+                    $("#SNbuttonLink").click();
+                    $("#TB_iframeContent").attr("allowTransparency", "true");
+
+                    $("#TB_iframeContent").css("padding-left", "50px");
+
+                } else {
+
+                    var loc = destUrl+'?key='+data['sso']+'?'+destStr;
+                    if(typeof(_target) != 'undefined' && _target != ''){
+                        window.parent.location = loc;
+                    }
+                    else {
+                        window.location = loc;
+                    }
+                }
+            } else {
+
+
+                $("#SNbuttonLink").attr('href',loginUrl+'?'+destStr+'&KeepThis=true&TB_iframe=true&height=400&width=442');
+
+                $("#SNbuttonLink").click();
+                $("#TB_iframeContent").attr("allowTransparency", "true");
+            }
+        });
+        return false;
+    }
+</script>
+<div id="Background">
+    <div id="TopBackground">
+        <div id="BottomBackground">
+            {{> Header}}
+            <div id="MainContentOuter">
+                <div class="MainContentBg">
+                    <div class="MainContentTopBg">
+                        <div class="MainContentBottomBg">
+                            <div id="MainContent">
+                                <div id="MainTitle">
+                                    <div class="Centre1">
+                                        <div class="Centre2">
+
+                                            <h3 class="Gradient DoubleFlourish"><span class="spacing" aria-hidden="true">RuneScape Wiki</span>
+                                                <span class="G0">RuneScape Wiki</span>
+                                                <span class="G1" aria-hidden="true">RuneScape Wiki</span>
+                                                <span class="G2" aria-hidden="true">RuneScape Wiki</span>
+                                                <span class="G3" aria-hidden="true">RuneScape Wiki</span>
+                                                <span class="G4" aria-hidden="true">RuneScape Wiki</span>
+                                                <span class="G5" aria-hidden="true">RuneScape Wiki</span>
+                                                <span class="G6" aria-hidden="true">RuneScape Wiki</span>
+                                                <span class="mask"><span class="spacing" aria-hidden="true">RuneScape Wiki</span>
+<span class="leftInnerFlourish"></span><span class="centreFlourish"></span><span class="rightInnerFlourish"></span>
+</span>
+                                                <span class="rightUnderscore">
+<img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/gradient_header/flourish_outer_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">RuneScape Wiki</span>
+</span>
+                                                <span class="leftUnderscore"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/gradient_header/flourish_outer_left.png" class="left" alt=""></span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="wiki">
+                                    <div class="portlet" id="navigation-search">
+                                    </div>
+
+                                    <div id="Advert">
+                                        <iframe src="https://web.archive.org/web/20120620024434if_/http://www.runescape.com/advert/advert.ws?placement=207" allowtransparency="true" width="730" height="100" scrolling="no" frameborder="0"></iframe>
+                                    </div>
+
+
+
+                                    <div id="wikiAdLine">
+
+                                        <div id="jagexCertified">
+                                            <img alt="jagexCertified" src="https://web.archive.org/web/20130128025421im_/http://services.runescape.com/m=rswiki/images/style/redRibbon-en.png">
+                                        </div>
+
+
+                                    </div>
+
+                                    <div id="wiki-page">
+                                        <div id="wiki-navigation">
+                                            <div id="logo">
+
+                                                <a class="logo" href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Welcome_to_the_RuneScape_Wiki"><img border="0" src="https://web.archive.org/web/20130128025420im_/http://services.runescape.com/m=rswiki/images/bullet.gif" alt=""></a>
+                                            </div>
+                                            <br>
+
+
+
+
+
+
+                                        </div>
+
+
+                                        <div id="user-menu"><ul>
+
+                                            <li><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Community_Hub" title="Community Hub">
+
+
+
+
+
+
+
+
+
+                                                Community-Zentrum
+                                            </a></li>
+
+                                        </ul></div>
+
+                                        <div class="clear"></div>
+
+
+
+                                        <ul id="tab_menu" class="tab-menu">
+
+
+
+
+                                            <li class="active"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Support_Centre" title="Support Centre">
+
+
+
+
+
+
+
+
+
+                                                Artikel
+                                            </a></li>
+
+                                        </ul>
+                                        <div id="jagexErrorMessage">
+
+                                        </div>
+                                        <div id="wiki-content" style="overflow:hidden;">
+                                            <div id="contents">
+                                                <h1 id="contents-header">
+
+
+
+
+
+
+
+
+
+                                                    Support Centre
+                                                </h1>
+
+                                                <div id="contentSub">Umgeleitet von <a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Customer_Support?redirect=no">Customer Support</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <div id="content-article">
+
+
+
+                                                    <p><i><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Welcome_to_the_RuneScape_Wiki" title="Welcome to the RuneScape Wiki">RuneScape Wiki</a> &gt;&gt; <b>Support Centre</b></i><br></p>
+                                                    <div class="floatleft"><a class="wikiimg" href="https://web.archive.org/web/20120501085442im_/http://services.runescape.com/m=rswikiimages/en/2011/12/playersupportcharacters-08203926.png"><img class="wikiimg" src="https://web.archive.org/web/20120501085442im_/http://services.runescape.com/m=rswikiimages/en/2011/12/playersupportcharacters-08203926.png" width="113" height="179" alt="playersupportcharacters.png"></a></div>
+                                                    <p>The Customer Support team is here to ensure that you have the best possible customer service whilst playing RuneScape. We provide coverage 24 hours a day, 7 days a week, 365 days a year for all of our players, whilst constantly working towards enhancing your Jagex experience.</p>
+                                                    <table class="bigportal">
+                                                        <tbody><tr>
+                                                            <td class="portalheader"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Account_Help" title="Account Help">Account Help</a></td>
+                                                            <td rowspan="3"></td>
+                                                            <td class="portalheader"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Billing_Information_%26_Help" title="Billing Information &amp; Help">Billing Information &amp; Help</a></td>
+                                                            <td rowspan="3"></td>
+                                                            <td class="portalheader"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Safety_%26_Security" title="Safety &amp; Security">Safety &amp; Security</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="portalmiddle">Resolutions and advice for account based problems.</td>
+                                                            <td class="portalmiddle">Information on membership and subscription problems.</td>
+                                                            <td class="portalmiddle">Information on keeping you, your account and your computer secure.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="portalfooter"></td>
+                                                            <td class="portalfooter"></td>
+                                                            <td class="portalfooter"></td>
+                                                        </tr>
+                                                        </tbody></table>
+                                                    <p><br></p>
+                                                    <table class="bigportal">
+                                                        <tbody><tr>
+                                                            <td class="portalheader"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Technical_Help" title="Technical Help">Technical Help</a></td>
+                                                            <td rowspan="3"></td>
+                                                            <td class="portalheader"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Contact_Us" title="Contact Us">Contact Us</a></td>
+                                                            <td rowspan="3"></td>
+                                                            <td class="portalheader"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Customer_Support_Forums" title="Customer Support Forums">The Support Forums</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="portalmiddle">What to do if you are having trouble loading the game.</td>
+                                                            <td class="portalmiddle">How to contact Jagex Customer Support.</td>
+                                                            <td class="portalmiddle">Help and advice from the Support Team on the RuneScape Forums.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="portalfooter"></td>
+                                                            <td class="portalfooter"></td>
+                                                            <td class="portalfooter"></td>
+                                                        </tr>
+                                                        </tbody></table>
+                                                    <p><br></p>
+                                                    <table class="bigportal">
+                                                        <tbody><tr>
+                                                            <td class="portalheader"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Moderators" title="Moderators">Jagex Moderators</a></td>
+                                                            <td rowspan="3"></td>
+                                                            <td class="portalheader"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/T%26Cs_and_Privacy_Policy" title="T&amp;Cs and Privacy Policy">T&amp;Cs and Privacy Policy</a></td>
+                                                            <td rowspan="3"></td>
+                                                            <td class="portalheader"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Phishing" title="Phishing">Phishing</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="portalmiddle">About the people that look after the game and the forums.</td>
+                                                            <td class="portalmiddle">What you are agreeing to when you sign up for an account.</td>
+                                                            <td class="portalmiddle">Don't be caught out.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="portalfooter"></td>
+                                                            <td class="portalfooter"></td>
+                                                            <td class="portalfooter"></td>
+                                                        </tr>
+                                                        </tbody></table>
+                                                    <p><br></p>
+                                                    <table class="bottomWikiNavHeader">
+                                                        <tbody><tr>
+                                                            <td class="bottomWikiNavHeaderTitle"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Welcome_to_the_RuneScape_Wiki" title="Welcome to the RuneScape Wiki">RuneScape Wiki</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bottomWikiNavGap">
+                                                                <table class="zebratable" width="100%">
+                                                                    <tbody><tr class="zebratable-even">
+                                                                        <td>
+                                                                            <div class="bottomWikiNav">
+                                                                                <div class="bottomWikiNavLeft">
+                                                                                    <div class="bottomWikiNavTitle"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Game_Guide" title="Game Guide">Game Guide</a></div>
+
+                                                                                    All you need to know, and more, about the game world. How to get started and how to develop your character.</div>
+                                                                                <div class="bottomWikiNavRight">
+                                                                                    <div class="bottomWikiNavTitle"><b>Support Centre</b></div>
+
+                                                                                    Need help with your account? Perhaps the game won't run for you? Help can be found here.</div>
+                                                                            </div>
+                                                                            <div class="bottomWikiNav" style="clear:both;">
+                                                                                <div class="bottomWikiNavBottomLeft">
+                                                                                    <div class="bottomWikiNavTitle"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Scribbles_%26_Sketches" title="Scribbles &amp; Sketches">Scribbles &amp; Sketches</a></div>
+
+                                                                                    Artwork, fan fiction and arts and crafts are found in this section.</div>
+                                                                                <div class="bottomWikiNavBottomRight">
+                                                                                    <div class="bottomWikiNavTitle"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Community_Hub" title="Community Hub">The Community Hub</a></div>
+
+                                                                                    Confused by templates or want to contribute but not sure what to do? Check here for details on the RuneScape Wiki editing community.</div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody></table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bottomWikiNavFooter"></td>
+                                                        </tr>
+                                                        </tbody></table>
+                                                    <p><br></p>
+                                                </div>
+                                                <div class="clear"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <div id="category-index"><a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Special:Categories" title="Special:Categories">Kategorien</a>:
+
+                                                    <a href="/web/20120620024434/http://services.runescape.com/m=rswiki/en/Category:Support_Centre" title="Category:Support Centre">Support Centre</a>
+
+                                                </div>
+                                                <div class="clear"></div>
+
+
+
+
+                                                <br>
+
+
+                                                <div id="bottom_menu_container">
+                                                    <ul id="bottom_menu" class="tab-menu">
+
+
+
+
+                                                    </ul>
+                                                </div>
+
+
+
+                                                <script type="text/javascript">
+                                                    $('#wikiReportLink').click(function() {
+                                                        Shadowbox.open({
+                                                            content: '<div><form action="./" method="post" target="_parent" /></form></div>',
+                                                            player: "html",
+                                                            title: 'Report a wiki page',
+                                                            height: 150,
+                                                            width: 700
+                                                        });
+                                                    });
+                                                </script>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div id="wiki-footer">
+                                            <div id="footer-custom"></div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Footer" class="Kingthings">
+                    <ul class="Main">
+                        <li>
+                            <a href="https://web.archive.org/web/20120620024434/https://www.runescape.com/account_settings.ws">Account</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120620024434/https://www.runescape.com/account_settings.ws">Profile &amp; Settings</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/members_benefits.ws">Upgrade</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://services.runescape.com/m=loyalty-points/">Loyalty Programme</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://services.runescape.com/m=friend-referral/">Refer a Friend</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/store_locator.ws">Membership Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://web.archive.org/web/20120620024434/http://services.runescape.com/m=rswiki/en/Customer_Support">Support</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120620024434/http://services.runescape.com/m=rswiki/en/Customer_Support">Customer Support</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/loginapplet/loginapplet.ws?mod=accountappeal&amp;dest=passwordchoice.ws">Password Recovery</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://services.runescape.com/m=rswiki/en/Technical_Help">Tech Support</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://services.runescape.com/m=rswiki/en/Billing_Advice">Billing Support</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://services.runescape.com/m=rswiki/en/Safety_%26_Security">Safety &amp; Security</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://services.runescape.com/m=bugtracker_v4/">Submit a Bug Report</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/gameguide.ws">Game</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/gameguide.ws">Game Guide</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/beginnersguide.ws">Beginner's Guide</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/world_locations.ws">Locations</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://services.runescape.com/m=rswiki/en/">RuneScape Wiki</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/title.ws">Community</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120620024434/http://services.runescape.com/m=forum/forums.ws">Forums</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://services.runescape.com/m=clan-home/">Clans</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://services.runescape.com/m=adventurers-log/">Adventurer's Log</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/events.ws">Events</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://services.runescape.com/m=hiscore/heroes.ws">Hiscores</a></li>
+                                <li><a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/downloads.ws">Downloads</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2 id="RuneScapeLogo"><a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/logos/runescape.png" alt="RuneScape" title=""></a></h2>
+                    <div class="FooterBottom">
+                        <a href="https://web.archive.org/web/20120620024434/http://www.jagex.com/g=runescape/" id="JagexLogo"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/logos/jagex.png" alt="Jagex" title=""></a>
+                        <p>This website and its contents are copyright © 1999 - 2012 Jagex Ltd<br>Use of this website is subject to our <a href="https://web.archive.org/web/20120620024434/http://www.jagex.com/g=runescape/terms/terms.ws" target="_blank">Terms &amp; Conditions</a> and <a href="https://web.archive.org/web/20120620024434/http://www.jagex.com/g=runescape/privacy/privacy.ws" target="_blank">Privacy Policy</a>. <br><a href="https://web.archive.org/web/20120620024434/http://www.jagex.com/g=runescape/terms/cookies.ws">Change Cookie Settings</a></p>
+
+                        <div class="LanguageButtonSurround">
+                            <div class="LanguageButton"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/language_selector/en.png" title="en" alt="en" class="SelectedLang"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/language_selector/LanguageButtonFg.png" class="foreground">
+                                <div class="LanguagePanel">
+                                    <div class="bottom">
+                                        <ul>
+                                            <li class="flag"><a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/?set_lang=0" title="English"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/language_selector/en.png" alt="English" class="flag"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/language_selector/LanguageArrow.png" class="LanguageArrow" alt=""></a></li>
+                                            <li class="flag"><a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/l=1/?set_lang=1" title="Deutsch"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/language_selector/de.png" alt="Deutsch" class="flag"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/language_selector/LanguageArrow.png" class="LanguageArrow" alt=""></a></li>
+                                            <li class="flag"><a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/l=2/?set_lang=2" title="Français"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/language_selector/fr.png" alt="Français" class="flag"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/language_selector/LanguageArrow.png" class="LanguageArrow" alt=""></a></li>
+                                            <li class="flag"><a href="https://web.archive.org/web/20120620024434/http://www.runescape.com/l=3/?set_lang=3" title="Português (BR)"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/language_selector/pt.png" alt="Português (BR)" class="flag"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/language_selector/LanguageArrow.png" class="LanguageArrow" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="BottomNavigationFlag">
+
+                            <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://www.facebook.com/RuneScape" data-send="false" data-layout="button_count" data-width="45" data-show-faces="false" data-colorscheme="dark"><span style="height: 21px; width: 90px;"><iframe id="f1e82fc231dd95f" name="f145e2ec67aa08e" scrolling="no" title="Like this content on Facebook." class="fb_ltr" style="border: none; overflow: hidden; height: 21px; width: 90px;" allow="autoplay 'self'; fullscreen 'self'" src="https://web.archive.org/web/20120620024517/http://www.facebook.com/plugins/like.php?api_key=174823375888281&amp;channel_url=https%3A%2F%2Fweb.archive.org%2Fweb%2F20120620024517%2Fhttp%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D8%23cb%3Dff5fba5423adb%26origin%3Dhttp%253A%252F%252Fservices.runescape.com%252Ff177897244f8105%26domain%3Dservices.runescape.com%26relation%3Dparent.parent&amp;colorscheme=dark&amp;extended_social_context=false&amp;href=http%3A%2F%2Fwww.facebook.com%2FRuneScape&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90"></iframe></span></div></div>
+                        <div id="SnLinks">
+                            <a href="https://web.archive.org/web/20120620024434/http://services.runescape.com/m=news/latest_news.rss" title="RSS" target="_blank" class="HoverImg NoFade"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/logos/MediumRss.png" alt="RSS"></a>
+
+                            <a href="https://web.archive.org/web/20120620024434/http://www.facebook.com/RuneScape" title="Follow us on Facebook" target="_blank" class="HoverImg NoFade AddButtons"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/social/MediumFacebook.png" alt="Facebook"></a>
+
+                            <a href="https://web.archive.org/web/20120620024434/http://twitter.com/RuneScape" title="Follow us on Twitter" target="_blank" class="HoverImg NoFade AddButtons"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/social/MediumTwitter.png" alt="Twitter"></a>
+
+                            <a href="https://web.archive.org/web/20120620024434/http://www.youtube.com/RuneScape" title="Follow us on YouTube" target="_blank" class="HoverImg NoFade AddButtons"><img src="https://web.archive.org/web/20120620024434im_/http://www.runescape.com/img/global/social/MediumYoutube.png" alt="YouTube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+
+        document.write(unescape("%3Cscript src='https://web.archive.org/web/20120620024434/http://www.google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+    </script><script src="https://web.archive.org/web/20120620024434/http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        try {
+            var _pageTracker=_gat._getTracker("UA-2058817-15");
+            _pageTracker._setDomainName(".runescape.com");
+
+
+            _pageTracker._trackPageview();
+        }catch(x){}
+    </script>
+
+    <script type="text/javascript">
+        try {
+            var pageTracker=_gat._getTracker("UA-2058817-2");
+            pageTracker._setDomainName(".runescape.com");
+
+
+            pageTracker._trackPageview();
+        }catch(x){}
+    </script>
+
+
+
+
+
+
+
+
+
+</div>

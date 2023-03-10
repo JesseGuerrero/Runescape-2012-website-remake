@@ -1937,6 +1937,63 @@ span.Checkbox.checked span:hover, span.Checkbox.checked.Hover span {
   height: 7px;
   z-index: 29; }
 
+.Button29,
+.Button29 span,
+.Button29 input {
+  background-image: url("https://web.archive.org/web/20120629033444im_/https://www.runescape.com/img/global/buttons/Button29.png?0");
+  height: 29px;
+  line-height: 28px; }
+
+.Button29 {
+  padding-left: 13px; }
+
+.Button29 span {
+  padding-right: 13px; }
+
+.Button29 span span span {
+  margin-left: -26px;
+  left: 13px; }
+
+.Button29disabled,
+.Button29disabled span,
+.Button29disabled input {
+  background-image: url("https://web.archive.org/web/20120629033444im_/https://www.runescape.com/img/global/buttons/Button29disabled.png?0");
+  height: 29px;
+  line-height: 28px; }
+
+.Button29disabled {
+  padding-left: 13px; }
+
+.Button29disabled span {
+  padding-right: 13px; }
+
+.Button29disabled span span span {
+  margin-left: -26px;
+  left: 13px; }
+
+.Button29,
+.Button29 b {
+  color: #f0b166; }
+
+.Button29:hover,
+.Button29:hover b {
+  color: #f3b13f; }
+
+.Button29 b,
+.Button29disabled b {
+  display: block;
+  font-family: MuseoSans500,Arial,Times New Roman,serif;
+  font-size: 11px;
+  line-height: 21px;
+  font-weight: normal; }
+
+.Button29disabled b,
+.Button29disabled:hover b {
+  color: #B8B8B8; }
+
+.Button29disabled, .Button29disabled span, .Button29disabled input {
+  cursor: default; }
+
 .HoverGradient:hover .Gradient_link1 *,
 .HoverGradient:hover .Gradient_link2 *,
 .HoverGradient:hover .Gradient_link4 *,

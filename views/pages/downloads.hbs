@@ -1,0 +1,399 @@
+<script type="text/javascript">//<![CDATA[
+__wm.bt(700,27,25,2,"web","http://www.runescape.com/downloads.ws","20120718053538",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+__wm.rw(1);
+//]]></script>
+<script type="text/javascript">
+    if ($("#fb-root").length == 0){
+        $("body").prepend('<div id="fb-root"></div>');
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '174823375888281',
+                status: false,
+                cookie: true,
+                xfbml: true,
+                oauth: true
+            });
+            if($.browser.msie){
+                FB.UIServer.setLoadedNode = function (a,b) { FB.UIServer._loadedNodes[a.id] = b; }
+            }
+        };
+        (function() {
+            var e = document.createElement('script');
+            e.async = true;
+            e.src = document.location.protocol + '//web.archive.org/web/20120718053538/http://connect.facebook.net/en_US/all.js';
+            document.getElementById('fb-root').appendChild(e);
+        }());
+    }
+</script>
+<script type="text/javascript">
+    function fbLoginRedirect(buttonName, loginUrl, destUrl, destStr, _target){
+        $.getJSON('https://web.archive.org/web/20120718053538/http://services.runescape.com/m=sn-integration/checkLogin.ws?json=?', {"tps":0, "token":FB.getAuthResponse().accessToken, "expiry":FB.getAuthResponse().expiresIn, "signed":FB.getAuthResponse().signedRequest}, function(data) {
+            if(typeof(_target) != 'undefined' && _target != '') $("#SNbuttonLink").attr('target',_target);
+            if (data['sso']<0) {
+
+
+                alert("There was a problem verifying your login. Please try again.");
+            } else if (data['sso'].length > 1){
+
+                if(data['sna']>-1) {
+
+
+                    $("#SNbuttonLink").attr('href',loginUrl+'key='+data['sso']+'&tps=0&'+destStr+'&KeepThis=true&TB_iframe=true&height=500&width=560');
+
+                    $("#SNbuttonLink").click();
+                    $("#TB_iframeContent").attr("allowTransparency", "true");
+
+                    $("#TB_iframeContent").css("padding-left", "50px");
+
+                } else {
+
+                    var loc = destUrl+'?key='+data['sso']+'?'+destStr;
+                    if(typeof(_target) != 'undefined' && _target != ''){
+                        window.parent.location = loc;
+                    }
+                    else {
+                        window.location = loc;
+                    }
+                }
+            } else {
+
+
+                $("#SNbuttonLink").attr('href',loginUrl+'?'+destStr+'&KeepThis=true&TB_iframe=true&height=400&width=442');
+
+                $("#SNbuttonLink").click();
+                $("#TB_iframeContent").attr("allowTransparency", "true");
+            }
+        });
+        return false;
+    }
+</script>
+<div id="Background">
+    <div id="TopBackground">
+        <div id="BottomBackground">
+            {{> Header}}
+            <div id="MainContentOuter">
+                <div class="MainContentBg">
+                    <div class="MainContentTopBg">
+                        <div class="MainContentBottomBg">
+                            <div id="MainContent">
+                                <div id="MainTitle">
+                                    <div class="Centre1">
+                                        <div class="Centre2">
+
+                                            <h3 class="Gradient DoubleFlourish"><span class="spacing" aria-hidden="true">Downloads</span>
+                                                <span class="G0">Downloads</span>
+                                                <span class="G1" aria-hidden="true">Downloads</span>
+                                                <span class="G2" aria-hidden="true">Downloads</span>
+                                                <span class="G3" aria-hidden="true">Downloads</span>
+                                                <span class="G4" aria-hidden="true">Downloads</span>
+                                                <span class="G5" aria-hidden="true">Downloads</span>
+                                                <span class="G6" aria-hidden="true">Downloads</span>
+                                                <span class="mask"><span class="spacing" aria-hidden="true">Downloads</span>
+<span class="leftInnerFlourish"></span><span class="centreFlourish"></span><span class="rightInnerFlourish"></span>
+</span>
+                                                <span class="rightUnderscore">
+<img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/gradient_header/flourish_outer_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">Downloads</span>
+</span>
+                                                <span class="leftUnderscore"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/gradient_header/flourish_outer_left.png" class="left" alt=""></span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="downloadTop">
+                                    <h2 class="orangeHeader">Extra Files</h2>
+
+                                    <h2 class="Gradient">
+                                        <span class="G0">Available for Download</span>
+                                        <span class="G1" aria-hidden="true">Available for Download</span>
+                                        <span class="G2" aria-hidden="true">Available for Download</span>
+                                        <span class="G3" aria-hidden="true">Available for Download</span>
+                                        <span class="G4" aria-hidden="true">Available for Download</span>
+                                        <span class="G5" aria-hidden="true">Available for Download</span>
+                                        <span class="G6" aria-hidden="true">Available for Download</span>
+                                        <span class="mask"><span class="spacing">Available for Download</span>
+<span class="middleUnderscore"><span class="spacing" aria-hidden="true">Available for Download</span></span>
+</span>
+                                        <span class="rightUnderscore">
+<img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/gradient_header/underscore_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">Available for Download</span>
+</span>
+                                        <span class="leftUnderscore"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/gradient_header/underscore_flourish_left.png" class="left" alt=""></span>
+                                    </h2>
+                                    <p>
+                                        Note: You don't need to download any of these files to play RuneScape. You can play the game directly in your web browser by pressing "Play RuneScape" on the front page.
+                                    </p>
+                                    <p>
+                                        The following files are bonus extras which are provided in addition to the game for players who want them.
+                                    </p>
+                                    <p>
+                                        These are the only official RuneScape downloads. Unofficial downloads from other sites may contain viruses, keyloggers, etc. If you want to run the game outside of your browser, we recommend - to keep your account safe - that you only use the client from here.
+                                    </p>
+                                </div>
+                                <div id="downloadables">
+                                    <div class="downloadEntity">
+                                        <div class="downloadEntityContent">
+                                            <img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/client.png" alt="Game Client">
+                                            <h2 class="orangeHeader">Game Client</h2>
+                                            <ul>
+                                                <li>Launch RuneScape directly from your desktop, without all that browser clutter;</li>
+                                                <li>Doesn't require administrator privileges for your PC or Mac;</li>
+                                                <li>The application is open source. For a copy of the source, <a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/downloads/jagexlauncher-src.tar.bz2?151111">click here</a>.</li>
+                                            </ul>
+                                            <div class="clearL"></div>
+                                            <p>
+                                                If you are having problems, please visit the <a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=rswiki/en/Technical_Help">technical support section of the RuneScape Wiki</a> for trouble shooting tips.
+                                            </p>
+                                        </div>
+                                        <div class="downloadLinks">
+                                            <a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/downloads/runescape.msi?151111" class="Button Button56 image" id="windows"><span><span><span class="Gradient_link30 HoverGradient"><b>Download</b><b class="g1" aria-hidden="true">Download</b><b class="g2" aria-hidden="true">Download</b><b class="g3" aria-hidden="true">Download</b><b class="g4" aria-hidden="true">Download</b><b class="g5" aria-hidden="true">Download</b><b class="g6" aria-hidden="true">Download</b><b class="g7" aria-hidden="true">Download</b><b class="g8" aria-hidden="true">Download</b><b class="g9" aria-hidden="true">Download</b><b class="g10" aria-hidden="true">Download</b><b class="g11" aria-hidden="true">Download</b><b class="g12" aria-hidden="true">Download</b><b class="g13" aria-hidden="true">Download</b><b class="g14" aria-hidden="true">Download</b><b class="g15" aria-hidden="true">Download</b><b class="g16" aria-hidden="true">Download</b><b class="g17" aria-hidden="true">Download</b><b class="g18" aria-hidden="true">Download</b><b class="g19" aria-hidden="true">Download</b><b class="g20" aria-hidden="true">Download</b><b class="g21" aria-hidden="true">Download</b><b class="g22" aria-hidden="true">Download</b><b class="g23" aria-hidden="true">Download</b><b class="g24" aria-hidden="true">Download</b><b class="g25" aria-hidden="true">Download</b><b class="g26" aria-hidden="true">Download</b><b class="g27" aria-hidden="true">Download</b><b class="g28" aria-hidden="true">Download</b><b class="g29" aria-hidden="true">Download</b></span></span></span></a>
+                                            <p>(This client doesn't need Java to be installed)</p>
+                                            <a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/downloads/runescape.dmg?151111" class="Button Button56 image" id="mac"><span><span><span class="Gradient_link30 HoverGradient"><b>Download</b><b class="g1" aria-hidden="true">Download</b><b class="g2" aria-hidden="true">Download</b><b class="g3" aria-hidden="true">Download</b><b class="g4" aria-hidden="true">Download</b><b class="g5" aria-hidden="true">Download</b><b class="g6" aria-hidden="true">Download</b><b class="g7" aria-hidden="true">Download</b><b class="g8" aria-hidden="true">Download</b><b class="g9" aria-hidden="true">Download</b><b class="g10" aria-hidden="true">Download</b><b class="g11" aria-hidden="true">Download</b><b class="g12" aria-hidden="true">Download</b><b class="g13" aria-hidden="true">Download</b><b class="g14" aria-hidden="true">Download</b><b class="g15" aria-hidden="true">Download</b><b class="g16" aria-hidden="true">Download</b><b class="g17" aria-hidden="true">Download</b><b class="g18" aria-hidden="true">Download</b><b class="g19" aria-hidden="true">Download</b><b class="g20" aria-hidden="true">Download</b><b class="g21" aria-hidden="true">Download</b><b class="g22" aria-hidden="true">Download</b><b class="g23" aria-hidden="true">Download</b><b class="g24" aria-hidden="true">Download</b><b class="g25" aria-hidden="true">Download</b><b class="g26" aria-hidden="true">Download</b><b class="g27" aria-hidden="true">Download</b><b class="g28" aria-hidden="true">Download</b><b class="g29" aria-hidden="true">Download</b></span></span></span></a>
+                                            <p>(In software mode, resizing the client can cause it to freeze)</p>
+                                        </div>
+                                        <div class="clearL"></div>
+                                    </div>
+                                    <div class="fullHr"></div>
+                                    <div class="downloadEntity">
+                                        <div class="downloadEntityContent">
+                                            <img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/gamebar.png" alt="RuneScape Game Bar">
+                                            <h2 class="orangeHeader">RuneScape Game Bar</h2>
+                                            <ul>
+                                                <li>Access RuneScape with one click of a button;</li>
+                                                <li>Reminders for Tears of Guthix, Bork, Skeletal Horror, Phoenix Lair and more;</li>
+                                                <li>Live feed of news and blogs;</li>
+                                                <li>Keep track of your Grand Exchange offers.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="downloadLinks">
+                                            <a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=toolbar/download.ws" class="Button Button56"><span><span><span class="Gradient_link30 HoverGradient"><b>Download</b><b class="g1" aria-hidden="true">Download</b><b class="g2" aria-hidden="true">Download</b><b class="g3" aria-hidden="true">Download</b><b class="g4" aria-hidden="true">Download</b><b class="g5" aria-hidden="true">Download</b><b class="g6" aria-hidden="true">Download</b><b class="g7" aria-hidden="true">Download</b><b class="g8" aria-hidden="true">Download</b><b class="g9" aria-hidden="true">Download</b><b class="g10" aria-hidden="true">Download</b><b class="g11" aria-hidden="true">Download</b><b class="g12" aria-hidden="true">Download</b><b class="g13" aria-hidden="true">Download</b><b class="g14" aria-hidden="true">Download</b><b class="g15" aria-hidden="true">Download</b><b class="g16" aria-hidden="true">Download</b><b class="g17" aria-hidden="true">Download</b><b class="g18" aria-hidden="true">Download</b><b class="g19" aria-hidden="true">Download</b><b class="g20" aria-hidden="true">Download</b><b class="g21" aria-hidden="true">Download</b><b class="g22" aria-hidden="true">Download</b><b class="g23" aria-hidden="true">Download</b><b class="g24" aria-hidden="true">Download</b><b class="g25" aria-hidden="true">Download</b><b class="g26" aria-hidden="true">Download</b><b class="g27" aria-hidden="true">Download</b><b class="g28" aria-hidden="true">Download</b><b class="g29" aria-hidden="true">Download</b></span></span></span></a>
+                                            <p>
+                                                (Only supported in Chrome, Firefox &amp; Internet Explorer)
+                                            </p>
+                                        </div>
+                                        <div class="clearL"></div>
+                                    </div>
+                                    <div class="fullHr"></div>
+                                    <div class="downloadEntity">
+                                        <div class="downloadEntityContent">
+                                            <img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/betrayal_at_falador/Betrayal-at-Falador.png" alt="RuneScape Novel - Betrayal at Falador">
+                                            <h2 class="orangeHeader">RuneScape Novel - Betrayal at Falador</h2>
+                                            <ul>
+                                                <li>Download three chapters of RuneScape's first novel.</li>
+                                                <li>Begin the epic saga of Black Knights, werewolves and unholy deception.</li>
+                                                <li>Continue the story by <a href="https://web.archive.org/web/20120718053538/http://runescape-us.spreadshirt.com/runescape-betrayal-at-falador-A7329729/" target="_blank">buying Betrayal at Falador here</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="downloadLinks">
+                                            <a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/betrayal_at_falador/Betrayal-at-Falador.pdf" class="Button Button56"><span><span><span class="Gradient_link30 HoverGradient"><b>Download</b><b class="g1" aria-hidden="true">Download</b><b class="g2" aria-hidden="true">Download</b><b class="g3" aria-hidden="true">Download</b><b class="g4" aria-hidden="true">Download</b><b class="g5" aria-hidden="true">Download</b><b class="g6" aria-hidden="true">Download</b><b class="g7" aria-hidden="true">Download</b><b class="g8" aria-hidden="true">Download</b><b class="g9" aria-hidden="true">Download</b><b class="g10" aria-hidden="true">Download</b><b class="g11" aria-hidden="true">Download</b><b class="g12" aria-hidden="true">Download</b><b class="g13" aria-hidden="true">Download</b><b class="g14" aria-hidden="true">Download</b><b class="g15" aria-hidden="true">Download</b><b class="g16" aria-hidden="true">Download</b><b class="g17" aria-hidden="true">Download</b><b class="g18" aria-hidden="true">Download</b><b class="g19" aria-hidden="true">Download</b><b class="g20" aria-hidden="true">Download</b><b class="g21" aria-hidden="true">Download</b><b class="g22" aria-hidden="true">Download</b><b class="g23" aria-hidden="true">Download</b><b class="g24" aria-hidden="true">Download</b><b class="g25" aria-hidden="true">Download</b><b class="g26" aria-hidden="true">Download</b><b class="g27" aria-hidden="true">Download</b><b class="g28" aria-hidden="true">Download</b><b class="g29" aria-hidden="true">Download</b></span></span></span></a>
+                                        </div>
+                                        <div class="clearL"></div>
+                                    </div>
+                                    <div class="fullHr"></div>
+                                    <div class="downloadEntity">
+                                        <div class="downloadEntityContent">
+                                            <img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/map.png" alt="World Map (25th May 2012)">
+                                            <h2 class="orangeHeader">World Map (25th May 2012)</h2>
+                                            <p>
+                                                Get the complete RuneScape world map as an image. Right-click on the "Download Now" link and click on "Save Target/Link As..." to download.
+                                            </p>
+                                        </div>
+                                        <div class="downloadLinks">
+                                            <a target="_blank" href="https://web.archive.org/web/20120718053538/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/rs_map/rsmap-25may2012-en-a.png" class="Button Button56"><span><span><span class="Gradient_link30 HoverGradient"><b>Download</b><b class="g1" aria-hidden="true">Download</b><b class="g2" aria-hidden="true">Download</b><b class="g3" aria-hidden="true">Download</b><b class="g4" aria-hidden="true">Download</b><b class="g5" aria-hidden="true">Download</b><b class="g6" aria-hidden="true">Download</b><b class="g7" aria-hidden="true">Download</b><b class="g8" aria-hidden="true">Download</b><b class="g9" aria-hidden="true">Download</b><b class="g10" aria-hidden="true">Download</b><b class="g11" aria-hidden="true">Download</b><b class="g12" aria-hidden="true">Download</b><b class="g13" aria-hidden="true">Download</b><b class="g14" aria-hidden="true">Download</b><b class="g15" aria-hidden="true">Download</b><b class="g16" aria-hidden="true">Download</b><b class="g17" aria-hidden="true">Download</b><b class="g18" aria-hidden="true">Download</b><b class="g19" aria-hidden="true">Download</b><b class="g20" aria-hidden="true">Download</b><b class="g21" aria-hidden="true">Download</b><b class="g22" aria-hidden="true">Download</b><b class="g23" aria-hidden="true">Download</b><b class="g24" aria-hidden="true">Download</b><b class="g25" aria-hidden="true">Download</b><b class="g26" aria-hidden="true">Download</b><b class="g27" aria-hidden="true">Download</b><b class="g28" aria-hidden="true">Download</b><b class="g29" aria-hidden="true">Download</b></span></span></span></a>
+                                        </div>
+                                        <div class="clearL"></div>
+                                    </div>
+                                    <div class="fullHr"></div>
+                                    <div class="downloadEntity">
+                                        <div class="downloadEntityContent">
+                                            <img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/audio.png" alt="Audio Assets">
+                                            <h2 class="orangeHeader">Audio Assets</h2>
+                                            <p>
+                                                A selection of RuneScape music to use in your RuneScape videos or just to listen to!
+                                            </p>
+                                            <p>
+                                                These are RuneScape tracks that we've remixed from the in-game originals, as well as audio versions of the pirate quest series sea shanties.
+                                            </p>
+                                        </div>
+                                        <div class="downloadLinks">
+                                            <a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/downloads_music.ws" class="Button Button56"><span><span><span class="Gradient_link30 HoverGradient"><b>Audio List</b><b class="g1" aria-hidden="true">Audio List</b><b class="g2" aria-hidden="true">Audio List</b><b class="g3" aria-hidden="true">Audio List</b><b class="g4" aria-hidden="true">Audio List</b><b class="g5" aria-hidden="true">Audio List</b><b class="g6" aria-hidden="true">Audio List</b><b class="g7" aria-hidden="true">Audio List</b><b class="g8" aria-hidden="true">Audio List</b><b class="g9" aria-hidden="true">Audio List</b><b class="g10" aria-hidden="true">Audio List</b><b class="g11" aria-hidden="true">Audio List</b><b class="g12" aria-hidden="true">Audio List</b><b class="g13" aria-hidden="true">Audio List</b><b class="g14" aria-hidden="true">Audio List</b><b class="g15" aria-hidden="true">Audio List</b><b class="g16" aria-hidden="true">Audio List</b><b class="g17" aria-hidden="true">Audio List</b><b class="g18" aria-hidden="true">Audio List</b><b class="g19" aria-hidden="true">Audio List</b><b class="g20" aria-hidden="true">Audio List</b><b class="g21" aria-hidden="true">Audio List</b><b class="g22" aria-hidden="true">Audio List</b><b class="g23" aria-hidden="true">Audio List</b><b class="g24" aria-hidden="true">Audio List</b><b class="g25" aria-hidden="true">Audio List</b><b class="g26" aria-hidden="true">Audio List</b><b class="g27" aria-hidden="true">Audio List</b><b class="g28" aria-hidden="true">Audio List</b><b class="g29" aria-hidden="true">Audio List</b></span></span></span></a></div>
+                                        <div class="clearL"></div>
+                                    </div>
+                                    <div class="fullHr"></div>
+                                    <div class="downloadEntity">
+                                        <div class="downloadEntityContent">
+                                            <img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/duel.png" alt="Duel Cards">
+                                            <h2 class="orangeHeader">Duel Cards</h2>
+                                            <p>
+                                                Ten RuneScape Duel cards for you to download, print out and use to defeat your friends!
+                                            </p>
+                                            <p>
+                                                Ever wondered which of RuneScape's biggest creature would win in a scrap? Download and print out ten Runescape Duel cards by using the links below, and pit creatures like TzTok-Jad against the might of the Corporeal Beast.
+                                                The rules couldn't be simpler: beat your opponent by winning all their cards, and win their cards by having higher Attack, Magic, Ranged, Agility and RuneScape Power. For the full rules, click on the right-hand link below.
+                                            </p>
+                                            <p>
+                                                Right-click on a link and click on "Save Target/Link As..." to download.
+                                            </p>
+                                        </div>
+                                        <div class="downloadLinks">
+                                            <div class="duelCard"><p>Cards 1-3:</p><a target="_blank" href="https://web.archive.org/web/20120718053538/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/duel_cards/download_layout_trading_cards.jpg" class="Button Button29"><span><span><span class=""><b>Download</b></span></span></span></a></div>
+                                            <div class="duelCard"><p>Cards 4-7:</p><a target="_blank" href="https://web.archive.org/web/20120718053538/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/duel_cards/download_layout_trading_cards_2.jpg" class="Button Button29"><span><span><span class=""><b>Download</b></span></span></span></a></div>
+                                            <div class="duelCard"><p>Cards 8-10:</p><a target="_blank" href="https://web.archive.org/web/20120718053538/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/duel_cards/download_layout_trading_cards_3.jpg" class="Button Button29"><span><span><span class=""><b>Download</b></span></span></span></a></div>
+                                            <div class="duelCard"><p>Full Game Rules:</p><a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=rswiki/en/Postbag_39#RuneScape_Duel_Cards" class="Button Button29"><span><span><span class=""><b>View Here</b></span></span></span></a></div>
+                                        </div>
+                                        <div class="clearL"></div>
+                                    </div>
+                                    <div class="fullHr"></div>
+                                    <div class="downloadEntity">
+                                        <div class="downloadEntityContent">
+                                            <img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/xmas.png" alt="Xmas Cards">
+                                            <h2 class="orangeHeader">Xmas Cards</h2>
+                                            <p>
+                                                Bring a bit of Bob the cat into the lives of your friends and family this Christmas. Meowy Christmas!
+                                            </p>
+                                            <p>
+                                                Right-click on a link and click on "Save Target/Link As..." to download.
+                                            </p>
+                                        </div>
+                                        <div class="downloadLinks">
+                                            <a target="_blank" href="https://web.archive.org/web/20120718053538/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/xmas/bob_xmas_card_2011.jpg" class="Button Button56"><span><span><span class="Gradient_link30 HoverGradient"><b>Download</b><b class="g1" aria-hidden="true">Download</b><b class="g2" aria-hidden="true">Download</b><b class="g3" aria-hidden="true">Download</b><b class="g4" aria-hidden="true">Download</b><b class="g5" aria-hidden="true">Download</b><b class="g6" aria-hidden="true">Download</b><b class="g7" aria-hidden="true">Download</b><b class="g8" aria-hidden="true">Download</b><b class="g9" aria-hidden="true">Download</b><b class="g10" aria-hidden="true">Download</b><b class="g11" aria-hidden="true">Download</b><b class="g12" aria-hidden="true">Download</b><b class="g13" aria-hidden="true">Download</b><b class="g14" aria-hidden="true">Download</b><b class="g15" aria-hidden="true">Download</b><b class="g16" aria-hidden="true">Download</b><b class="g17" aria-hidden="true">Download</b><b class="g18" aria-hidden="true">Download</b><b class="g19" aria-hidden="true">Download</b><b class="g20" aria-hidden="true">Download</b><b class="g21" aria-hidden="true">Download</b><b class="g22" aria-hidden="true">Download</b><b class="g23" aria-hidden="true">Download</b><b class="g24" aria-hidden="true">Download</b><b class="g25" aria-hidden="true">Download</b><b class="g26" aria-hidden="true">Download</b><b class="g27" aria-hidden="true">Download</b><b class="g28" aria-hidden="true">Download</b><b class="g29" aria-hidden="true">Download</b></span></span></span></a>
+                                        </div>
+                                        <div class="clearL"></div>
+                                    </div>
+                                    <div class="fullHr"></div>
+                                    <div class="downloadEntity">
+                                        <div class="downloadEntityContent">
+                                            <img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/easter.png" alt="Easter">
+                                            <h2 class="orangeHeader">Easter</h2>
+                                            <p>
+                                                Show which side you chose for the Easter 2012 event with these posters.
+                                            </p>
+                                            <p>
+                                                Right-click on a link and click on "Save Target/Link As..." to download.
+                                            </p>
+                                        </div>
+                                        <div class="downloadLinks">
+                                            <div class="duelCard"><p>Chocatrice:</p><a target="_blank" href="https://web.archive.org/web/20120718053538/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/easter/chocatrice-wood.jpg" class="Button Button29"><span><span><span class=""><b>Download</b></span></span></span></a></div>
+                                            <div class="duelCard"><p>Evil Chicken:</p><a target="_blank" href="https://web.archive.org/web/20120718053538/http://www.runescape.com/img/main/downloads_and_media/downloads_and_wallpapers/easter/evil-chicken-wood.jpg" class="Button Button29"><span><span><span class=""><b>Download</b></span></span></span></a></div>
+                                        </div>
+                                        <div class="clearL"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Footer" class="Kingthings">
+                    <ul class="Main">
+                        <li>
+                            <a href="https://web.archive.org/web/20120718053538/https://www.runescape.com/account_settings.ws">Account</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120718053538/https://www.runescape.com/account_settings.ws">Profile &amp; Settings</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/members_benefits.ws">Upgrade</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=loyalty-points/">Loyalty Programme</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=friend-referral/">Refer a Friend</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/store_locator.ws">Membership Cards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=rswiki/en/Customer_Support">Support</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=rswiki/en/Customer_Support">Customer Support</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/loginapplet/loginapplet.ws?mod=accountappeal&amp;dest=passwordchoice.ws">Password Recovery</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=rswiki/en/Technical_Help">Tech Support</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=rswiki/en/Billing_Advice">Billing Support</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=rswiki/en/Safety_%26_Security">Safety &amp; Security</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=bugtracker_v4/">Submit a Bug Report</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/gameguide.ws">Game</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/gameguide.ws">Game Guide</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/beginnersguide.ws">Beginner's Guide</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/world_locations.ws">Locations</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=rswiki/en/">RuneScape Wiki</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/title.ws">Community</a>
+                            <ul class="Sub">
+                                <li><a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=forum/forums.ws">Forums</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=clan-home/">Clans</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=adventurers-log/">Adventurer's Log</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/events.ws">Events</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=hiscore/heroes.ws">Hiscores</a></li>
+                                <li><a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/downloads.ws">Downloads</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2 id="RuneScapeLogo"><a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/logos/runescape.png" alt="RuneScape" title=""></a></h2>
+                    <div class="FooterBottom">
+                        <a href="https://web.archive.org/web/20120718053538/http://www.jagex.com/g=runescape/" id="JagexLogo"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/logos/jagex.png" alt="Jagex" title=""></a>
+                        <p>This website and its contents are copyright © 1999 - 2012 Jagex Ltd<br>Use of this website is subject to our <a href="https://web.archive.org/web/20120718053538/http://www.jagex.com/g=runescape/terms/terms.ws" target="_blank">Terms &amp; Conditions</a> and <a href="https://web.archive.org/web/20120718053538/http://www.jagex.com/g=runescape/privacy/privacy.ws" target="_blank">Privacy Policy</a>. <br><a href="https://web.archive.org/web/20120718053538/http://www.jagex.com/g=runescape/terms/cookies.ws">Change Cookie Settings</a></p>
+
+                        <div class="LanguageButtonSurround">
+                            <div class="LanguageButton"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/language_selector/en.png" title="en" alt="en" class="SelectedLang"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/language_selector/LanguageButtonFg.png" class="foreground">
+                                <div class="LanguagePanel">
+                                    <div class="bottom">
+                                        <ul>
+                                            <li class="flag"><a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/?set_lang=0" title="English"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/language_selector/en.png" alt="English" class="flag"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/language_selector/LanguageArrow.png" class="LanguageArrow" alt=""></a></li>
+                                            <li class="flag"><a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/l=1/?set_lang=1" title="Deutsch"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/language_selector/de.png" alt="Deutsch" class="flag"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/language_selector/LanguageArrow.png" class="LanguageArrow" alt=""></a></li>
+                                            <li class="flag"><a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/l=2/?set_lang=2" title="Français"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/language_selector/fr.png" alt="Français" class="flag"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/language_selector/LanguageArrow.png" class="LanguageArrow" alt=""></a></li>
+                                            <li class="flag"><a href="https://web.archive.org/web/20120718053538/http://www.runescape.com/l=3/?set_lang=3" title="Português (BR)"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/language_selector/pt.png" alt="Português (BR)" class="flag"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/language_selector/LanguageArrow.png" class="LanguageArrow" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="BottomNavigationFlag">
+
+                            <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://www.facebook.com/RuneScape" data-send="false" data-layout="button_count" data-width="45" data-show-faces="false" data-colorscheme="dark"><span style="height: 21px; width: 90px;"><iframe id="f14d139855f7269" name="f3b65d68ffa61a" scrolling="no" title="Like this content on Facebook." class="fb_ltr" style="border: none; overflow: hidden; height: 21px; width: 90px;" allow="autoplay 'self'; fullscreen 'self'" src="https://web.archive.org/web/20120718053342/http://www.facebook.com/plugins/like.php?api_key=174823375888281&amp;channel_url=https%3A%2F%2Fweb.archive.org%2Fweb%2F20120718053342%2Fhttp%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D9%23cb%3Df1882c632b55795%26origin%3Dhttp%253A%252F%252Fwww.runescape.com%252Ff399dbe66f63cd2%26domain%3Dwww.runescape.com%26relation%3Dparent.parent&amp;colorscheme=dark&amp;extended_social_context=false&amp;href=http%3A%2F%2Fwww.facebook.com%2FRuneScape&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90"></iframe></span></div></div>
+                        <div id="SnLinks">
+                            <a href="https://web.archive.org/web/20120718053538/http://services.runescape.com/m=news/latest_news.rss" title="RSS" target="_blank" class="HoverImg NoFade"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/logos/MediumRss.png" alt="RSS"></a>
+
+                            <a href="https://web.archive.org/web/20120718053538/http://www.facebook.com/RuneScape" title="Follow us on Facebook" target="_blank" class="HoverImg NoFade AddButtons"></a>
+
+                            <a href="https://web.archive.org/web/20120718053538/http://twitter.com/RuneScape" title="Follow us on Twitter" target="_blank" class="HoverImg NoFade AddButtons"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/social/MediumTwitter.png" alt="Twitter"></a>
+
+                            <a href="https://web.archive.org/web/20120718053538/http://www.youtube.com/RuneScape" title="Follow us on YouTube" target="_blank" class="HoverImg NoFade AddButtons"><img src="https://web.archive.org/web/20120718053538im_/http://www.runescape.com/img/global/social/MediumYoutube.png" alt="YouTube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+
+        document.write(unescape("%3Cscript src='https://web.archive.org/web/20120718053538/http://www.google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+    </script><script src="https://web.archive.org/web/20120718053538/http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        try {
+            var _pageTracker=_gat._getTracker("UA-2058817-15");
+            _pageTracker._setDomainName(".runescape.com");
+
+
+            _pageTracker._trackPageview();
+        }catch(x){}
+    </script>
+
+    <script type="text/javascript">
+        try {
+            var pageTracker=_gat._getTracker("UA-2058817-2");
+            pageTracker._setDomainName(".runescape.com");
+
+
+            pageTracker._trackPageview();
+        }catch(x){}
+    </script>
+
+
+
+
+</div>
