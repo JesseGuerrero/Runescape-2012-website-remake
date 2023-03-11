@@ -1,4 +1,5 @@
 var express = require('express');
+var axios = require("../utils/axios");
 var router = express.Router();
 
 //Determine if faster to have local images or github images
@@ -53,8 +54,12 @@ router.get('/hall-of-heroes', function(req, res, next) { https://web.archive.org
     res.render('pages/hall-of-heroes', { layout: 'layout-hallofheroes.hbs' });
 });
 
-router.get('/highscores', function(req, res, next) { https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
-    res.render('pages/highscores', { layout: 'layout-highscores.hbs' });
+router.get('/highscores/:skill', function(req, res, next) { https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get("https://darkan.org:8443/v1/highscores?page=1&limit=22")
+        .then((response) => {
+          res.render('pages/highscores', { layout: 'layout-highscores.hbs', highscores: response, skill: req.params.skill });
+        });
+
 });
 
 

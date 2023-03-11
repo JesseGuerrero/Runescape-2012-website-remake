@@ -5,19 +5,12 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
 var exphbs  = require('express-handlebars');
-
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
 var app = express();
 
 // view engine setup
-const hbs = exphbs.create({
-  extname: 'hbs',
-  defaultLayout: 'layout.hbs',
-  layoutsDir   : 'views/layouts',
-  partialsDir  : 'views/partials'
-});
+const hbs = require('./utils/helpers')(exphbs);
 
 app.engine('hbs', hbs.engine);
 app.set('views', path.join(__dirname, 'views'));
