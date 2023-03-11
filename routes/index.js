@@ -5,11 +5,15 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {//https://web.archive.org/web/20120709052134/http://www.runescape.com:80/title.ws
-  res.render('index', { layouts: 'layout.hbs'});
+  res.render('index', { layouts: 'layout.hbs'}); //images done
 });
 
 router.get('/news1', function(req, res, next) {//https://web.archive.org/web/20120704185400/http://services.runescape.com/m=news/behind-the-scenes-july
   res.render('pages/news-example1', { layout: 'layout-news.hbs' });
+});
+
+router.get('/news2', function(req, res, next) {//https://web.archive.org/web/20120704185400/http://services.runescape.com/m=news/behind-the-scenes-july
+  res.render('pages/news-example2', { layout: 'layout-news.hbs' });
 });
 
 router.get('/media', function(req, res, next) {//remove
@@ -33,7 +37,7 @@ router.get('/world', function(req, res, next) {//https://web.archive.org/web/201
 // });
 
 router.get('/rs-wiki', function(req, res, next) {
-  res.render('world', { layout: 'layout-world.hbs' });
+  res.redirect('https://runescape.wiki/', {});
 });
 
 
