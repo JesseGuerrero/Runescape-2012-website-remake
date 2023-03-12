@@ -9,11 +9,11 @@ router.get('/', function(req, res, next) {//https://web.archive.org/web/20120709
 });
 
 router.get('/news1', function(req, res, next) {//https://web.archive.org/web/20120704185400/http://services.runescape.com/m=news/behind-the-scenes-july
-  res.render('pages/news-example1', { layout: 'layout-news.hbs' });
+  res.render('pages/news-example1', { layout: 'layout.hbs', news: true });
 });
 
 router.get('/news2', function(req, res, next) {//https://web.archive.org/web/20120704185400/http://services.runescape.com/m=news/behind-the-scenes-july
-  res.render('pages/news-example2', { layout: 'layout-news.hbs' });
+  res.render('pages/news-example2', { layout: 'layout.hbs', news: true });
 });
 
 router.get('/media', function(req, res, next) {//remove
@@ -25,11 +25,11 @@ router.get('/game-guide', function(req, res, next) {//remove
 });
 
 router.get('/beginners-guide', function(req, res, next) {//remove getting started, what's next
-  res.render('pages/beginners-guide.hbs', { layout: 'layout-beginnersguide.hbs' });
+  res.render('pages/beginners-guide.hbs', { layout: 'layout.hbs', beginnersGuide: true });
 });
 
 router.get('/world', function(req, res, next) {//https://web.archive.org/web/20120731001805/http://www.runescape.com:80/world_locations.ws
-  res.render('pages/world/world', { layout: 'layout-world.hbs' });
+  res.render('pages/world/world', { layout: 'layout.hbs', world: true });
 });
 
 // router.get('/world/lumbridge', function(req, res, next) {//https://web.archive.org/web/20120731001805/http://www.runescape.com:80/world_locations.ws

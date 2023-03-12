@@ -1,0 +1,252 @@
+#comments,
+#newsArticles {
+  float: left;
+  width: 542px; }
+
+#comments {
+  margin: 0 0 0 100px;
+  display: none; }
+
+.newspost_content_format {
+  clear: both; }
+
+div.PageControl {
+  margin-left: 98px; }
+
+.newspost_content_format,
+#comments .comment .content,
+#comments .comment p {
+  margin: 16px 4px;
+  font-size: 1.06em;
+  line-height: 1.7em;
+  color: #b8b8b8; }
+
+#comments #submit_post {
+  display: none; }
+
+img.deviceTL {
+  position: absolute;
+  top: 102px;
+  left: 60px; }
+
+.BarTwoThirdsBottom,
+.BarTwoThirdsTop {
+  margin-left: 97px;
+  display: none; }
+
+.BarTwoThirdsTop {
+  margin-top: 33px; }
+
+.BarTwoThirdsTop h3 {
+  float: left;
+  margin: 2px 17px;
+  font-family: KingthingsPetrockRegular,Times New Roman,serif; }
+
+.BarTwoThirdsTop span.commentsCount {
+  float: right;
+  margin: 11px 3px;
+  color: #dedede;
+  font-size: 17px;
+  font-family: KingthingsPetrockRegular,Times New Roman,serif; }
+
+.BarTwoThirdsBottom a.moreComments {
+  float: left;
+  margin: 11px 16px; }
+
+.loginToPostComment {
+  float: right;
+  margin: 11px 17px;
+  display: none; }
+
+#comments .postComment {
+  float: right;
+  margin: 2px 14px; }
+
+#comments .comment {
+  background: url("https://web.archive.org/web/20120813131629im_/http://www.runescape.com/img/news/commentBg.png") top left no-repeat;
+  clear: both;
+  color: #b8b8b8;
+  position: relative;
+  margin-left: 2px; }
+
+/*
+#MainContent{
+ background: url('https://web.archive.org/web/20120813131629im_/http://www.runescape.com/img/newsnewsarticletest.jpg') 0 -63px no-repeat;
+}
+*/
+#comments .comment img.avatar {
+  /* Avatar */
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  z-index: 2;
+  width: 50px;
+  height: 50px; }
+
+#comments .comment .content,
+#comments .comment p {
+  margin-left: 70px;
+  clear: left; }
+
+#comments .comment span.author {
+  font-family: KingthingsPetrockRegular,Times New Roman,serif;
+  color: #f3b13f;
+  margin: 16px 0 0 70px;
+  font-size: 17px;
+  float: left; }
+
+#comments .comment span.date {
+  color: #707070;
+  margin: 19px 6px 16px;
+  float: left;
+  font-weight: bold;
+  font-size: 11px; }
+
+#comments h4 {
+  font-family: KingthingsPetrockRegular,Times New Roman,serif;
+  color: #f3b13f;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 4px 12px; }
+
+#comments #comment {
+  background-color: black;
+  border: none;
+  color: #b8b8b8;
+  font-family: MuseoSans500,Times New Roman,serif;
+  font-size: 12px;
+  height: 90px;
+  margin: 5px 14px;
+  padding: 2px 6px;
+  width: 498px;
+  border-radius: 6px; }
+
+#comments a.rules {
+  font-size: 10px;
+  clear: left;
+  color: #38c8f7;
+  margin-left: 12px;
+  position: relative; }
+
+#NewsFilterDropdown {
+  position: absolute;
+  width: 223px;
+  height: 170px;
+  background: url("https://web.archive.org/web/20120813131629im_/http://www.runescape.com/img/global/news/SortBg.png") top right no-repeat;
+  top: 45px;
+  left: 415px;
+  overflow: hidden;
+  z-index: 4; }
+
+#categoryDropdown {
+  top: 7px;
+  left: 50px; }
+
+#NewsFilterDropdown .InPageDropDown {
+  top: 8px;
+  left: 57px; }
+
+#NewsFilterDropdown .InPageDropDown ul {
+  z-index: 6; }
+
+#NewsFilterDropdown .InPageDropDown .firstValue,
+#NewsFilterDropdown .InPageDropDown ul li {
+  font-size: 0.86em; }
+
+#NewsFilterDropdown .InPageDropDown .firstValue {
+  padding: 0 0 12px 15px;
+  z-index: 6; }
+
+div.InPageDropDown .DropListWrapper {
+  top: -90px; }
+
+#NewsFilterDropdown div.mask {
+  background: url("https://web.archive.org/web/20120813131629im_/http://www.runescape.com/img/global/news/SortMask.png") top right no-repeat;
+  height: 16px;
+  top: 0px;
+  left: 0px;
+  z-index: 3; }
+
+#NewsFilterDropdown div.tab {
+  background: url("https://web.archive.org/web/20120813131629im_/http://www.runescape.com/img/global/news/SortTab.png") bottom center no-repeat;
+  height: 180px;
+  width: 112px;
+  top: -128px;
+  left: 64px;
+  z-index: 2;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  -moz-transition: top 0.5s  1s;
+  -webkit-transition: top 0.5s  1s;
+  -webkit-backface-visibility: hidden;
+  -o-transition: top 0.5s  1s;
+  transition: top 0.5s  1s; }
+
+#NewsFilterDropdown div:hover.tab {
+  top: -4px;
+  -moz-transition: top 0.5s;
+  -webkit-transition: top 0.5s;
+  -webkit-backface-visibility: hidden;
+  -o-transition: top 0.5s;
+  transition: top 0.5s; }
+
+#NewsFilterDropdown div.tab ul {
+  list-style: none;
+  position: relative;
+  z-index: 4;
+  margin: 26px 0 0 13px; }
+
+#NewsFilterDropdown div.tab li {
+  line-height: 20px;
+  font-size: 12px;
+  margin: 0;
+  position: relative; }
+
+#NewsFilterDropdown h4 {
+  color: #F3B13F;
+  font-family: KingthingsPetrockRegular,Times New Roman,serif;
+  font-size: 17px;
+  float: left;
+  margin: 19px 0 0 0;
+  font-weight: normal;
+  text-shadow: 0px 1px 2px black; }
+
+#NewsArticles {
+  margin: 44px 0 0 97px;
+  float: left;
+  width: 554px; }
+
+.Article .Content {
+  width: 523px; }
+
+.Article a.More {
+  margin-right: 50px; }
+
+#rightColumn {
+  float: right;
+  margin-bottom: 52px;
+  margin-top: -52px;
+  overflow: hidden;
+  position: relative; }
+
+#rightColumn #SNcontainer {
+  margin: 0; }
+
+#advert {
+  margin-left: 3px;
+  background: url(https://web.archive.org/web/20120813131629im_/http://www.runescape.com/img/global/page/advert-bg.png) top left no-repeat;
+  position: relative;
+  width: 321px;
+  height: 289px; }
+
+#advert span {
+  bottom: 13px;
+  color: #CCCCCC;
+  font-size: 10px;
+  left: 139px;
+  position: absolute; }
+
+#advert iframe {
+  margin: 4px 11px 0;
+  background: black; }

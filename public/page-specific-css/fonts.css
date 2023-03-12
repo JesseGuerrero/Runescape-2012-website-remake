@@ -1,0 +1,23 @@
+@font-face {
+  font-family: KingthingsPetrockRegular;
+  src: url("../other/KingthingsPetrock.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: KingthingsPetrockLightRegular;
+  src: url("../other/Kingthings_Petrock_light-webfont.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: MuseoSans500;
+  src: url("../other/MuseoSans_500-webfont.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: MuseoSans500Italic;
+  src: url("../other/MuseoSans_500_Italic-webfont.ttf");
+  font-weight: normal;
+  font-style: normal; }

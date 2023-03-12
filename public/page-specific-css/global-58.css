@@ -1,4 +1,4 @@
-@import url(https://web.archive.org/web/20120717082001cs_/http://www.runescape.com/css/buttons-68.css);
+@import url(https://web.archive.org/web/20120629215546cs_/http://www.runescape.com/css/buttons-68.css);
 html, body, div, span, applet, object, iframe, img,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 dl, dt, dd, ol, ul, li,
@@ -72,7 +72,7 @@ a {
   color: #f3b13f; }
 
 a, a:visited {
-  color: #f3b13f !important;
+  color: #f3b13f;
   cursor: pointer; }
 
 a:hover {
@@ -106,18 +106,19 @@ textarea {
   font-family: MuseoSans500,Arial,Times New Roman,serif; }
 
 #Background {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page/background_simple.jpg) no-repeat center 65px black;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page/background_simple.jpg) no-repeat center 65px black;
   width: 100%;
   min-width: 1000px;
   left: 0;
   top: 0; }
 
 #TopBackground {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/HeaderCentreBg.png?1) top center no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/HeaderCentreBg.png?1) top center no-repeat; }
 
 #BottomBackground {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page/BottomBgGrad.png) bottom center no-repeat;
-  width: 100%; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page/BottomBgGrad.png) bottom center no-repeat;
+  width: 100%;
+  height: 100%; }
 
 #MainContentOuter {
   width: 1000px;
@@ -125,15 +126,15 @@ textarea {
   clear: both; }
 
 .MainContentBg {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/MainContentCentreBg.png) repeat-y 24px top;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/MainContentCentreBg.png) repeat-y 24px top;
   color: #b8b8b8; }
 
 .MainContentTopBg {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/MainContentTopBg.png) no-repeat 0 0;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/MainContentTopBg.png) no-repeat 0 0;
   overflow: hidden; }
 
 .MainContentBottomBg {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/MainContentBottomBg.png) no-repeat center bottom;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/MainContentBottomBg.png) no-repeat center bottom;
   overflow: hidden; }
 
 #MainContent {
@@ -208,7 +209,7 @@ textarea {
   font-family: MuseoSans500,Arial,Times New Roman,serif; }
 
 #Footer ul.Sub li a {
-  color: #b8b8b8 !important;
+  color: #b8b8b8;
   font-size: 12px;
   -moz-transition: text-shadow 300ms;
   -webkit-transition: text-shadow 300ms;
@@ -292,7 +293,7 @@ textarea {
 #HeaderLeftInner {
   height: 113px;
   margin-right: 585px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/HeaderBg.jpg) repeat-x; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/HeaderBg.jpg) repeat-x; }
 
 #HeaderRight {
   width: 50%;
@@ -300,7 +301,7 @@ textarea {
   right: 0; }
 
 #HeaderRightInner {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/HeaderBg.jpg) repeat-x;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/HeaderBg.jpg) repeat-x;
   margin-left: 586px;
   height: 113px; }
 
@@ -333,7 +334,7 @@ textarea {
   position: absolute;
   left: 0;
   top: 0;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/login/LoginMask.png?1) top left;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/login/LoginMask.png?1) top left;
   display: block; }
 
 #Login,
@@ -346,7 +347,7 @@ textarea {
   height: 113px; }
 
 #Login #LoginPanel {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/login/LoginBg.png) no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/login/LoginBg.png) no-repeat;
   width: 205px;
   height: 297px;
   position: absolute;
@@ -381,11 +382,11 @@ textarea {
   outline: none; }
 
 #Login .LoginXbottom {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/login/LoginX.png) no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/login/LoginX.png) no-repeat;
   z-index: 11; }
 
 #Login .LoginXtop {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/login/LoginXMO.png) no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/login/LoginXMO.png) no-repeat;
   opacity: 0.0;
   filter: alpha(opacity=0);
   -moz-transition: opacity 0.3s;
@@ -468,7 +469,7 @@ html.no-csstransitions #Login .LoginXbottom,
   padding: 0 7px; }
 
 #Login .Password {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/login/PasswordBg.png) top left no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/login/PasswordBg.png) top left no-repeat; }
 
 #Login label.username,
 #Login label.password {
@@ -643,14 +644,14 @@ html.no-csstransitions #Login .LoginXbottom,
   filter: alpha(opacity=100); }
 
 #LoggedIn {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/login/LoggedinBg.png) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/login/LoggedinBg.png) top left no-repeat;
   width: 362px;
   height: 134px;
   position: absolute;
   left: 647px; }
 
 #LoggedIn #Upgrade {
-  background: url("https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/login/UpgradeBg.png") no-repeat scroll 0 0 transparent;
+  background: url("https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/login/UpgradeBg.png") no-repeat scroll 0 0 transparent;
   display: block;
   height: 52px;
   left: 15px;
@@ -708,7 +709,7 @@ html.no-csstransitions #Login .LoginXbottom,
   z-index: 110; }
 
 #LoggedIn #Avatar .mask {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/login/AvatarMask.png) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/login/AvatarMask.png) top left no-repeat;
   top: 0;
   left: 0;
   z-index: 2; }
@@ -759,7 +760,7 @@ html.no-csstransitions #Login .LoginXbottom,
   -o-transition: color 300ms;
   transition: color 300ms;
   padding: 0 10px 0 12px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/nav/SubNavMask.png) -43px -51px no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/nav/SubNavMask.png) -43px -51px no-repeat; }
 
 #SubNav > nav > ul > li > a:hover {
   text-decoration: none;
@@ -812,7 +813,7 @@ html.no-csstransitions #Login .LoginXbottom,
 
 #SubNav ul li .DropDown > div {
   width: 142px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/nav/SubNavDropDownBg.png) bottom left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/nav/SubNavDropDownBg.png) bottom left no-repeat;
   margin-top: -160px;
   left: 0;
   z-index: 20;
@@ -832,7 +833,7 @@ html.no-csstransitions #Login .LoginXbottom,
   top: 14px;
   position: absolute;
   width: 160px;
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/nav/SubNavMask.png);
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/nav/SubNavMask.png);
   background-repeat: repeat-x;
   z-index: 35;
   left: 0px;
@@ -1025,7 +1026,7 @@ select {
   position: relative;
   font-size: 12px;
   overflow: hidden;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/news/ArticleBorder.png) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/news/ArticleBorder.png) top left no-repeat;
   color: #b8b8b8;
   padding: 13px 0 20px 10px;
   height: auto; }
@@ -1050,7 +1051,7 @@ select {
   height: 175px; }
 
 #NewsArticles .NewsHeaderImage div {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/news/ArticleFade.png) bottom center no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/news/ArticleFade.png) bottom center no-repeat;
   height: 224px;
   left: -34px;
   position: absolute;
@@ -1061,7 +1062,7 @@ select {
   display: none; }
 
 #NewsArticles .CollapsedMask {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/news/CollapsedMask.png) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/news/CollapsedMask.png) top left no-repeat;
   width: 549px;
   height: 39px;
   position: absolute;
@@ -1206,13 +1207,13 @@ span.Radio span {
 span.Radio {
   width: 23px;
   height: 24px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/RadioButtonShadow.png) top left no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/RadioButtonShadow.png) top left no-repeat; }
 
 span.Radio span {
   width: 15px;
   cursor: pointer;
   height: 15px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/RadioButton.png) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/RadioButton.png) top left no-repeat;
   margin: 0 4px; }
 
 span.Radio span:hover,
@@ -1230,13 +1231,13 @@ span.Checkbox {
   width: 21px;
   height: 25px;
   margin-top: 1px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/CheckboxButtonShadow.png) top left no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/CheckboxButtonShadow.png) top left no-repeat; }
 
 span.Checkbox span {
   width: 13px;
   cursor: pointer;
   height: 13px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/CheckboxButton.png) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/CheckboxButton.png) top left no-repeat;
   margin: 2px 4px 0 4px; }
 
 span.Checkbox span:hover, span.Checkbox.Hover span {
@@ -1318,7 +1319,7 @@ span.Checkbox.checked span:hover, span.Checkbox.checked.Hover span {
 
 #Nav ul.MainMenu li div.DropDown div {
   width: 149px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/nav/DropDownBg.png) bottom left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/nav/DropDownBg.png) bottom left no-repeat;
   margin-top: -186px;
   left: 0;
   z-index: 2;
@@ -1339,7 +1340,7 @@ span.Checkbox.checked span:hover, span.Checkbox.checked.Hover span {
   z-index: 4;
   margin-left: 0;
   padding: 5px 0 15px 0;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/nav/DropDownFlourish.png) 4px 2px no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/nav/DropDownFlourish.png) 4px 2px no-repeat; }
 
 #Nav ul.MainMenu li div.DropDown ul li {
   line-height: 24px;
@@ -1414,7 +1415,7 @@ span.Checkbox.checked span:hover, span.Checkbox.checked.Hover span {
   top: 34px;
   position: absolute;
   width: 160px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/nav/NavMask.png) top left repeat-x;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/nav/NavMask.png) top left repeat-x;
   z-index: 10;
   display: block;
   left: 3px;
@@ -1994,7 +1995,7 @@ a.Button29disabled:hover .Gradient_link3 * {
   width: 16px; }
 
 .WoodenPanel {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/buttons/WoodenPanelLeft.png) no-repeat left top;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/buttons/WoodenPanelLeft.png) no-repeat left top;
   padding: 10px 0 10px 20px;
   overflow: visible;
   cursor: pointer; }
@@ -2014,7 +2015,7 @@ a.Button29disabled:hover .Gradient_link3 * {
   top: -2px; }
 
 .WoodenPanel .PanelRight {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/buttons/WoodenPanelRight.png) no-repeat scroll left top transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/buttons/WoodenPanelRight.png) no-repeat scroll left top transparent;
   width: 29px;
   height: 47px;
   position: absolute;
@@ -2241,7 +2242,7 @@ h2.Gradient span.middleUnderscore,
 h3.Gradient span.middleUnderscore,
 h4.Gradient span.middleUnderscore,
 h5.Gradient span.middleUnderscore {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/gradient_header/underscore_middle.png) repeat-x 0 28px transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/gradient_header/underscore_middle.png) repeat-x 0 28px transparent;
   margin-left: 17px;
   z-index: 20; }
 
@@ -2291,7 +2292,7 @@ h5.Centre > span.spacing, h5.Centre > span.G0, h5.Centre > span.G1, h5.Centre > 
   left: 0; }
 
 h3.DoubleFlourish span.leftInnerFlourish, h3.DoubleFlourish span.rightInnerFlourish {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/gradient_header/flourish_inner_left.png) no-repeat top left;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/gradient_header/flourish_inner_left.png) no-repeat top left;
   width: 50%;
   height: 6px;
   display: inline-block;
@@ -2305,11 +2306,11 @@ h3.DoubleFlourish span.leftInnerFlourish, h3.DoubleFlourish span.rightInnerFlour
     margin-top: 29px\9; } }
 
 h3.DoubleFlourish span.rightInnerFlourish {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/gradient_header/flourish_inner_right.png) no-repeat top right;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/gradient_header/flourish_inner_right.png) no-repeat top right;
   float: right; }
 
 h3.DoubleFlourish span.centreFlourish {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/gradient_header/flourish_middle.png) no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/gradient_header/flourish_middle.png) no-repeat;
   width: 6px;
   height: 6px;
   z-index: 20;
@@ -2352,14 +2353,14 @@ span.SNbutton {
   float: left; }
 
 span.SNbutton .left {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/social/SNleft.png) no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/social/SNleft.png) no-repeat;
   width: 22px;
   height: 20px;
   float: left;
   margin-right: 42px; }
 
 span.SNbutton .middle {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/social/SNback.png) repeat-x;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/social/SNback.png) repeat-x;
   height: 20px;
   position: absolute;
   z-index: 20;
@@ -2432,7 +2433,7 @@ span.SNbutton span.SB_label {
   z-index: 20;
   top: 52px;
   left: 0px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/tooltips/ToolTipBg.png) 0 center repeat transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/tooltips/ToolTipBg.png) 0 center repeat transparent;
   border: 1px solid #a2a3a3;
   padding: 1px 8px;
   text-align: center;
@@ -2469,14 +2470,14 @@ span.SNbutton span.SB_label {
   line-height: 12px; }
 
 div.HrTwoThirds {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/HrTwoThirds.png) center center no-repeat transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/HrTwoThirds.png) center center no-repeat transparent;
   width: 518px;
   border: none;
   height: 47px;
   clear: both; }
 
 div.HrOneThird {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/HrOneThird.png) center center no-repeat transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/HrOneThird.png) center center no-repeat transparent;
   width: 252px;
   border: none;
   height: 60px;
@@ -2509,7 +2510,7 @@ div.HrOneThird {
   position: relative; }
 
 #YouTubePanel {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/social/YoutubeBg.png) 0 0 no-repeat transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/social/YoutubeBg.png) 0 0 no-repeat transparent;
   height: 352px; }
 
 #YouTubePanel h4.title {
@@ -2524,11 +2525,11 @@ div.HrOneThird {
   margin: 46px 0 0 42px; }
 
 #FacebookPanel {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/social/FacebookBg.png) 0 0 no-repeat transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/social/FacebookBg.png) 0 0 no-repeat transparent;
   height: 451px; }
 
 #TwitterPanel {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/social/TwitterBg.png) 0 0 no-repeat transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/social/TwitterBg.png) 0 0 no-repeat transparent;
   height: 471px; }
 
 #FacebookPanel #FacebookFeedHolder,
@@ -2650,28 +2651,28 @@ span.TwitterTweet {
   top: -80px !important; }
 
 .BarTwoThirdsTop {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/BarTwoThirdsTop.png) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/BarTwoThirdsTop.png) top left no-repeat;
   width: 542px;
   height: 59px;
   float: left;
   margin: 12px 0 0; }
 
 .BarFullTop {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/BarFullTop.png) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/BarFullTop.png) top left no-repeat;
   width: 854px;
   height: 69px;
   float: left;
   margin: 12px 0 0 73px; }
 
 .BarTwoThirdsBottom {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/BarTwoThirdsBottom.png) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/BarTwoThirdsBottom.png) top left no-repeat;
   width: 542px;
   height: 69px;
   float: left;
   margin: 12px 0 0; }
 
 .BarFullBottom {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/BarFullBottom.png) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/BarFullBottom.png) top left no-repeat;
   width: 854px;
   height: 69px;
   float: left;
@@ -2679,7 +2680,7 @@ span.TwitterTweet {
 
 div.PageControl {
   list-style-type: none;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/BarTwoThirdsBottom.png) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/BarTwoThirdsBottom.png) top left no-repeat;
   margin: 25px 0 0;
   float: left;
   width: 542px;
@@ -2688,7 +2689,7 @@ div.PageControl {
   text-align: center; }
 
 div.PageControl.Full {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/BarFullBottom.png) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/BarFullBottom.png) top left no-repeat;
   margin: 25px 0 0 73px;
   width: 854px;
   height: 51px;
@@ -2817,7 +2818,7 @@ div.PageControl ul li.previous a:hover {
   float: left; }
 
 div.PageControlAdvanced {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/BarFullBottom.png?1) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/BarFullBottom.png?1) top left no-repeat;
   margin: 0 0 0 73px;
   width: 854px;
   height: 58px;
@@ -2826,7 +2827,7 @@ div.PageControlAdvanced {
   text-align: center; }
 
 div.PageControlAdvancedMiddle {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/advanced/List_bg.png?1) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/advanced/List_bg.png?1) top left no-repeat;
   overflow: hidden;
   width: 345px;
   height: 37px;
@@ -2853,7 +2854,7 @@ div.PageControlAdvancedMiddle ul li a {
   text-align: center; }
 
 div.PageControlAdvancedMiddle ul li .PageInput {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/advanced/Input_bg.png?1) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/advanced/Input_bg.png?1) top left no-repeat;
   width: 32px;
   height: 23px;
   overflow: hidden;
@@ -2894,7 +2895,7 @@ div.PageControlAdvancedLeft {
   width: 139px;
   height: 37px;
   overflow: hidden;
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/advanced/Arrow_bg.png?1);
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/advanced/Arrow_bg.png?1);
   background-repeat: no-repeat; }
 
 div.PageControlAdvancedRight .PageControlAdvancedDisabled,
@@ -2965,7 +2966,7 @@ div.PageControlAdvancedLeft .PageControlAdvancedLast {
   position: absolute;
   top: 118px;
   left: 0px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/FilterControl/FilterControlBg.png) top right no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/FilterControl/FilterControlBg.png) top right no-repeat;
   z-index: 10;
   height: 400px;
   width: 90px; }
@@ -2982,7 +2983,7 @@ div.PageControlAdvancedLeft .PageControlAdvancedLast {
   overflow: hidden; }
 
 .FilterControlMask {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/FilterControl/FilterControlMask.png) top right no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/FilterControl/FilterControlMask.png) top right no-repeat;
   position: absolute;
   top: 0;
   right: -4px;
@@ -2991,7 +2992,7 @@ div.PageControlAdvancedLeft .PageControlAdvancedLast {
   z-index: 10; }
 
 .FilterControlSemaphore {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/FilterControl/FilterControlSemaphore.png) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/FilterControl/FilterControlSemaphore.png) top left no-repeat;
   width: 65px;
   height: 25px;
   position: absolute;
@@ -3008,7 +3009,7 @@ div.PageControlAdvancedLeft .PageControlAdvancedLast {
   width: 56px;
   height: 50px;
   display: block;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/FilterControl/TabBg.png) no-repeat top left;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/FilterControl/TabBg.png) no-repeat top left;
   margin-bottom: 9px;
   margin-left: 10px;
   -moz-transition: all 0.2s;
@@ -3062,7 +3063,7 @@ div.PageControlAdvancedLeft .PageControlAdvancedLast {
   width: 50px; }
 
 .LanguageButtonSurround {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/language_selector/LanguageButtonSurround.png) 0 0 no-repeat transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/language_selector/LanguageButtonSurround.png) 0 0 no-repeat transparent;
   width: 98px;
   height: 52px;
   position: absolute;
@@ -3070,7 +3071,7 @@ div.PageControlAdvancedLeft .PageControlAdvancedLast {
   left: 630px; }
 
 .LanguageButton {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/language_selector/LanguageButtonBg.png) top left no-repeat transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/language_selector/LanguageButtonBg.png) top left no-repeat transparent;
   width: 57px;
   height: 25px;
   position: relative;
@@ -3102,7 +3103,7 @@ div.PageControlAdvancedLeft .PageControlAdvancedLast {
 
 .LanguagePanel {
   cursor: default;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/language_selector/LanguagePanelTop.png) left 31px no-repeat transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/language_selector/LanguagePanelTop.png) left 31px no-repeat transparent;
   top: 2px;
   width: 186px;
   overflow: hidden;
@@ -3134,7 +3135,7 @@ div.PageControlAdvancedLeft .PageControlAdvancedLast {
   height: auto; }
 
 .LanguagePanel .bottom {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/language_selector/LanguagePanelFoot.png) bottom left no-repeat transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/language_selector/LanguagePanelFoot.png) bottom left no-repeat transparent;
   overflow: hidden; }
 
 .LanguagePanel .bottom ul {
@@ -3199,7 +3200,7 @@ div.PageControlAdvancedLeft .PageControlAdvancedLast {
   filter: alpha(opacity=100); }
 
 .TransparentBg {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/buttons/transLeft.png) repeat-x scroll 0 0 transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/buttons/transLeft.png) repeat-x scroll 0 0 transparent;
   display: inline-block;
   height: 30px;
   padding-left: 5px;
@@ -3220,7 +3221,7 @@ div.PageControlAdvancedLeft .PageControlAdvancedLast {
   padding: 8px 5px 2px 5px; }
 
 .TransparentBgLeft {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/buttons/transRight.png);
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/buttons/transRight.png);
   display: inline-block;
   height: 30px;
   position: relative;
@@ -3294,85 +3295,85 @@ div.PageControlAdvancedLeft .PageControlAdvancedLast {
   width: 311px; }
 
 .OrnamentalBox.Width311.SegmentOne .OrnamentalBoxBg {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox311SOne_middle.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox311SOne_middle.png); }
 
 .OrnamentalBox.Width311.SegmentOne .OrnamentalBoxBottom {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox311SOne_bottom.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox311SOne_bottom.png); }
 
 .OrnamentalBox.Width311.SegmentOne .OrnamentalBoxTop {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox311SOne_top.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox311SOne_top.png); }
 
 .OrnamentalBox.Width417.SegmentOne {
   width: 417px; }
 
 .OrnamentalBox.Width417.SegmentOne .OrnamentalBoxBg {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox417SOne_middle.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox417SOne_middle.png); }
 
 .OrnamentalBox.Width417.SegmentOne .OrnamentalBoxBottom {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox417SOne_bottom.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox417SOne_bottom.png); }
 
 .OrnamentalBox.Width417.SegmentOne .OrnamentalBoxTop {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox417SOne_top.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox417SOne_top.png); }
 
 .OrnamentalBox.Width450.SegmentOne {
   width: 450px; }
 
 .OrnamentalBox.Width450.SegmentOne .OrnamentalBoxBg {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox450SOne_middle.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox450SOne_middle.png); }
 
 .OrnamentalBox.Width450.SegmentOne .OrnamentalBoxBottom {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox450SOne_bottom.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox450SOne_bottom.png); }
 
 .OrnamentalBox.Width450.SegmentOne .OrnamentalBoxTop {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox450SOne_top.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox450SOne_top.png); }
 
 .OrnamentalBox.Width823.SegmentTwo {
   width: 823px; }
 
 .OrnamentalBox.Width823.SegmentTwo .OrnamentalBoxBg {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox823STwo_middle.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox823STwo_middle.png); }
 
 .OrnamentalBox.Width823.SegmentTwo .OrnamentalBoxBottom {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox823STwo_bottom.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox823STwo_bottom.png); }
 
 .OrnamentalBox.Width823.SegmentTwo .OrnamentalBoxTop {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox823STwo_top.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox823STwo_top.png); }
 
 .OrnamentalBox.Width863.SegmentOne {
   width: 863px; }
 
 .OrnamentalBox.Width863.SegmentOne .OrnamentalBoxBg {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox863SOne_middle.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox863SOne_middle.png); }
 
 .OrnamentalBox.Width863.SegmentOne .OrnamentalBoxBottom {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox863SOne_bottom.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox863SOne_bottom.png); }
 
 .OrnamentalBox.Width863.SegmentOne .OrnamentalBoxTop {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox863SOne_top.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox863SOne_top.png); }
 
 .OrnamentalBox.Width923.SegmentTwo {
   width: 923px; }
 
 .OrnamentalBox.Width923.SegmentTwo .OrnamentalBoxBg {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox923STwo_middle.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox923STwo_middle.png); }
 
 .OrnamentalBox.Width923.SegmentTwo .OrnamentalBoxBottom {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox923STwo_bottom.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox923STwo_bottom.png); }
 
 .OrnamentalBox.Width923.SegmentTwo .OrnamentalBoxTop {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox923STwo_top.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox923STwo_top.png); }
 
 .OrnamentalBox.Width923.SegmentOne {
   width: 923px; }
 
 .OrnamentalBox.Width923.SegmentOne .OrnamentalBoxBg {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox923SOne_middle.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox923SOne_middle.png); }
 
 .OrnamentalBox.Width923.SegmentOne .OrnamentalBoxBottom {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox923SOne_bottom.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox923SOne_bottom.png); }
 
 .OrnamentalBox.Width923.SegmentOne .OrnamentalBoxTop {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/ornamentalBox923SOne_top.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/ornamentalBox923SOne_top.png); }
 
 .OrnamentalBox.Width417 .OrnamentalBoxTitle {
   top: 25px; }
@@ -3400,13 +3401,13 @@ div.PageControlAdvancedLeft .PageControlAdvancedLast {
 .RaggedBoxTop,
 .RaggedBoxBg,
 .RaggedBoxBottom {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/raggedBoxTwoThirds.png) 0 top no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/raggedBoxTwoThirds.png) 0 top no-repeat; }
 
 .RaggedBox.Full .RaggedBoxHeader,
 .RaggedBox.Full .RaggedBoxTop,
 .RaggedBox.Full .RaggedBoxBg,
 .RaggedBox.Full .RaggedBoxBottom {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/boxes/raggedBoxFull.png) 0 top no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/boxes/raggedBoxFull.png) 0 top no-repeat; }
 
 .RaggedBoxHeader {
   position: absolute;
@@ -3548,7 +3549,7 @@ div.SubNavigation div:first-child {
   margin-right: -11px !important; }
 
 #CrestWrapper {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/myprofile/crestBg.png?1) no-repeat scroll 0 0 transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/myprofile/crestBg.png?1) no-repeat scroll 0 0 transparent;
   height: 179px;
   position: absolute;
   right: 53px;
@@ -3560,7 +3561,7 @@ div.SubNavigation div:first-child {
   margin: 22px; }
 
 .VisitClanHome {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/myprofile/chains.png) no-repeat scroll 0 0 transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/myprofile/chains.png) no-repeat scroll 0 0 transparent;
   height: 66px;
   padding: 30px 0 0 6px;
   position: absolute;
@@ -3589,7 +3590,7 @@ div.SubNavigation div:first-child {
   padding-left: 103px;
   position: relative;
   top: 30px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/myprofile/clanNameBg.png) no-repeat scroll 0 0 transparent; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/myprofile/clanNameBg.png) no-repeat scroll 0 0 transparent; }
 
 #MyName b {
   display: block;
@@ -3605,7 +3606,7 @@ div.SubNavigation div:first-child {
   top: 36px; }
 
 .RecruitingFlag {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/myprofile/recruitingBg.png) no-repeat scroll 0 0 transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/myprofile/recruitingBg.png) no-repeat scroll 0 0 transparent;
   height: 66px;
   position: absolute;
   right: 76px;
@@ -3623,7 +3624,7 @@ div.SubNavigation div:first-child {
   text-align: center; }
 
 .MyProfile .FilterControlSemaphore {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/myprofile/FilterControlSemaphoreClans.png);
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/myprofile/FilterControlSemaphoreClans.png);
   left: 13px; }
 
 .MyProfile .FilterControl {
@@ -3631,10 +3632,10 @@ div.SubNavigation div:first-child {
   height: 448px; }
 
 .MyProfile .FilterControlMask {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/myprofile/FilterControlMask.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/myprofile/FilterControlMask.png); }
 
 .InputWrapper {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/InputDarkW192H21.png) no-repeat scroll 0 0 transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/InputDarkW192H21.png) no-repeat scroll 0 0 transparent;
   display: block;
   float: left;
   height: 39px;
@@ -3686,17 +3687,17 @@ div.SubNavigation div:first-child {
   float: left; }
 
 .EncrustedInputBoxWrapper .InputBoxLeft {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/inputBoxLeft.png) no-repeat scroll 0 0 transparent; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/inputBoxLeft.png) no-repeat scroll 0 0 transparent; }
 
 .DarkInputBoxWrapper .InputBoxLeft {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/inputBoxLeftDark.png) no-repeat scroll 0 0 transparent; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/inputBoxLeftDark.png) no-repeat scroll 0 0 transparent; }
 
 .EncrustedInputBoxWrapper .InputBoxRight {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/inputBoxRight.png) no-repeat scroll 0 0 transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/inputBoxRight.png) no-repeat scroll 0 0 transparent;
   width: 23px; }
 
 .DarkInputBoxWrapper .InputBoxRight {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/inputBoxRightDark.png) no-repeat scroll 0 0 transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/inputBoxRightDark.png) no-repeat scroll 0 0 transparent;
   width: 10px; }
 
 .jspVerticalBar {
@@ -3704,45 +3705,45 @@ div.SubNavigation div:first-child {
   background: transparent; }
 
 .jspTrack {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/scrollbars/verticalTrackBg.png) top left repeat-y transparent; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/scrollbars/verticalTrackBg.png) top left repeat-y transparent; }
 
 .jspCap,
 .jspVerticalBar .jspCap {
   display: block;
   height: 9px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/scrollbars/verticalCaps.png) top left no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/scrollbars/verticalCaps.png) top left no-repeat; }
 
 .jspCapBottom,
 .jspVerticalBar .jspCapBottom {
   background-position: bottom left; }
 
 .jspDrag {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/scrollbars/verticalDrag.png) 3px 0 no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/scrollbars/verticalDrag.png) 3px 0 no-repeat; }
 
 .scroll-pane::-webkit-scrollbar {
   width: 9px; }
 
 .scroll-pane::-webkit-scrollbar-button {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/scrollbars/verticalCaps.png) no-repeat scroll left top transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/scrollbars/verticalCaps.png) no-repeat scroll left top transparent;
   height: 9px;
   cursor: pointer; }
 
 .scroll-pane::-webkit-scrollbar-button:end {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/scrollbars/verticalCaps.png) no-repeat scroll left bottom transparent; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/scrollbars/verticalCaps.png) no-repeat scroll left bottom transparent; }
 
 .scroll-pane::-webkit-scrollbar-track {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/scrollbars/verticalTrackBg.png) top left repeat-y transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/scrollbars/verticalTrackBg.png) top left repeat-y transparent;
   cursor: pointer; }
 
 .scroll-pane::-webkit-scrollbar-track-piece {
   cursor: pointer; }
 
 .scroll-pane::-webkit-scrollbar-thumb {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/scrollbars/verticalDragWebkit.png) repeat-y scroll 3px 0 transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/scrollbars/verticalDragWebkit.png) repeat-y scroll 3px 0 transparent;
   cursor: pointer; }
 
 .FirstLetter {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/header/LetterBg.png) no-repeat scroll 0 0 transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/header/LetterBg.png) no-repeat scroll 0 0 transparent;
   color: #A84742;
   display: block;
   float: left;
@@ -3778,12 +3779,12 @@ html.ie .FirstLetter {
   left: 8px;
   position: relative;
   width: 113px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/dropdown/DropDown100Bg.png) no-repeat scroll left bottom transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/dropdown/DropDown100Bg.png) no-repeat scroll left bottom transparent;
   cursor: pointer; }
 
 .InPageDropDown {
   position: absolute;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/dropdown/DropDownWrapperBg.png) no-repeat scroll 0 0 red;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/dropdown/DropDownWrapperBg.png) no-repeat scroll 0 0 red;
   display: block;
   padding: 0;
   position: absolute;
@@ -3812,24 +3813,24 @@ html.ie .FirstLetter {
   right: 5px;
   bottom: 7px;
   width: 24px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/dropdown/arrowDown.png) no-repeat scroll 0 bottom transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/dropdown/arrowDown.png) no-repeat scroll 0 bottom transparent;
   z-index: 1; }
 
 .DropListWrapper {
   top: -48px; }
 
 .InPageDropDown .Shine {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/dropdown/shine.png) no-repeat scroll 0 0 transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/dropdown/shine.png) no-repeat scroll 0 0 transparent;
   z-index: 3;
   opacity: 0.0;
   filter: alpha(opacity=0); }
 
 .InPageDropDown .Mask {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/dropdown/dropDownMask.png) no-repeat scroll center 0 transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/dropdown/dropDownMask.png) no-repeat scroll center 0 transparent;
   z-index: 2; }
 
 .InPageDropDown .Mask.dark {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/dropdown/dropDownMask_dark.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/dropdown/dropDownMask_dark.png); }
 
 .InPageDropDown .Flourish {
   left: 4px;
@@ -3843,7 +3844,7 @@ html.ie .FirstLetter {
   padding: 2px 10px; }
 
 .InPageDropDown li:hover {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/dropdown/listItemBg.png) no-repeat right 1px transparent; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/dropdown/listItemBg.png) no-repeat right 1px transparent; }
 
 .InPageDropDown li input {
   position: absolute;
@@ -3919,7 +3920,7 @@ div.InPageDropDown:hover ul {
   border: none; }
 
 .InPageDropDownNew .DropListWrapper {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page/dropdown/DropDown100Bg.png) no-repeat scroll left bottom transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page/dropdown/DropDown100Bg.png) no-repeat scroll left bottom transparent;
   cursor: pointer;
   left: 8px;
   position: relative;
@@ -3939,10 +3940,10 @@ div.InPageDropDown:hover ul {
   padding: 0 0 0 10px; }
 
 .InPageDropDownNew li:hover {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page/dropdown/ListItemBg.png) no-repeat scroll right 0 transparent; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page/dropdown/ListItemBg.png) no-repeat scroll right 0 transparent; }
 
 .InPageDropDownNew .Mask {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page/dropdown/DropDownMask100.png) no-repeat top center;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page/dropdown/DropDownMask100.png) no-repeat top center;
   width: 130px;
   height: 6px;
   z-index: 2;
@@ -4091,24 +4092,24 @@ div.InPageDropDown:hover ul {
 
 .InPageDropDownNew.width150 .DropListWrapper {
   width: 160px;
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page/dropdown/DropDown150Bg.png);
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page/dropdown/DropDown150Bg.png);
   left: 10px; }
 
 .InPageDropDown.width150 .DropListWrapper {
   width: 160px;
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/dropdown/DropDown150Bg.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/dropdown/DropDown150Bg.png); }
 
 .InPageDropDownNew.width150 .Mask {
   width: 180px;
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page/dropdown/dropDownMask150.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page/dropdown/dropDownMask150.png); }
 
 .InPageDropDown.width150 .Mask {
   width: 170px;
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/dropdown/dropDownMask150_dark.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/dropdown/dropDownMask150_dark.png); }
 
 .InPageDropDown.width150 .Shine {
   width: 170px;
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/dropdown/shine150.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/dropdown/shine150.png); }
 
 .InPageDropDownNew.width200 {
   width: 230px; }
@@ -4124,24 +4125,24 @@ div.InPageDropDown:hover ul {
 
 .InPageDropDownNew.width200 .DropListWrapper {
   width: 215px;
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page/dropdown/DropDown200Bg.png);
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page/dropdown/DropDown200Bg.png);
   left: 5px; }
 
 .InPageDropDown.width200 .DropListWrapper {
   width: 215px;
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/dropdown/DropDown200Bg.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/dropdown/DropDown200Bg.png); }
 
 .InPageDropDownNew.width200 .Mask {
   width: 230px;
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page/dropdown/dropDownMask200.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page/dropdown/dropDownMask200.png); }
 
 .InPageDropDown.width200 .Mask {
   width: 225px;
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/dropdown/dropDownMask200_dark.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/dropdown/dropDownMask200_dark.png); }
 
 .InPageDropDown.width200 .Shine {
   width: 225px;
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page_control/dropdown/shine200.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page_control/dropdown/shine200.png); }
 
 .OpenShadowbox {
   display: none; }
@@ -4158,7 +4159,7 @@ div.InPageDropDown:hover ul {
 .ModalLogin {
   width: 429px;
   height: 235px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/login/modalLoginOverlayBG.png) no-repeat transparent; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/login/modalLoginOverlayBG.png) no-repeat transparent; }
 
 .ModalLogin .FlatHeader {
   font-size: 20px;
@@ -4208,7 +4209,7 @@ div.InPageDropDown:hover ul {
   text-decoration: none; }
 
 .HrModal {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/login/horizontalRuleBigFlourishes.png) left center no-repeat transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/login/horizontalRuleBigFlourishes.png) left center no-repeat transparent;
   border: none !important;
   clear: both;
   display: block;
@@ -4330,7 +4331,7 @@ div.GoodAttention,
 div.Attention {
   width: 800px;
   height: 31px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/alertBadBg.png) top center no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/alertBadBg.png) top center no-repeat;
   clear: both;
   color: #aa321b;
   margin: 80px 100px 0;
@@ -4340,7 +4341,7 @@ div.Attention {
   font-size: 18px; }
 
 div.GoodAttention {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/alertGoodBg.png) top left no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/alertGoodBg.png) top left no-repeat;
   color: #48964a; }
 
 .Attention .Button29,
@@ -4355,7 +4356,7 @@ div.GoodAttention {
 div.FlexiAttention,
 div.FlexiAttention .top,
 div.FlexiAttention .bottom {
-  background-image: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/FlexiAlert.png); }
+  background-image: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/FlexiAlert.png); }
 
 div.FlexiAttention {
   background-position: -2148px 0px;
@@ -4381,7 +4382,7 @@ div.FlexiAttention .bottom {
   padding: 12px 0; }
 
 div.FlexiAttention.Bad {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/content/FlexiAlert.png) -1432px 0px repeat-y;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/content/FlexiAlert.png) -1432px 0px repeat-y;
   color: #AA321B; }
 
 .TipBubble-Parent {
@@ -4396,7 +4397,7 @@ div.FlexiAttention.Bad {
   position: absolute;
   width: 152px;
   height: 77px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/tooltips/TipBubble.png) no-repeat center top;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/tooltips/TipBubble.png) no-repeat center top;
   z-index: 1;
   display: none;
   text-align: center;
@@ -4441,11 +4442,11 @@ div.FlexiAttention.Bad {
 
 .ErrorBubble .top {
   height: 9px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/error/errorTop.png?0) transparent top right no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/error/errorTop.png?0) transparent top right no-repeat;
   display: block; }
 
 .ErrorBubble .middle {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/error/errorMiddle.png?0) transparent top right no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/error/errorMiddle.png?0) transparent top right no-repeat;
   display: block;
   padding: 0 16px 0 21px;
   text-align: left;
@@ -4453,7 +4454,7 @@ div.FlexiAttention.Bad {
 
 .ErrorBubble .bottom {
   height: 14px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/error/errorBottom.png?0) transparent top right no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/error/errorBottom.png?0) transparent top right no-repeat;
   display: block; }
 
 table.StripeTable,
@@ -4506,7 +4507,7 @@ table.stripeTable tr.odd td {
   height: 80px !important;
   margin-top: -40px !important;
   line-height: -24px !important;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/page/loadingAnimation.gif) no-repeat center center !important; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/page/loadingAnimation.gif) no-repeat center center !important; }
 
 #sb-loading-inner span {
   display: none !important; }
@@ -4515,7 +4516,7 @@ table.stripeTable tr.odd td {
   background-color: transparent !important; }
 
 #Advert {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/hiscore/advertLetterBoxBG.png) no-repeat scroll center center transparent;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/hiscore/advertLetterBoxBG.png) no-repeat scroll center center transparent;
   height: 118px;
   position: relative;
   top: 40px;
@@ -4537,17 +4538,17 @@ table.stripeTable tr.odd td {
   *display: inline; }
 
 .Dropdown .Beg {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/TFbeg.png) bottom no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/TFbeg.png) bottom no-repeat;
   height: 36px;
   width: 23px; }
 
 .Dropdown .Center {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/TFcen.png) repeat-x;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/TFcen.png) repeat-x;
   height: 36px;
   width: 130px; }
 
 .Dropdown .End {
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/TFend.png) top no-repeat;
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/TFend.png) top no-repeat;
   height: 36px;
   width: 23px; }
 
@@ -4563,24 +4564,24 @@ table.stripeTable tr.odd td {
   width: 176px;
   margin-bottom: -11px;
   position: relative;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPTop.png) no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPTop.png) no-repeat; }
 
 .Drop .scroll-pane {
   padding: 0 2px;
   width: 172px;
   height: 100px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPMid.png) repeat-y; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPMid.png) repeat-y; }
 
 .Drop .Scroll-paneMid {
   padding: 0 2px;
   width: 172px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPMid.png) repeat-y; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPMid.png) repeat-y; }
 
 .Drop .Scroll-paneBot {
   height: 17px;
   width: 176px;
   margin-top: -11px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPBot.png) no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPBot.png) no-repeat; }
 
 .Dropdown.w100 .Center {
   width: 62px; }
@@ -4590,19 +4591,19 @@ table.stripeTable tr.odd td {
 
 .Dropdown.w100 .Drop .Scroll-paneTop {
   width: 100px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPTop100.png) no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPTop100.png) no-repeat; }
 
 .Dropdown.w100 .Drop .scroll-pane {
   width: 100px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPMid100.png) repeat-y; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPMid100.png) repeat-y; }
 
 .Dropdown.w100 .Drop .Scroll-paneMid {
   width: 100px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPMid100.png) repeat-y; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPMid100.png) repeat-y; }
 
 .Dropdown.w100 .Drop .Scroll-paneBot {
   width: 100px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPBot100.png) no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPBot100.png) no-repeat; }
 
 .Dropdown.w250 .Center {
   width: 202px; }
@@ -4612,19 +4613,19 @@ table.stripeTable tr.odd td {
 
 .Dropdown.w250 .Drop .Scroll-paneTop {
   width: 250px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPTop250.png) no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPTop250.png) no-repeat; }
 
 .Dropdown.w250 .Drop .scroll-pane {
   width: 250px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPMid250.png) repeat-y; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPMid250.png) repeat-y; }
 
 .Dropdown.w250 .Drop .Scroll-paneMid {
   width: 250px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPMid250.png) repeat-y; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPMid250.png) repeat-y; }
 
 .Dropdown.w250 .Drop .Scroll-paneBot {
   width: 250px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPBot250.png) no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPBot250.png) no-repeat; }
 
 .Dropdown.w300 .Center {
   width: 252px; }
@@ -4634,19 +4635,19 @@ table.stripeTable tr.odd td {
 
 .Dropdown.w300 .Drop .Scroll-paneTop {
   width: 300px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPTop300.png) no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPTop300.png) no-repeat; }
 
 .Dropdown.w300 .Drop .scroll-pane {
   width: 300px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPMid300.png) repeat-y; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPMid300.png) repeat-y; }
 
 .Dropdown.w300 .Drop .Scroll-paneMid {
   width: 300px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPMid300.png) repeat-y; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPMid300.png) repeat-y; }
 
 .Dropdown.w300 .Drop .Scroll-paneBot {
   width: 300px;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/SPBot300.png) no-repeat; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/SPBot300.png) no-repeat; }
 
 ul.SelectRS {
   color: #C15215;
@@ -4672,7 +4673,7 @@ ul.SelectRS li {
   width: 137px;
   z-index: 1;
   position: relative;
-  background: url(https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/form/arrow.png) no-repeat right center; }
+  background: url(https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/form/arrow.png) no-repeat right center; }
 
 .w100 .SelectedLi {
   width: 70px; }
@@ -4698,7 +4699,7 @@ select.Replaced {
   position: relative;
   width: 20px;
   height: 21px;
-  background: url("https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/social/GooglePlus.png"); }
+  background: url("https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/social/GooglePlus.png"); }
 
 .CustomPlusOneMargins {
   margin-top: 15px;
@@ -4737,7 +4738,7 @@ select.Replaced {
 .Orange .TR,
 .Orange .BL,
 .Orange .BR {
-  background-image: url("https://web.archive.org/web/20120717082001im_/http://www.runescape.com/img/global/borders/imgBorderOrangeFive.png");
+  background-image: url("https://web.archive.org/web/20120629215546im_/http://www.runescape.com/img/global/borders/imgBorderOrangeFive.png");
   background-repeat: no-repeat;
   background-position: left top;
   background-color: transparent;
