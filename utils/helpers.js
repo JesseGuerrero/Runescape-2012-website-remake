@@ -1,4 +1,5 @@
-
+let constants = require("../utils/constants");
+const {getSkillIDByName} = require("./constants");
 
 function hbsHelpers(hbs) {
     return hbs.create({
@@ -11,19 +12,34 @@ function hbsHelpers(hbs) {
                 console.log(value)
             },
             add: function (value1, value2) {
-                return value1 + value2;
+                return (parseInt(value1) + parseInt(value2)).toString();
+            },
+            multiply: function(value1, value2) {
+                return (parseInt(value1) * parseInt(value2)).toString();
             },
             formatNum: function (num) {
-                return num.toLocaleString("en-US")
+                return num.toLocaleString("en-US");
             },
-            getHSSkillLevel: function (data, index) {
-
+            showIfPositive: function (num) {
+                if(parseInt(num) > 0)
+                    return num
+                return ""
             },
-            getHSTotalXP: function (data, index) {
-                return data['data'][index].totalXp
+            getRank: function (index, page, limit) {
+                return (parseInt(index) + 1) + ((parseInt(page) - 1)*parseInt(limit))
             },
-            getHSTotalLevel: function (data, index) {
-                return data['data'][index].totalLevel
+            getHSSkillLevel: function (data, skill) {
+                if(skill == "Overall")
+                    return data.totalLevel
+                return constants.getSkillLevelByXP(data['xp'][getSkillIDByName(skill)])
+            },
+            getHSSkillXP: function (data, skill) {
+                if(skill == "Overall")
+                    return data.totalXp
+                return data['xp'][getSkillIDByName(skill)]
+            },
+            getLevelFromXP: function (xp) {
+                return constants.getSkillLevelByXP(parseInt(xp));
             }
             // More helpers...
         }

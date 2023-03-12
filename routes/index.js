@@ -1,8 +1,7 @@
-var express = require('express');
-var axios = require("../utils/axios");
-var router = express.Router();
-
-//Determine if faster to have local images or github images
+let express = require('express');
+let axios = require("../utils/axios");
+const {getSkillIDByName, formatRSNickName} = require("../utils/constants");
+let router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {//https://web.archive.org/web/20120709052134/http://www.runescape.com:80/title.ws
@@ -54,13 +53,113 @@ router.get('/hall-of-heroes', function(req, res, next) { https://web.archive.org
     res.render('pages/hall-of-heroes', { layout: 'layout-hallofheroes.hbs' });
 });
 
-router.get('/highscores/:skill', function(req, res, next) { https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
-    axios.get("https://darkan.org:8443/v1/highscores?page=1&limit=22")
+router.get('/highscores', function(req, res, next) { https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get("https://darkan.org:8443/v1/highscores?page=" + 1 +"&limit=" + 22)
         .then((response) => {
-          res.render('pages/highscores', { layout: 'layout-highscores.hbs', highscores: response, skill: req.params.skill });
+            res.render('pages/highscores', { layout: 'layout-highscores.hbs', highscores: response, skill: "Overall", page: 1,
+                limit: 22});
         });
-
 });
 
+router.get('/highscores/Overall/:page', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get("https://darkan.org:8443/v1/highscores?page=" + req.params.page +"&limit=" + 22)
+        .then((response) => {
+            res.render('pages/highscores', { layout: 'layout-highscores.hbs', highscores: response, skill: "Overall", page: req.params.page,
+                limit: 22});
+        });
+});
+
+router.get('/highscores/:skill/:page', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get("https://darkan.org:8443/v1/highscores?skill=" + getSkillIDByName(req.params.skill) + "&page=" + req.params.page +"&limit=" + 22)
+        .then((response) => {
+          res.render('pages/highscores', { layout: 'layout-highscores.hbs', highscores: response, skill: req.params.skill, page: req.params.page,
+          limit: 22});
+        });
+});
+
+router.get('/highscores/:skill', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get("https://darkan.org:8443/v1/highscores?skill=" + getSkillIDByName(req.params.skill) + "&page=" + 1 +"&limit=" + 22)
+        .then((response) => {
+            res.render('pages/highscores', { layout: 'layout-highscores.hbs', highscores: response, skill: req.params.skill, page: 1,
+                limit: 22});
+        });
+});
+
+router.get('/highscores-player/:user', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get(`https://darkan.org:8443/v1/highscores?limit=9999999`)
+        .then((response) => {
+            let username = formatRSNickName(req.params.user)
+            let skillsData = fetchSkills(response, username);
+            console.log(skillsData)
+            res.render('pages/player-highscores', { layout: 'layout-playerhighscores.hbs',
+                displayName: username, totalLevel: skillsData['totalLevel'], totalXP: skillsData['totalXP'],
+                totalRank: skillsData['totalRank'], skillXPs: skillsData['skillXPs'],
+                skillRanks: skillsData['skillRanks'] });
+        })
+});
+
+const fetchSkills = function (playerData, displayName) {
+    playerData = playerData['data']
+    let skillXPArr = []
+    let skillRankArr = []
+    let rank = -1;
+    for(let i = 0; i < playerData.length; i++) {
+        if(playerData[i].displayName === displayName) {
+            for(let skillI = 0; skillI < 25; skillI++)
+                skillXPArr.push(playerData[i].xp[skillI])
+            break
+        }
+    }
+    function sortSkill(skillI) {
+        if(skillI >=0 && skillI <= 24)
+            return function (user1, user2) {
+                if (user1.xp[skillI] < user2.xp[skillI])
+                    return 1
+                else if (user1.xp[skillI] > user2.xp[skillI])
+                    return -1
+                else if (user1.xp[skillI] == user2.xp[skillI])
+                    return -1
+                return 0
+            }
+        return function (user1, user2) {
+            if(user1.totalLevel < user2.totalLevel)
+                return 1
+            else if(user1.totalLevel > user2.totalLevel)
+                return -1
+            else if(user1.totalLevel == user2.totalLevel)
+                if(user1.totalXp < user2.totalXp)
+                    return 1
+                else if(user1.totalXp > user2.totalXp)
+                    return -1
+            return 0
+        }
+    }
+    for(let i = 0; i < 25; i++) {
+        playerData.sort(sortSkill(i));
+        for(let j = 0; j < playerData.length; j++) {
+            if(playerData[j].displayName === displayName) {
+                skillRankArr.push(j+1)
+            }
+        }
+    }
+    playerData.sort(sortSkill(-1))
+    let totalXP = 0;
+    let totalLevel = 1;
+    for(let i = 0; i < playerData.length; i++) {
+        if(playerData[i].displayName === displayName) {
+            rank = i+1;
+            totalXP = playerData[i].totalXp
+            totalLevel = playerData[i].totalLevel
+        }
+    }
+
+    return {
+        "totalLevel": totalLevel,
+        "totalXP": totalXP,
+        "totalRank": rank,
+        "skillXPs": skillXPArr,
+        "skillRanks": skillRankArr
+    };
+};
 
 module.exports = router;
