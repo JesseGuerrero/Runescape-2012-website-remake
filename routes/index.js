@@ -50,7 +50,10 @@ router.get('/customer-support', function(req, res, next) { https://web.archive.o
 });
 
 router.get('/hall-of-heroes', function(req, res, next) { https://web.archive.org/web/20120620024338/http://services.runescape.com/m=hiscore/heroes.ws
-    res.render('pages/hall-of-heroes', { layout: 'layout-hallofheroes.hbs' });
+    axios.get("https://darkan.org:8443/v1/highscores?page=1&limit=10")
+        .then((response) => {
+            res.render('pages/hall-of-heroes', { layout: 'layout.hbs', heroes: true, highscores: response });
+        });
 });
 
 router.get('/highscores', function(req, res, next) { https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0

@@ -10,8 +10,38 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
     let frames = _____WB$wombat$assign$function_____("frames");
     let opener = _____WB$wombat$assign$function_____("opener");
 
+    let bannerNum = 1;
+    function nextBanner() {
+        let bannerImg = document.getElementById("banner" + bannerNum)
+        bannerImg.style.display = "none";
+        bannerNum += 1;
 
+        bannerImg = document.getElementById("banner" + bannerNum)
+        if(document.body.contains(bannerImg)) {
+            bannerImg.style.display = "block";
+        }
+        if(!document.body.contains(bannerImg)) {
+            bannerNum = 1;
+            let bannerImg = document.getElementById("banner" + bannerNum)
+            bannerImg.style.display = "block";
+        }
+    }
 
+    function previousBanner() {
+        let bannerImg = document.getElementById("banner" + bannerNum)
+        bannerImg.style.display = "none";
+        bannerNum -= 1;
+
+        bannerImg = document.getElementById("banner" + bannerNum)
+        if(document.body.contains(bannerImg)) {
+            bannerImg.style.display = "block";
+        }
+        if(!document.body.contains(bannerImg)) {
+            bannerNum = 5;
+            let bannerImg = document.getElementById("banner" + bannerNum)
+            bannerImg.style.display = "block";
+        }
+    }
 
 
 
@@ -35,42 +65,6 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
 
             community.play.initialise();
 
-        },
-        // SLIDER
-        slider: function(){
-            if(swfobject.hasFlashPlayerVersion(community.memory.flash)){
-                $("#bannerReel a").each(function(i){
-                    var $this = $(this);
-                    var src = $this.find('img').attr("src");
-                    var href = $this.attr("href");
-                    if(src.match("/swf/")){
-                        var newID = "slideSWF"+i;
-                        $this.replaceWith("<div><div id='"+newID+"'></div></div>").attr({id: newID});
-
-                        swfobject.embedSWF(
-                            src.replace(/\.[^\.]{3,4}$/, ".swf"),
-                            newID,
-                            "1000",
-                            "384",
-                            community.memory.flash,
-                            "",
-                            {
-                                click_url: href
-                            },
-                            {
-                                wmode: "opaque"
-                            }
-                        );
-                    }
-                });
-            }
-
-            $("#bannerReel").arturoSlider({
-                nextID: "bannerNext",
-                prevID: "bannerPrevious",
-                speed: 800,
-                period: 10000
-            });
         },
         // CALLS TO ACTION
         ctas: {
