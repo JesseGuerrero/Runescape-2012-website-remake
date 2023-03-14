@@ -1,13 +1,21 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var sassMiddleware = require('node-sass-middleware');
-var exphbs  = require('express-handlebars');
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var app = express();
+let createError = require('http-errors');
+let express = require('express');
+let path = require('path');
+let cookieParser = require('cookie-parser');
+let logger = require('morgan');
+let sassMiddleware = require('node-sass-middleware');
+let exphbs  = require('express-handlebars');
+let methodOverride = require('method-override');
+const Article = require('./utils/article')
+let mongoose = require('mongoose');
+let indexRouter = require('./routes/index');
+let articlesRouter = require('./routes/articles')
+let usersRouter = require('./routes/users');
+let app = express();
+
+mongoose.connect('mongodb://localhost/blog', {
+  useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
+})
 
 // view engine setup
 const hbs = require('./utils/helpers')(exphbs);
@@ -19,6 +27,7 @@ app.set('view engine', 'hbs');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(methodOverride('_method'))
 app.use(cookieParser());
 app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
@@ -29,6 +38,11 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.get('/news', async (req, res) => {
+  const articles = await Article.find().sort({ createdAt: 'desc' })
+  res.render('articles/index', { articles: articles, layout: "layout-writenews" })
+})
+app.use('/articles', articlesRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

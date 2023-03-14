@@ -16,6 +16,18 @@ router.get('/news2', function(req, res, next) {//https://web.archive.org/web/201
   res.render('pages/news-example2', { layout: 'layout.hbs', news: true });
 });
 
+router.get('/news3', function(req, res, next) {//https://web.archive.org/web/20120704185400/http://services.runescape.com/m=news/behind-the-scenes-july
+    res.render('pages/news-example3', { layout: 'layout.hbs', news: true });
+});
+
+router.get('/news4', function(req, res, next) {//https://web.archive.org/web/20120704185400/http://services.runescape.com/m=news/behind-the-scenes-july
+    res.render('pages/news-example4', { layout: 'layout.hbs', news: true });
+});
+
+router.get('/write-news', function(req, res, next) {//https://web.archive.org/web/20120704185400/http://services.runescape.com/m=news/behind-the-scenes-july
+    res.render('pages/form-fields.hbs', { layout: 'layout-writenews' });
+});
+
 router.get('/media', function(req, res, next) {//remove
   res.redirect('/', {});
 });

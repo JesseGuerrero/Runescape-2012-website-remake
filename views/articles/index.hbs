@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="mb-4">Blog Articles</h1>
+    <a href="/articles/new" class="btn btn-success">New Article</a>
+    <a href="/articles/admin" class="btn btn-success">Login as moderator</a>
+
+    {{#each articles}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <h4 class="card-title">{{this.title}}</h4>
+            <div class="card-subtitle text-muted mb-2">
+                {{formatDate this.createdAt}}
+            </div>
+            <div class="card-text mb-2">{{this.description}}</div>
+            <a href="articles/{{this.slug}}" class="btn btn-primary">Read More</a>
+            <a href="articles/edit/{{this.id}}" class="btn btn-info">Edit</a>
+            <form action="/articles/{{this.id}}?_method=DELETE" method="POST" class="d-inline">
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+    </div>
+    {{/each}}
+</div>

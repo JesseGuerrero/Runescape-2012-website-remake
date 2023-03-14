@@ -26,9 +26,9 @@
     </div>
 </div>
 {{#if heroes}}
-    {{> HeroesNav}}
+    {{> highscores/HeroesNav}}
     {{else}}
-        {{> HighscoresNav}}
+        {{> highscores/HighscoresNav}}
 {{/if}}
 <div id="hiscoresSearch">
     <form onsubmit="window.location='/highscores-player/'+ document.getElementById('compare').value; return false;">

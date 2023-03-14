@@ -1,12 +1,15 @@
+const Handlebars = require('handlebars')
+let { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
 let constants = require("../utils/constants");
-const {getSkillIDByName} = require("./constants");
+let {getSkillIDByName} = require("./constants");
 
 function hbsHelpers(hbs) {
     return hbs.create({
         extname: 'hbs',
         defaultLayout: 'layout.hbs',
         layoutsDir   : 'views/layouts',
-        partialsDir  : 'views/partials',
+        partialsDir  : ['views/partials', 'views/partials/highscores-partials'],
+        handlebars: allowInsecurePrototypeAccess(Handlebars),
         helpers: { // This was missing
             display: function (value) {
                 console.log(value)
@@ -40,6 +43,9 @@ function hbsHelpers(hbs) {
             },
             getLevelFromXP: function (xp) {
                 return constants.getSkillLevelByXP(parseInt(xp));
+            },
+            formatDate: function(date) {
+                return new Date(date).toLocaleDateString();
             }
             // More helpers...
         }
