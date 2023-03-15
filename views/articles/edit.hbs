@@ -1,6 +1,6 @@
 <div class="container">
     <h1 class="mb-4">Edit Article</h1>
-    <form action="/articles/{{article.id}}?_method=PUT" method="POST">
+    <form action="{{webAPI}}web/edit/{{article.id}}" method="POST">
         {{> news/FormFields}}
     </form>
 </div>

@@ -1,7 +1,8 @@
 const axios = require('axios');
+const auth = require("../auth.json")
 
 const instance = axios.create({
-    baseURL: 'http://144.126.132.23:8443/v1',
+    baseURL: auth.webAPI,
     timeout: 1000,
 });
 

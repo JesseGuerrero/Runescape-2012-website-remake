@@ -13,7 +13,7 @@
             <div class="card-text mb-2">{{this.description}}</div>
             <a href="articles/{{this.slug}}" class="btn btn-primary">Read More</a>
             <a href="articles/edit/{{this.id}}" class="btn btn-info">Edit</a>
-            <form action="/articles/{{this.id}}?_method=DELETE" method="POST" class="d-inline">
+            <form action="http://localhost:8443/v1/web/delete/{{this.id}}" method="POST" class="d-inline">
                 <button type="submit" class="btn btn-danger">Delete</button>
             </form>
         </div>

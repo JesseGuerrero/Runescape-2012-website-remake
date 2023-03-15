@@ -11,9 +11,11 @@ let mongoose = require('mongoose');
 let indexRouter = require('./routes/index');
 let articlesRouter = require('./routes/articles')
 let usersRouter = require('./routes/users');
+const axios = require("./utils/axios");
+const auth = require("./auth.json")
 let app = express();
 
-mongoose.connect('mongodb://localhost/blog', {
+mongoose.connect('mongodb://localhost/darkan-server', {
   useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
 })
 
@@ -39,8 +41,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.get('/news', async (req, res) => {
-  const articles = await Article.find().sort({ createdAt: 'desc' })
-  res.render('articles/index', { articles: articles, layout: "layout-writenews" })
+  axios.get(auth.webAPI + "web?page=1&limit=6&type=0")
+      .then((response) => {
+        res.render('articles/index', { layout: "layout-writenews", articles: response["data"] });
+      });
 })
 app.use('/articles', articlesRouter);
 app.use('/users', usersRouter);
