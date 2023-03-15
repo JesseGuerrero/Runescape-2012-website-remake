@@ -1,8 +1,6 @@
 <div class="container">
-    {{#if isModerator}}
-        <h1 class="mb-4">New Article</h1>
-        <form action="/articles" method="POST">
-            {{> FormFields}}
-        </form>
-    {{/if}}
+    <h1 class="mb-4">New Article</h1>
+    <form action="/articles" method="POST">
+        {{> news/FormFields}}
+    </form>
 </div>

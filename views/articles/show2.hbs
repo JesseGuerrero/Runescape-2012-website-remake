@@ -1,0 +1,28 @@
+<div class="container">
+    <h1 class="mb-1">{{article.title}}</h1>
+    <div class="text-muted mb-2">
+        {{article.createdAt}}
+    </div>
+    <a href="/news" class="btn btn-secondary">All Articles</a>
+    <a href="/articles/edit/{{article.id}}" class="btn btn-info">Edit</a>
+    <div class="Content">
+        {{{article.sanitizedHtml}}}
+    </div>
+
+    <style>
+        .Content p img {
+            float: left;
+        }
+        .Content .image-style-side {
+            float:right;
+        }
+        .Content figure.image {
+            margin: auto !important;
+            display: flex; !important;
+        }
+        .Content figure.image img {
+            margin: auto !important;
+            width: 100%;
+        }
+    </style>
+</div>

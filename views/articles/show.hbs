@@ -1,11 +1,339 @@
-<div class="container">
-    <h1 class="mb-1">{{article.title}}</h1>
-    <div class="text-muted mb-2">
-        {{article.createdAt}}
-    </div>
-    <a href="/news" class="btn btn-secondary">All Articles</a>
-    <a href="/articles/edit/{{article.id}}" class="btn btn-info">Edit</a>
-    <div>
-        {{{article.sanitizedHtml}}}
+<script type="text/javascript">//<![CDATA[
+__wm.bt(700,27,25,2,"web","http://www.runescape.com/title.ws","20120709052134",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+__wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript">
+    if ($("#fb-root").length == 0){
+        $("body").prepend('<div id="fb-root"></div>');
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '174823375888281',
+                status: false,
+                cookie: true,
+                xfbml: true,
+                oauth: true
+            });
+            if($.browser.msie){
+                FB.UIServer.setLoadedNode = function (a,b) { FB.UIServer._loadedNodes[a.id] = b; }
+            }
+        };
+        (function() {
+            var e = document.createElement('script');
+            e.async = true;
+            e.src = document.location.protocol + '//web.archive.org/web/20120709052134/http://connect.facebook.net/en_US/all.js';
+            document.getElementById('fb-root').appendChild(e);
+        }());
+    }
+</script>
+<a style="display:none" id="SNbuttonLink" class="thickbox"></a>
+<script type="text/javascript">
+    function fbLoginRedirect(buttonName, loginUrl, destUrl, destStr, _target){
+        $.getJSON('https://web.archive.org/web/20120709052134/http://services.runescape.com/m=sn-integration/l=3/checkLogin.ws?json=?', {"tps":0, "token":FB.getAuthResponse().accessToken, "expiry":FB.getAuthResponse().expiresIn, "signed":FB.getAuthResponse().signedRequest}, function(data) {
+            if(typeof(_target) != 'undefined' && _target != '') $("#SNbuttonLink").attr('target',_target);
+            if (data['sso']<0) {
+
+
+                alert("Houve um problema ao verificar o login. Tente novamente.");
+            } else if (data['sso'].length > 1){
+
+                if(data['sna']>-1) {
+
+
+                    $("#SNbuttonLink").attr('href',loginUrl+'key='+data['sso']+'&tps=0&'+destStr+'&KeepThis=true&TB_iframe=true&height=500&width=560');
+
+                    $("#SNbuttonLink").click();
+                    $("#TB_iframeContent").attr("allowTransparency", "true");
+
+                    $("#TB_iframeContent").css("padding-left", "50px");
+
+                } else {
+
+                    var loc = destUrl+'?key='+data['sso']+'?'+destStr;
+                    if(typeof(_target) != 'undefined' && _target != ''){
+                        window.parent.location = loc;
+                    }
+                    else {
+                        window.location = loc;
+                    }
+                }
+            } else {
+
+
+                $("#SNbuttonLink").attr('href',loginUrl+'?'+destStr+'&KeepThis=true&TB_iframe=true&height=400&width=442');
+
+                $("#SNbuttonLink").click();
+                $("#TB_iframeContent").attr("allowTransparency", "true");
+            }
+        });
+        return false;
+    }
+</script>
+<style>
+    .Content p img {
+        float: left;
+    }
+    .Content .image-style-side {
+        float:right;
+    }
+    .Content figure.image {
+        margin: auto !important;
+        display: flex; !important;
+    }
+    .Content figure.image img {
+        margin: auto !important;
+        width: 100%;
+    }
+</style>
+<div id="Background">
+    <div id="TopBackground">
+        <div id="BottomBackground">
+            {{> Header}}
+            <div id="MainContentOuter">
+                <div class="MainContentBg">
+                    <div class="MainContentTopBg">
+                        <div class="MainContentBottomBg">
+                            <div id="MainContent">
+                                <div id="MainTitle">
+                                    <div class="Centre1">
+                                        <div class="Centre2">
+
+                                            <h3 class="Gradient DoubleFlourish"><span class="spacing" aria-hidden="true">News</span>
+                                                <span class="G0">News</span>
+                                                <span class="G1" aria-hidden="true">News</span>
+                                                <span class="G2" aria-hidden="true">News</span>
+                                                <span class="G3" aria-hidden="true">News</span>
+                                                <span class="G4" aria-hidden="true">News</span>
+                                                <span class="G5" aria-hidden="true">News</span>
+                                                <span class="G6" aria-hidden="true">News</span>
+                                                <span class="mask"><span class="spacing" aria-hidden="true">News</span>
+<span class="leftInnerFlourish"></span><span class="centreFlourish"></span><span class="rightInnerFlourish"></span>
+</span>
+                                                <span class="rightUnderscore">
+<img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/flourish_outer_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">News</span>
+</span>
+                                                <span class="leftUnderscore"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/flourish_outer_left.png" class="left" alt=""></span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="rightColumn">
+                                    <script type="text/javascript" src="https://web.archive.org/web/20120704185400js_/http://www.jagex.com/js/jagex/jagex_twitter2_0_2-4.js"></script>
+                                    <div id="SNcontainer">
+                                        <div id="YouTubePanel">
+
+                                            <h3 class="Gradient">
+                                                <span class="G0">YouTube</span>
+                                                <span class="G1" aria-hidden="true">YouTube</span>
+                                                <span class="G2" aria-hidden="true">YouTube</span>
+                                                <span class="G3" aria-hidden="true">YouTube</span>
+                                                <span class="G4" aria-hidden="true">YouTube</span>
+                                                <span class="G5" aria-hidden="true">YouTube</span>
+                                                <span class="G6" aria-hidden="true">YouTube</span>
+                                                <span class="mask"><span class="spacing">YouTube</span>
+<span class="middleUnderscore"><span class="spacing" aria-hidden="true">YouTube</span></span>
+</span>
+                                                <span class="rightUnderscore">
+<img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/underscore_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">YouTube</span>
+</span>
+                                                <span class="leftUnderscore"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/underscore_flourish_left.png" class="left" alt=""></span>
+                                            </h3>
+                                            <iframe id="YouTubeEmbed" width="246" height="159" src="https://web.archive.org/web/20120704185400if_/http://www.youtube.com/embed/videoseries?list=PL05126FA13EDBEB7E&amp;hl=en_GB&amp;controls=0&amp;wmode=opaque" frameborder="0" allowfullscreen=""></iframe>
+                                            <a target="_blank" href="https://web.archive.org/web/20120704185400/http://www.youtube.com/RuneScape" class="Button Button29" id="YouTubeLink"><span><span><span class=""><b>View the RuneScape Channel</b></span></span></span></a>
+                                        </div>
+                                        <div id="FacebookPanel">
+
+                                            <h3 class="Gradient">
+                                                <span class="G0">Facebook</span>
+                                                <span class="G1" aria-hidden="true">Facebook</span>
+                                                <span class="G2" aria-hidden="true">Facebook</span>
+                                                <span class="G3" aria-hidden="true">Facebook</span>
+                                                <span class="G4" aria-hidden="true">Facebook</span>
+                                                <span class="G5" aria-hidden="true">Facebook</span>
+                                                <span class="G6" aria-hidden="true">Facebook</span>
+                                                <span class="mask"><span class="spacing">Facebook</span>
+<span class="middleUnderscore"><span class="spacing" aria-hidden="true">Facebook</span></span>
+</span>
+                                                <span class="rightUnderscore">
+<img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/underscore_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">Facebook</span>
+</span>
+                                                <span class="leftUnderscore"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/underscore_flourish_left.png" class="left" alt=""></span>
+                                            </h3>
+                                            <a target="_blank" href="https://web.archive.org/web/20120704185400/http://www.facebook.com/RuneScape" class="Button Button29" id="FacebookWallLink"><span><span><span class=""><b>View Facebook Wall</b></span></span></span></a>
+                                            <script type="text/javascript" src="https://web.archive.org/web/20120704185400js_/http://connect.facebook.net/en_US/all.js"></script>
+                                            <div id="FacebookFeedHolder" class="scroll-pane webkit" style="overflow-y: auto;">
+                                                <p class="error">Sorry, The Facebook feed is currently unavailable.</p>
+                                            </div>
+                                            <script>
+                                                // Ready function
+                                                $(function(){
+                                                    //
+                                                    var FBpane;
+                                                    var FBapi;
+                                                    if ( $.browser.webkit ){
+                                                        //alert("Webkit!");
+                                                    } else {
+                                                        FBpane=$("#FacebookFeedHolder.scroll-pane");
+                                                        FBapi=FBpane.data('jsp');
+                                                    }
+                                                    $.getJSON("https://web.archive.org/web/20120704185400/http://services.runescape.com/m=sn-integration/rsfeed.ws?json=?", function (response) {
+                                                        var oFacebookFeedHolder = $("#FacebookFeedHolder");//document.getElementById("FacebookFeedHolder");
+                                                        //
+                                                        var data=response.data;
+                                                        var out = "";
+                                                        nPosts=Math.min(data.length,5)
+                                                        for (var i = 0; i < nPosts; i++) {
+                                                            out += "<div class='article'>";
+                                                            if (data[i].link != undefined) {
+                                                                out += "<a href='"+data[i].link + "' target='_blank'>";
+                                                            }
+                                                            out += "<img src='https://web.archive.org/web/20120704185400/https://graph.facebook.com/" + data[i].from.id +"/picture' alt='' title='" + data[i].from.name + "' class='avatar'/>";
+                                                            //out += " <img src='./picture.jpg' alt='' title='" + data[i].from.name + "' class='avatar'/>";
+                                                            out += " <div class='AuthorAndTime'><h6 class='author'>"+data[i].from.name + "</h6>";
+                                                            //
+                                                            strD= data[i].created_time.split("+")[0];
+                                                            //
+                                                            // Format date as days and hours Ago.
+                                                            d=new Date(strD);
+                                                            n=new Date();
+                                                            a=new Date(n-d);
+                                                            days = a.getDate();
+                                                            strPast="";
+                                                            if (days>0)strPast+=days+" day";
+                                                            if (days>1)strPast+="s";
+                                                            if (days>0)strPast+=" ";
+                                                            h=a.getHours();
+                                                            if (h>0)strPast+=h+" hour";
+                                                            if (h>1)strPast+="s";
+                                                            //m=a.getMinutes();
+                                                            //
+                                                            out += " <span class='date'>"+strPast+" ago</span></div>";
+                                                            if (data[i].picture != undefined)
+                                                                out += "<img src="+data[i].picture + " class='picture'/>";
+                                                            if (data[i].message != undefined)
+                                                                out += " <p>"+data[i].message + "</p>";
+                                                            //out += " <img src="+data[i].picture + "/>"
+                                                            //out += " <a href="+data[i].link + " target='_blank'>LINK</a>";
+                                                            //out += " <img src="+data[i].icon + "/>";
+                                                            if (data[i].link != undefined) {
+                                                                out += "</a>";
+                                                            }
+                                                            out += "</div>";
+                                                            if (i<nPosts-1)out += "<div class='HrOneThird'></div>";
+                                                        }
+                                                        //var $repoppedHolder = oFacebookFeedHolder.find(".jspPane").empty().append(out);
+                                                        if ( $.browser.webkit ){
+                                                            //alert("Webkit!");
+                                                            var $repoppedHolder = oFacebookFeedHolder.empty().append(out);
+                                                        }else{
+                                                            FBapi.getContentPane().empty().append(out);
+                                                            FBapi.reinitialise();
+                                                        }
+                                                        //$('#FacebookFeedHolder').tinyscrollbar();
+                                                    })
+                                                });
+                                            </script>
+                                        </div>
+                                        <div id="TwitterPanel">
+
+                                            <h3 class="Gradient">
+                                                <span class="G0">Twitter</span>
+                                                <span class="G1" aria-hidden="true">Twitter</span>
+                                                <span class="G2" aria-hidden="true">Twitter</span>
+                                                <span class="G3" aria-hidden="true">Twitter</span>
+                                                <span class="G4" aria-hidden="true">Twitter</span>
+                                                <span class="G5" aria-hidden="true">Twitter</span>
+                                                <span class="G6" aria-hidden="true">Twitter</span>
+                                                <span class="mask"><span class="spacing">Twitter</span>
+<span class="middleUnderscore"><span class="spacing" aria-hidden="true">Twitter</span></span>
+</span>
+                                                <span class="rightUnderscore">
+<img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/underscore_right.png" class="right" alt=""><span class="spacing" aria-hidden="true">Twitter</span>
+</span>
+                                                <span class="leftUnderscore"><img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/gradient_header/underscore_flourish_left.png" class="left" alt=""></span>
+                                            </h3>
+                                            <a target="_blank" href="https://web.archive.org/web/20120704185400/http://www.twitter.com/RuneScape" class="Button Button29" id="TwitterFeedLink"><span><span><span class=""><b>View Twitter Feed</b></span></span></span></a>
+                                            <div id="TwitterFeedHolder" class="scroll-pane webkit" style="overflow-y: auto;"><p class="error">Sorry, the Twitter feed is currently unavailable.</p></div>
+                                            <script>
+                                                // Ready function
+                                                $(function(){
+                                                    var TWpane;
+                                                    var TWapi;
+                                                    if ( !$.browser.webkit ){
+                                                        TWpane=$("#TwitterFeedHolder.scroll-pane");
+                                                        TWapi=TWpane.data('jsp');
+                                                    }
+                                                    // Output display function
+                                                    var showTweets = function(tweets){
+                                                        var out = "";
+                                                        for(var i = 0; i < tweets.length; i++){
+                                                            var t = tweets[i];
+                                                            out += "<div class='tweet'>";
+                                                            out +=  "<img src='" + t.user.image + "' alt='' title='" + escape(t.user.description) + "' class='avatar' />";//" alt='' title='" + t.user.description + "' class='avatar'/>";
+                                                            out +=  "<div class='AuthorAndTime'><h6 class='author'>" + t.user.name + "</h6>";
+                                                            out +=  "<span class='date'>" + t.time_ago + " ago</span></div>";
+                                                            out +=  "<p>" + t.tweet + "</p>";
+                                                            out += "</div>";
+                                                            if (i<tweets.length-1) out+= "<div class='HrOneThird'></div>";
+                                                        }
+                                                        if ( $.browser.webkit ){
+                                                            $('#TwitterFeedHolder').empty().append(out);
+                                                        }else{
+                                                            TWapi.getContentPane().empty().append(out);
+                                                            TWapi.reinitialise();
+                                                        }
+                                                    }
+                                                    var showFail = function(){
+                                                        var out = "<p class='error'>Sorry, the Twitter feed is currently unavailable.</p>";
+                                                        if ( $.browser.webkit ){
+                                                            $('#TwitterFeedHolder').empty().append(out);
+                                                        }else{
+                                                            TWapi.getContentPane().empty().append(out);
+                                                            TWapi.reinitialise();
+                                                        }
+                                                    }
+                                                    // Create new Tweety object with username and callback
+                                                    var rsTwitterFeed = new JAGEX.Twitter2({
+                                                        user: 'RuneScape',
+                                                        show: 5,
+                                                        success: showTweets,
+                                                        error: showFail
+                                                    });
+                                                    setInterval(function(){rsTwitterFeed.update();}, 600000);
+                                                });
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="https://web.archive.org/web/20120704185400im_/http://www.runescape.com/img/global/news/deviceTL.png" alt="" class="deviceTL">
+                                <div id="NewsArticles" class="singleArticle">
+                                    <div class="Article ArticleImage">
+                                        <div class="NewsHeaderImage">
+                                            <img src="https://web.archive.org/web/20120311222036im_/http://www.runescape.com/img/global/news/NoImage.jpg" alt="" title="">
+                                            <div></div>
+                                        </div>
+                                        {{> news/UpdateIcon}}
+                                        <div class="Title">
+                                            <h4 class="FlatHeader">{{article.title}}</h4>
+                                            <br style="clear:both">
+                                            <span>{{article.createdAt}}</span>
+                                        </div>
+                                        <div class="Content">
+                                            {{{article.sanitizedHtml}}}
+                                            <a href="/news"><u>Edit Articles</u></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{> Footer}}
+            </div>
+        </div>
     </div>
 </div>
+
+
+
+

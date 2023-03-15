@@ -1,0 +1,44 @@
+
+<div class="form-group">
+    <label for="title">Title</label>
+    <input required value="{{article.title}}" type="text" name="title" id="title" class="form-control">
+</div>
+
+<div class="form-group">
+    <label for="type">Update Type</label>
+    <select name="type" id="type" class="form-control" selected="{{article.type}}">
+        <option {{selectedIfEqual article.type 1}} value="1">Game Update</option>
+        <option {{selectedIfEqual article.type 2}} value="2">Web/API Update</option>
+        <option {{selectedIfEqual article.type 3}} value="3">Community Update</option>
+        <option {{selectedIfEqual article.type 4}} value="4">Engine Updates</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="description">Description</label>
+    <textarea name="description" id="description" class="form-control">{{article.description}}</textarea>
+</div>
+
+<div class="form-group">
+    <label for="markdown">HTML</label>
+    <textarea name="markdown" id="markdown" class="form-control" novalidate>{{article.markdown}}</textarea>
+</div>
+
+<a href="/news" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
+
+<style>
+    .image-inline {
+        float: left;
+    }
+</style>
+
+<script>
+    ClassicEditor
+            .create( document.querySelector( '#markdown' ))
+            .catch( error => {
+                console.log("aaaa")
+                console.error( error );
+            } );
+</script>
+

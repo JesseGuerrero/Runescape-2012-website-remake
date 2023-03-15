@@ -1,0 +1,9 @@
+{{#if (isEqual article.type 1)}}
+    <img src="https://web.archive.org/web/20120311222036im_/http://www.runescape.com/img/global/news/categories/Cat_1.png" alt="Game Updates" title="Game Updates" class="Category">
+    {{else if (isEqual article.type 2)}}
+        <img src="https://web.archive.org/web/20120315213729im_/http://www.runescape.com/img/global/news/categories/Cat_2.png" alt="Web/API Updates" title="Web/API Updates" class="Category">
+    {{else if (isEqual article.type 3)}}
+        <img src="https://web.archive.org/web/20120311222031im_/http://www.runescape.com/img/global/news/categories/Cat_3.png" alt="Community Updates" title="Community Updates" class="Category">
+    {{else if (isEqual article.type 4)}}
+        <img src="https://web.archive.org/web/20120315213729im_/http://www.runescape.com/img/global/news/categories/Cat_4.png" alt="Engine Updates" title="Engine Updates" class="Category">
+{{/if}}

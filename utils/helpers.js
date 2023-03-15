@@ -46,6 +46,13 @@ function hbsHelpers(hbs) {
             },
             formatDate: function(date) {
                 return new Date(date).toLocaleDateString();
+            },
+            selectedIfEqual: function(num1, num2) {
+                if(num1 == num2)
+                    return "selected"
+            },
+            isEqual: function(num1, num2) {
+                return num1 == num2;
             }
             // More helpers...
         }

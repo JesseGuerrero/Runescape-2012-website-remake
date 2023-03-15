@@ -1,11 +1,15 @@
 let express = require('express');
 let axios = require("../utils/axios");
 const {getSkillIDByName, formatRSNickName} = require("../utils/constants");
+const Article = require("../utils/article");
 let router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {//https://web.archive.org/web/20120709052134/http://www.runescape.com:80/title.ws
-  res.render('index', { layouts: 'layout.hbs'}); //images done
+router.get('/', async (req, res, next) => {//https://web.archive.org/web/20120709052134/http://www.runescape.com:80/title.ws
+  let articles = await Article.find().sort({ createdAt: 'desc' })
+    if(articles.length > 6)
+        articles = articles.slice(0, 6)
+  res.render('index', { layouts: 'layout.hbs', articles: articles }); //images done
 });
 
 router.get('/news1', function(req, res, next) {//https://web.archive.org/web/20120704185400/http://services.runescape.com/m=news/behind-the-scenes-july

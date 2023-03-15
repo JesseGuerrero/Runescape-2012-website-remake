@@ -10,8 +10,13 @@ const articleSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  type: {
+    type: Number,
+    required: false,
+    default: 1
+  },
   description: {
-    type: String
+    type: String,
   },
   markdown: {
     type: String,
