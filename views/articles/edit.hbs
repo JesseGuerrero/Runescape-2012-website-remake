@@ -1,6 +1,7 @@
 <div class="container">
     <h1 class="mb-4">Edit Article</h1>
-    <form action="{{webAPI}}web/edit/{{article.id}}" method="POST">
+    <form target="ifrm1" action="{{webAPI}}web/edit/{{article._id}}" method="POST">
         {{> news/FormFields}}
     </form>
+    <iframe id="ifrm1" name="ifrm1" style="display:none"></iframe>
 </div>

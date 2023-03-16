@@ -43,7 +43,7 @@ app.use('/', indexRouter);
 app.get('/news', async (req, res) => {
   axios.get(auth.webAPI + "web?page=1&limit=6&type=0")
       .then((response) => {
-        res.render('articles/index', { layout: "layout-writenews", articles: response["data"] });
+        res.render('articles/index', { layout: "layout-writenews", webAPI: auth.webAPI, articles: response["data"] });
       });
 })
 app.use('/articles', articlesRouter);

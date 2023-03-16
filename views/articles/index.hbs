@@ -11,12 +11,14 @@
                 {{formatDate this.createdAt}}
             </div>
             <div class="card-text mb-2">{{this.description}}</div>
-            <a href="articles/{{this.slug}}" class="btn btn-primary">Read More</a>
-            <a href="articles/edit/{{this.id}}" class="btn btn-info">Edit</a>
-            <form action="http://localhost:8443/v1/web/delete/{{this.id}}" method="POST" class="d-inline">
+            <a href="articles/{{this.slug}}" class="btn btn-primary">Show Article</a>
+            <a href="articles/edit/{{this._id}}" class="btn btn-info">Edit</a>
+            <form target="ifrm1" onclick="setTimeout(function () { window.location.reload(); }, 500)" action="{{../webAPI}}web/delete/{{this._id}}" method="POST" class="d-inline">
                 <button type="submit" class="btn btn-danger">Delete</button>
             </form>
+
         </div>
     </div>
     {{/each}}
+    <iframe id="ifrm1" name="ifrm1" style="display:none"></iframe>
 </div>
