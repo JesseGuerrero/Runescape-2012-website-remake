@@ -28,20 +28,12 @@ router.get('/news4', function(req, res, next) {//https://web.archive.org/web/201
     res.render('pages/news-example4', { layout: 'layout.hbs', news: true });
 });
 
-router.get('/write-news', function(req, res, next) {//https://web.archive.org/web/20120704185400/http://services.runescape.com/m=news/behind-the-scenes-july
-    res.render('pages/form-fields.hbs', { layout: 'layout-writenews' });
-});
-
 router.get('/media', function(req, res, next) {//remove
   res.redirect('/', {});
 });
 
 router.get('/game-guide', function(req, res, next) {//remove
   res.render('pages/game-guide', { layout: 'layout-gameguide.hbs' });
-});
-
-router.get('/beginners-guide', function(req, res, next) {//remove getting started, what's next
-  res.render('pages/beginners-guide.hbs', { layout: 'layout.hbs', beginnersGuide: true });
 });
 
 router.get('/world', function(req, res, next) {//https://web.archive.org/web/20120731001805/http://www.runescape.com:80/world_locations.ws

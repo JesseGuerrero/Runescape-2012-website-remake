@@ -40,13 +40,13 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.get('/news', async (req, res) => {
+app.get('/edit-news', async (req, res) => {
   axios.get(auth.webAPI + "web?page=1&limit=6&type=0")
       .then((response) => {
         res.render('articles/index', { layout: "layout-writenews", webAPI: auth.webAPI, articles: response["data"] });
       });
 })
-app.use('/articles', articlesRouter);
+app.use('/news', articlesRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

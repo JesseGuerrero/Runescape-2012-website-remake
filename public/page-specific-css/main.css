@@ -2558,7 +2558,7 @@ div.HrOneThird {
   text-shadow: 1px 1px 1px black; }
 
 #YouTubePanel,
-#FacebookPanel,
+#DiscordPanel,
 #TwitterPanel {
   width: 330px;
   float: right;
@@ -2581,7 +2581,7 @@ div.HrOneThird {
   height: 159px;
   margin: 46px 0 0 42px; }
 
-#FacebookPanel {
+#DiscordPanel {
   background: url(https://web.archive.org/web/20120627163719im_/http://www.runescape.com/l=3/img/global/social/FacebookBg.png) 0 0 no-repeat transparent;
   height: 451px; }
 
@@ -2589,7 +2589,7 @@ div.HrOneThird {
   background: url(https://web.archive.org/web/20120627163719im_/http://www.runescape.com/l=3/img/global/social/TwitterBg.png) 0 0 no-repeat transparent;
   height: 471px; }
 
-#FacebookPanel #FacebookFeedHolder,
+#DiscordPanel #FacebookFeedHolder,
 #TwitterPanel #TwitterFeedHolder {
   width: 280px;
   margin: 29px 0 0 22px;
@@ -2599,15 +2599,15 @@ div.HrOneThird {
 #TwitterPanel #TwitterFeedHolder {
   height: 324px; }
 
-#FacebookPanel #FacebookFeedHolder {
+#DiscordPanel #FacebookFeedHolder {
   height: 304px; }
 
-#FacebookPanel .article,
+#DiscordPanel .article,
 #TwitterPanel .tweet {
   position: relative;
   width: 260px; }
 
-#FacebookPanel .article img.avatar,
+#DiscordPanel .article img.avatar,
 #TwitterPanel .tweet img.avatar {
   height: 48px;
   width: 48px;
@@ -2619,16 +2619,16 @@ div.HrOneThird {
   -webkit-border-radius: 3px;
   border-radius: 3px; }
 
-#FacebookPanel .article .picture {
+#DiscordPanel .article .picture {
   float: left;
   margin: 0px 0 0 72px;
   max-width: 190px; }
 
-#FacebookPanel .article a,
+#DiscordPanel .article a,
 #TwitterPanel .tweet a {
   text-decoration: none; }
 
-#FacebookPanel .article .AuthorAndTime,
+#DiscordPanel .article .AuthorAndTime,
 #TwitterPanel .tweet .AuthorAndTime {
   display: block;
   width: 189px;
@@ -2636,7 +2636,7 @@ div.HrOneThird {
   float: right;
   text-align: left; }
 
-#FacebookPanel .article .author,
+#DiscordPanel .article .author,
 #TwitterPanel .tweet .author {
   color: #f3b13f;
   float: left;
@@ -2646,7 +2646,7 @@ div.HrOneThird {
   font-weight: normal;
   letter-spacing: 0.04em; }
 
-#FacebookPanel .article .date,
+#DiscordPanel .article .date,
 #TwitterPanel .tweet .date {
   color: #707070;
   float: left;
@@ -2654,7 +2654,7 @@ div.HrOneThird {
   font-weight: bold;
   margin: 1px 0 0; }
 
-#FacebookPanel .article p,
+#DiscordPanel .article p,
 #TwitterPanel .tweet p {
   clear: left;
   color: #b8b8b8;
@@ -2662,17 +2662,17 @@ div.HrOneThird {
   line-height: 1.3em;
   margin: 16px 0 0 72px; }
 
-#FacebookPanel .article p a,
+#DiscordPanel .article p a,
 #TwitterPanel .tweet p a {
   color: #38C8F7; }
 
-#FacebookPanel div.HrOneThird,
+#DiscordPanel div.HrOneThird,
 #TwitterPanel div.HrOneThird {
   height: 10px;
   margin: 14px 10px 11px; }
 
 #TwitterPanel h3.Gradient,
-#FacebookPanel h3.Gradient,
+#DiscordPanel h3.Gradient,
 #YouTubePanel h3.Gradient {
   margin: 13px 0 0 76px; }
 

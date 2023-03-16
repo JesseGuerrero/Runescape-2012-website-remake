@@ -479,77 +479,77 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
                 });
         });
 
-        $(".csstransitions #LoginButton1").click(function(){
-            var $this = $(this);
-            $this.parent().addClass("open");
-            $("#username").focus();
-            $(".no-csstransitions #Login.open a.LoginX").show().mouseover(function(){
-                var $this = $(this);
-                $this.stop().show().animate({opacity:'1'},200);
-            });
-            $(".no-csstransitions #Login.open a.LoginX").mouseout(function(){
-                var $this = $(this);
-                $this.stop().animate({opacity:'0'},200);
-            });
-
-
-            $(".no-csstransitions #LoginButton1").click(function(){
-                var $this=$(this);
-                var $LoginPanel=$("#LoginPanel").stop().animate({'top':'53px'},1000);
-                $this.fadeOut(1000);
-                $("#Login #RegisterButton,#LoginPanel #GetAccess").stop().fadeOut(1000);
-                $("#LoginPanel .Facebooklogin").stop().animate({'opacity':'1','display':'block','z-index':'3'},1000);
-                $("#Login .LoginX,#Login .LoginXbottom").stop().fadeIn(1000);
-            });
-            $(".no-csstransitions #Login .LoginXtop").mouseenter(function(){
-                var $this=$(this);
-                $this.stop().fadeIn(1000);
-            });
-            $(".no-csstransitions #Login .LoginXtop").mouseleave(function(){
-                var $this=$(this);
-                $this.stop().fadeOut(1000);
-            });
-            $(".no-csstransitions #Login .LoginXtop").click(function(){
-                var $this=$(this);
-                var $LoginPanel=$("#LoginPanel").stop().animate({'top':'-155px'},1000);
-                $this.fadeOut(1000);
-                $("this,#LoginButton1,#Login #RegisterButton,#LoginPanel #GetAccess").stop().fadeIn(1000);
-                $("#LoginPanel .Facebooklogin").stop().animate({'opacity':'0'},1000);
-                $("#Login .LoginX,#Login .LoginXbottom").stop().fadeOut(1000);
-                $("#Login a.LoginX").unbind();
-            });
-            $(".csstransitions a.LoginX").click(function(){
-                var $this = $(this);
-                $this.parent().removeClass("open");
-                $("#Login a.LoginX").unbind();
-            });
-        });
-
-
-        $(".no-csstransitions #LoginButton1").click(function(){
-            var $this=$(this);
-            var $LoginPanel=$("#LoginPanel").stop().animate({'top':'53px'},1000);
-            $this.fadeOut(1000);
-            $("#Login #RegisterButton,#LoginPanel #GetAccess").stop().fadeOut(1000);
-            $("#LoginPanel .Facebooklogin").stop().animate({'opacity':'1','display':'block','z-index':'3'},1000);
-            $("#Login .LoginX,#Login .LoginXbottom").stop().fadeIn(1000);
-            $(".no-csstransitions #Login .LoginXtop").mouseenter(function(){
-                var $this=$(this);
-                $this.stop().fadeIn(1000);
-            });
-            $(".no-csstransitions #Login .LoginXtop").mouseleave(function(){
-                var $this=$(this);
-                $this.stop().fadeOut(1000);
-            });
-            $(".no-csstransitions #Login .LoginXtop").click(function(){
-                var $this=$(this);
-                var $LoginPanel=$("#LoginPanel").stop().animate({'top':'-155px'},1000);
-                $this.fadeOut(1000);
-                $("this,#LoginButton1,#Login #RegisterButton,#LoginPanel #GetAccess").stop().fadeIn(1000);
-                $("#LoginPanel .Facebooklogin,#Login .LoginX,#Login .LoginXbottom").stop().fadeOut(1000);
-                $("#Login a.LoginX").unbind();
-            });
-        });
+        // $(".csstransitions #LoginButton1").click(function(){
+        //     var $this = $(this);
+        //     $this.parent().addClass("open");
+        //     $("#username").focus();
+        //     $(".no-csstransitions #Login.open a.LoginX").show().mouseover(function(){
+        //         var $this = $(this);
+        //         $this.stop().show().animate({opacity:'1'},200);
+        //     });
+        //     $(".no-csstransitions #Login.open a.LoginX").mouseout(function(){
+        //         var $this = $(this);
+        //         $this.stop().animate({opacity:'0'},200);
+        //     });
+        //
+        //
+        //     $(".no-csstransitions #LoginButton1").click(function(){
+        //         var $this=$(this);
+        //         var $LoginPanel=$("#LoginPanel").stop().animate({'top':'53px'},1000);
+        //         $this.fadeOut(1000);
+        //         $("#Login #RegisterButton,#LoginPanel #GetAccess").stop().fadeOut(1000);
+        //         $("#LoginPanel .Facebooklogin").stop().animate({'opacity':'1','display':'block','z-index':'3'},1000);
+        //         $("#Login .LoginX,#Login .LoginXbottom").stop().fadeIn(1000);
+        //     });
+        //     $(".no-csstransitions #Login .LoginXtop").mouseenter(function(){
+        //         var $this=$(this);
+        //         $this.stop().fadeIn(1000);
+        //     });
+        //     $(".no-csstransitions #Login .LoginXtop").mouseleave(function(){
+        //         var $this=$(this);
+        //         $this.stop().fadeOut(1000);
+        //     });
+        //     $(".no-csstransitions #Login .LoginXtop").click(function(){
+        //         var $this=$(this);
+        //         var $LoginPanel=$("#LoginPanel").stop().animate({'top':'-155px'},1000);
+        //         $this.fadeOut(1000);
+        //         $("this,#LoginButton1,#Login #RegisterButton,#LoginPanel #GetAccess").stop().fadeIn(1000);
+        //         $("#LoginPanel .Facebooklogin").stop().animate({'opacity':'0'},1000);
+        //         $("#Login .LoginX,#Login .LoginXbottom").stop().fadeOut(1000);
+        //         $("#Login a.LoginX").unbind();
+        //     });
+        //     $(".csstransitions a.LoginX").click(function(){
+        //         var $this = $(this);
+        //         $this.parent().removeClass("open");
+        //         $("#Login a.LoginX").unbind();
+        //     });
+        // });
+        //
+        //
+        // $(".no-csstransitions #LoginButton1").click(function(){
+        //     var $this=$(this);
+        //     var $LoginPanel=$("#LoginPanel").stop().animate({'top':'53px'},1000);
+        //     $this.fadeOut(1000);
+        //     $("#Login #RegisterButton,#LoginPanel #GetAccess").stop().fadeOut(1000);
+        //     $("#LoginPanel .Facebooklogin").stop().animate({'opacity':'1','display':'block','z-index':'3'},1000);
+        //     $("#Login .LoginX,#Login .LoginXbottom").stop().fadeIn(1000);
+        //     $(".no-csstransitions #Login .LoginXtop").mouseenter(function(){
+        //         var $this=$(this);
+        //         $this.stop().fadeIn(1000);
+        //     });
+        //     $(".no-csstransitions #Login .LoginXtop").mouseleave(function(){
+        //         var $this=$(this);
+        //         $this.stop().fadeOut(1000);
+        //     });
+        //     $(".no-csstransitions #Login .LoginXtop").click(function(){
+        //         var $this=$(this);
+        //         var $LoginPanel=$("#LoginPanel").stop().animate({'top':'-155px'},1000);
+        //         $this.fadeOut(1000);
+        //         $("this,#LoginButton1,#Login #RegisterButton,#LoginPanel #GetAccess").stop().fadeIn(1000);
+        //         $("#LoginPanel .Facebooklogin,#Login .LoginX,#Login .LoginXbottom").stop().fadeOut(1000);
+        //         $("#Login a.LoginX").unbind();
+        //     });
+        // });
 
         $(".no-csstransitions .InPageDropDownNew").css({'height':'45px'});
 

@@ -53,6 +53,9 @@ function hbsHelpers(hbs) {
             },
             isEqual: function(num1, num2) {
                 return num1 == num2;
+            },
+            isGreater: function(greaterNum, lesserNum) {
+                return greaterNum > lesserNum;
             }
             // More helpers...
         }

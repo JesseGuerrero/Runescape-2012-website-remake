@@ -1,0 +1,76 @@
+<div id="NewsArticles">
+    {{#each articles}}
+    <div class="Article"><div>
+        <div class="NewsHeaderImage">
+            <img src="https://web.archive.org/web/20120711064917im_/http://www.runescape.com/img/global/news/NoImage.jpg" alt="" title="">
+            <div></div>
+        </div>
+        {{> news/UpdateIcon article=this}}
+        <div class="Title">
+            <a href="news/{{this.slug}}"><h4 class="FlatHeader">{{this.title}}</h4></a>
+            <br style="clear:both">
+            <span>{{this.createdAt}}</span>
+        </div>
+        <div class="Content">
+            {{this.description}}
+        </div>
+        <a class="More HoverImgJs" href="news/{{this.slug}}"><img src="https://web.archive.org/web/20120711064917im_/http://www.runescape.com/img/global/news/ReadMore.png" alt="" title=""><img src="https://web.archive.org/web/20120711064917im_/http://www.runescape.com/img/global/news/ReadMore.png" class="HoverImgJsFg" style=""></a>
+    </div></div>
+    {{/each}}
+</div>
+<form method="post" style="display: inline;" action="list.ws&amp;cat=0">
+    <div class="PageControl">
+        {{#if (isGreater page 1)}}
+                <a href="/news/list/{{type}}/{{showIfPositive (add page -1)}}" class="Button Button29 Prev"><span><span><span class=""><b>Prev</b></span></span></span></a>
+            {{else}}
+                <span class="Button Button29disabled Prev"><span><span><span class=""><b>Prev</b></span></span></span></span>
+        {{/if}}
+
+        <a href="/news/list/{{type}}/{{showIfPositive (add page 1)}}" class="Button Button29 Next"><span><span><span class=""><b>Next</b></span></span></span></a>
+        <ul>
+            <li><a href="/news/list/{{type}}/{{showIfPositive (add page -4)}}" >{{showIfPositive (add page -4)}}</a></li>
+            <li><a href="/news/list/{{type}}/{{showIfPositive (add page -3)}}">{{showIfPositive (add page -3)}}</a></li>
+            <li><a href="/news/list/{{type}}/{{showIfPositive (add page -2)}}">{{showIfPositive (add page -2)}}</a></li>
+            <li><a href="/news/list/{{type}}/{{showIfPositive (add page -1)}}">{{showIfPositive (add page -1)}}</a></li>
+            <li class="InputField">
+                <form onsubmit="window.location='/news/list/{{type}}/' + document.getElementById('pageQuery').value; return false;">
+                    <div class="PageInput">
+                        <input id="pageQuery" placeholder="{{page}}" type="text" value="" maxlength="3">
+                        <input type="submit" style="width:0px;height:0px;padding:0px;margin:0px;font-size:0px;border:0px;float: left;">
+                    </div>
+                </form>
+            </li>
+            <li>
+                <a href="/news/list/{{type}}/{{add page 1}}">{{add page 1}}</a>
+            </li>
+            <li>
+                <a href="/news/list/{{type}}/{{add page 2}}">{{add page 2}}</a>
+            </li>
+            <li>
+                <a href="/news/list/{{type}}/{{add page 3}}">{{add page 3}}</a>
+            </li>
+            <li>
+                <a href="/news/list/{{type}}/{{add page 4}}">{{add page 4}}</a>
+            </li>
+            <li class="PageControlAdvancedEllipse">
+                <a href="/news/list/{{type}}/{{add page 5}}">...</a>
+            </li>
+        </ul>
+    </div>
+    <input type="submit" name="grrclient" value="grr" style="width:0px;height:0px;padding:0px;margin:0px;font-size:0px;border:0px;float: left;">
+</form>
+
+<style>
+    .PageControl .PageInput input {
+        border: none;
+        background: none;
+        height: 22px;
+        font-size: 20px;
+        color: #f3b13f;
+        margin-top: 5px;
+        font-family: KingthingsPetrockRegular,Times New Roman,serif;
+        width: 50px;
+        text-align: center;
+        background-image: url(https://web.archive.org/web/20120729031347im_/http://www.runescape.com/img/global/page_control/advanced/Input_bg_big.png);
+    }
+</style>

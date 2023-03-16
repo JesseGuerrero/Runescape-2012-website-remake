@@ -1,7 +1,7 @@
 <div class="container">
     <h1 class="mb-4">News Articles</h1>
-    <a href="/articles/new" class="btn btn-success">New Article</a>
-    <a href="/articles/admin" class="btn btn-success">Login as moderator</a>
+    <a href="/news/new" class="btn btn-success">New Article</a>
+    <a href="/news/admin" class="btn btn-success">Login as moderator</a>
 
     {{#each articles}}
     <div class="card mt-4">
@@ -11,8 +11,8 @@
                 {{formatDate this.createdAt}}
             </div>
             <div class="card-text mb-2">{{this.description}}</div>
-            <a href="articles/{{this.slug}}" class="btn btn-primary">Show Article</a>
-            <a href="articles/edit/{{this._id}}" class="btn btn-info">Edit</a>
+            <a href="news/{{this.slug}}" class="btn btn-primary">Show Article</a>
+            <a href="news/edit/{{this._id}}" class="btn btn-info">Edit</a>
             <form target="ifrm1" onclick="setTimeout(function () { window.location.reload(); }, 500)" action="{{../webAPI}}web/delete/{{this._id}}" method="POST" class="d-inline">
                 <button type="submit" class="btn btn-danger">Delete</button>
             </form>

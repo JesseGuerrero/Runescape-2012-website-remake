@@ -2,6 +2,7 @@ const express = require('express')
 const Article = require('../utils/article')
 const router = express.Router()
 const auth = require("../auth.json")
+const axios = require("../utils/axios");
 function authenticate(req, res) {
     const reject = () => {
         res.setHeader("www-authenticate", "Basic");
@@ -41,18 +42,30 @@ function isModerator(req) {
     return true;
 }
 
+router.get('/list', (req, res) => {
+    res.redirect('list/0/1');
+})
+
+router.get('/list/:type/:page', async (req, res) => {
+    axios.get(auth.webAPI + `web?page=${req.params.page}&limit=6&type=${req.params.type}`)
+        .then((response) => {
+            res.render('pages/news-listing', { layout: "layout", webAPI: auth.webAPI, articles: response["data"],
+                type: req.params.type, page: req.params.page, news: true });
+        });
+})
+
 router.get("/admin", (req, res) => {
     authenticate(req, res);
 });
 
 router.get('/new', (req, res) => {
-    res.render('articles/new', { article: new Article(), layout: "layout-writenews", webAPI: auth.webAPI, news: true })
+    res.render('articles/new', { article: new Article(), layout: "layout-writenews", webAPI: auth.webAPI })
 })
 
 router.get('/edit/:id', async (req, res) => {
     const article = await Article.findById(req.params.id)
     res.render('articles/edit', { article: article, isModerator: isModerator(req), layout: "layout-writenews",
-        webAPI: auth.webAPI, news: true, editArticle: true })
+        webAPI: auth.webAPI, editArticle: true })
 })
 
 router.get('/:slug', async (req, res) => {
