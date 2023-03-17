@@ -16,8 +16,8 @@
         </div>
         {{#each highscores.data}}
             <a name="1"></a>
-            <a href="compare.ws?user1=S&nbsp;U&nbsp;&nbsp;O&nbsp;&nbsp;M&nbsp;I"
-               class="row  ">
+            <a href="/highscores-player/{{this.displayName}}"
+               class="row">
                 <span class="columnRank">
                     <span>{{formatNum (getRank @index ../page ../limit)}}</span>
                 </span>

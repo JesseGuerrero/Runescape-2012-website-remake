@@ -1,7 +1,6 @@
 const Handlebars = require('handlebars')
 let { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
-let constants = require("../utils/constants");
-let {getSkillIDByName} = require("./constants");
+let {getSkillIDByName, getSkillLevelByXP} = require("./utils");
 
 function hbsHelpers(hbs) {
     return hbs.create({
@@ -34,7 +33,7 @@ function hbsHelpers(hbs) {
             getHSSkillLevel: function (data, skill) {
                 if(skill == "Overall")
                     return data.totalLevel
-                return constants.getSkillLevelByXP(data['xp'][getSkillIDByName(skill)])
+                return getSkillLevelByXP(data['xp'][getSkillIDByName(skill)])
             },
             getHSSkillXP: function (data, skill) {
                 if(skill == "Overall")
@@ -42,7 +41,7 @@ function hbsHelpers(hbs) {
                 return data['xp'][getSkillIDByName(skill)]
             },
             getLevelFromXP: function (xp) {
-                return constants.getSkillLevelByXP(parseInt(xp));
+                return getSkillLevelByXP(parseInt(xp));
             },
             formatDate: function(date) {
                 return new Date(date).toLocaleDateString();

@@ -1,46 +1,9 @@
 const express = require('express')
-const Article = require('../utils/article')
 const router = express.Router()
 const auth = require("../auth.json")
 const axios = require("../utils/axios");
-function authenticate(req, res) {
-    const reject = () => {
-        res.setHeader("www-authenticate", "Basic");
-        res.sendStatus(401);
-    };
+const { authenticate, isModerator } = require("../utils/utils");
 
-    const authorization = req.headers.authorization;
-
-    if (!authorization) {
-        return reject();
-    }
-
-    const [username, password] = Buffer.from(
-        authorization.replace("Basic ", ""),
-        "base64"
-    )
-        .toString()
-        .split(":");
-
-    if (!(username === auth.username && password === auth.password))
-        return reject();
-}
-
-function isModerator(req) {
-    const authorization = req.headers.authorization;
-    if (!authorization) {
-        return false;
-    }
-    const [username, password] = Buffer.from(
-        authorization.replace("Basic ", ""),
-        "base64"
-    )
-        .toString()
-        .split(":");
-    if (!(username === auth.username && password === auth.password))
-        return false;
-    return true;
-}
 
 router.get('/list', (req, res) => {
     res.redirect('list/0/1');
@@ -49,8 +12,7 @@ router.get('/list', (req, res) => {
 router.get('/list/:type/:page', async (req, res) => {
     axios.get(auth.webAPI + `web?page=${req.params.page}&limit=6&type=${req.params.type}`)
         .then((response) => {
-            res.render('pages/news-listing', { layout: "layout", webAPI: auth.webAPI, articles: response["data"],
-                type: req.params.type, page: req.params.page, news: true });
+            res.render('pages/news-listing', { layout: "layout", webAPI: auth.webAPI, articles: response["data"], news: true });
         });
 })
 
@@ -59,19 +21,23 @@ router.get("/admin", (req, res) => {
 });
 
 router.get('/new', (req, res) => {
-    res.render('articles/new', { article: new Article(), layout: "layout-writenews", webAPI: auth.webAPI })
+    res.render('articles/new', { layout: "layout-writenews", webAPI: auth.webAPI })
 })
 
 router.get('/edit/:id', async (req, res) => {
-    const article = await Article.findById(req.params.id)
-    res.render('articles/edit', { article: article, isModerator: isModerator(req), layout: "layout-writenews",
-        webAPI: auth.webAPI, editArticle: true })
+    axios.get(auth.webAPI + `web/get-article/${req.params.id}`)
+        .then((response) => {
+            res.render('articles/edit', { layout: "layout-writenews", isModerator: isModerator(req),
+                webAPI: auth.webAPI, article: response["data"], editArticle: true });
+        });
 })
 
 router.get('/:slug', async (req, res) => {
-    const article = await Article.findOne({ slug: req.params.slug })
-    if (article == null) res.redirect('/')
-    res.render('articles/show', { article: article, isModerator: isModerator(req), layout: "layout", news: true })
+    axios.get(auth.webAPI + `web/get-article-slug/${req.params.slug}`)
+        .then((response) => {
+            if (response['data'] == '') res.redirect('/')
+            res.render('articles/show', { article: response["data"], isModerator: isModerator(req), layout: "layout", news: true });
+        });
 })
 
 module.exports = router

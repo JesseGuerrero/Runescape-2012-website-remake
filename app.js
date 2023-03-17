@@ -6,7 +6,6 @@ let logger = require('morgan');
 let sassMiddleware = require('node-sass-middleware');
 let exphbs  = require('express-handlebars');
 let methodOverride = require('method-override');
-const Article = require('./utils/article')
 let mongoose = require('mongoose');
 let indexRouter = require('./routes/index');
 let articlesRouter = require('./routes/articles')
@@ -41,7 +40,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.get('/edit-news', async (req, res) => {
-  axios.get(auth.webAPI + "web?page=1&limit=6&type=0")
+  axios.get(auth.webAPI + "web?page=1&limit=99999&type=0")
       .then((response) => {
         res.render('articles/index', { layout: "layout-writenews", webAPI: auth.webAPI, articles: response["data"] });
       });
