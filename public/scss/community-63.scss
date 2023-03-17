@@ -8,7 +8,7 @@ body {
 }
 
 #Background {
-  background-image: url(https://web.archive.org/web/20120627163922im_/http://www.runescape.com/l=3/img/main/community/takeovers/background-combat-beta.jpg);
+  //background-image: url(https://web.archive.org/web/20120627163922im_/http://www.runescape.com/l=3/img/main/community/takeovers/background-combat-beta.jpg);
   background-position: center top;
 }
 
@@ -21,7 +21,7 @@ body {
   margin-bottom: -113px;
   overflow: hidden;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 #bannerContainer,
@@ -31,10 +31,10 @@ body {
 
 #bannerContainer {
   position: relative;
-  z-index: 1;
-  margin: -36px auto 0 auto;
+  z-index: 2;
+  margin: -37px auto 0 auto;
   background: url(https://web.archive.org/web/20120627163922im_/http://www.runescape.com/l=3/img/main/community/banner-bg.png) no-repeat top left;
-  height: 493px;
+  height: 400px;
 }
 
 #bannerContainer #headerMask {
@@ -85,7 +85,7 @@ body {
 
 #bannerContainer #bannerBorder {
   position: absolute;
-  background: url(https://web.archive.org/web/20120627163922im_/http://www.runescape.com/l=3/img/main/community/banner-border.png);
+  //background: url(https://web.archive.org/web/20120627163922im_/http://www.runescape.com/l=3/img/main/community/banner-border.png);
   height: 24px;
   width: 1000px;
   position: absolute;

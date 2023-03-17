@@ -24,11 +24,11 @@
     <textarea name="markdown" id="markdown" class="form-control" novalidate>{{article.markdown}}</textarea>
 </div>
 
-<a href="/news" class="btn btn-secondary">Cancel</a>
+<a href="/edit-news" class="btn btn-secondary">Cancel</a>
 {{#if editArticle}}
     <a href="/news/{{article.slug}}" class="btn btn-primary">Show Article</a>
 {{/if}}
-<button onclick="setTimeout(function () { window.location='/news'; }, 3)" type="submit" class="btn btn-primary">Save</button>
+<button onclick="setTimeout(function () { window.location='/edit-news'; }, 3)" type="submit" class="btn btn-primary">Save</button>
 
 <script>
     ClassicEditor

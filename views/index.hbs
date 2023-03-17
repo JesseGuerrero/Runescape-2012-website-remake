@@ -80,70 +80,72 @@ __wm.rw(1);
                         <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/prev-button.png">
                     </a>
                     <div id="bannerReel">
-                        <a><img id="banner1" src="https://web.archive.org/web/20120829143631im_/http://www.runescape.com/img/main/community/banners/combat_beta_en.jpg" alt="" title=""></a>
-                        <a><img id="banner2" src="https://web.archive.org/web/20220601225950im_/http://www.runescape.com/img/main/community/banners/crucible_en.jpg" alt="" title=""></a>
-                        <a><img id="banner3" src="https://web.archive.org/web/20220601225951im_/http://www.runescape.com/img/main/community/banners/squeal_gold_en.jpg" alt="" title=""></a>
-                        <a><img id="banner4" src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/firemaker_en.jpg" alt="" title=""></a>
+                        <a><img id="banner1" src="https://i.imgur.com/pen7KIN.png" alt="" title=""></a>
+                        <a><img id="banner2" src="https://i.imgur.com/0aGiFuK.png" alt="" title=""></a>
+                        <a><img id="banner3" src="https://i.imgur.com/Es2xH3J.png" alt="" title=""></a>
+                        <a><img id="banner4" src="https://i.imgur.com/WyT71yZ.png" alt="" title=""></a>
                         <a><img id="banner5" src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/loyalty.jpg" alt="" title=""></a>
+                        <a><img id="banner6" src="https://i.imgur.com/NqBtkGF.png" alt="" title=""></a>
+                        <a><img id="banner7" src="https://i.imgur.com/JDvheVV.png" alt="" title=""></a>
                     </div>
                     <a id="bannerNext" class="HoverImg" onclick="nextBanner()">
                         <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/next-button.png?1" alt="" title="">
                     </a>
                 </div>
                 <div id="bannerBorder"></div>
-                <div id="ctaOuterContainer">
-                    <div id="ctaPlayContainer">
-                        <a id="ctaPlayNow" href="" class="HoverImg GameLink">
-                            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/cta-play-free-now.jpg" title="" alt="Play Now Free">
-                        </a>
-                        <div id="SN_links" style="display: block;">
-                            <a id="ctaPlayNowFB" href="" class="HoverImg"><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/cta-play-facebook.jpg" alt="Play Now With Facebook"></a>
-                            <script type="text/javascript">
-                                $("#ctaPlayNowFB").live('click',function(ev){
-                                    ev.preventDefault();
-                                    if(typeof(FB) == 'undefined' || typeof(FB.getAuthResponse) != 'function'){
-                                        /*
+<!--                <div id="ctaOuterContainer">-->
+<!--                    <div id="ctaPlayContainer">-->
+<!--                        <a id="ctaPlayNow" href="" class="HoverImg GameLink">-->
+<!--                            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/cta-play-free-now.jpg" title="" alt="Play Now Free">-->
+<!--                        </a>-->
+<!--                        <div id="SN_links" style="display: block;">-->
+<!--                            <a id="ctaPlayNowFB" href="" class="HoverImg"><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/cta-play-facebook.jpg" alt="Play Now With Facebook"></a>-->
+<!--                            <script type="text/javascript">-->
+<!--                                $("#ctaPlayNowFB").live('click',function(ev){-->
+<!--                                    ev.preventDefault();-->
+<!--                                    if(typeof(FB) == 'undefined' || typeof(FB.getAuthResponse) != 'function'){-->
+<!--                                        /*-->
 
-                                        JAGEX.socialnetworks.SNNotification("Couldn't contact Facebook. Please try again later.");
-                                        */
-                                    }
-                                    else if(FB.getAuthResponse()==null) {
-
-
-
-                                        FB.login(function(response) {
-                                                    if(response.authResponse) {
-                                                        // Logged in
-                                                        fbLoginRedirect("ctaPlayNowFB", "https://web.archive.org/web/20120311002458/https://secure.runescape.com/m=sn-integration/a=12/facebook/gamelogin.ws?","https://web.archive.org/web/20120311002458/http://www.runescape.com/a=12/game.ws","","");
-                                                    }else{
-                                                        // No session notification
-
-                                                        alert("Authentication with Facebook failed. Please try again.");
-                                                    }
-                                                }
-
-                                                , {scope:''});
-
-                                    }else{
-                                        // Already has all settings
-                                        fbLoginRedirect("ctaPlayNowFB", "https://web.archive.org/web/20120311002458/https://secure.runescape.com/m=sn-integration/a=12/facebook/gamelogin.ws?", "https://web.archive.org/web/20120311002458/http://www.runescape.com/a=12/game.ws","","");
-                                    }
-                                });
-                            </script>
+<!--                                        JAGEX.socialnetworks.SNNotification("Couldn't contact Facebook. Please try again later.");-->
+<!--                                        */-->
+<!--                                    }-->
+<!--                                    else if(FB.getAuthResponse()==null) {-->
 
 
-                        </div>
-                        <script type="text/javascript">
-                            $("#SN_links").css("display","block");
-                        </script>
-                    </div>
-                    <div id="ctaInnerContainer">
-                        <a class="ctaHover" id="ctaMembers" href=""><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/cta-members-hover.jpg?1"></a>
-                        <a class="ctaHover" id="ctaClans" href=""><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/cta-clans-hover.jpg?1"></a>
-                        <a class="ctaHover" id="ctaCombat" href=""><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/cta-combat-hover.jpg?1"></a>
-                        <a class="ctaHover" id="ctaMembership" href=""><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/cta-membership-hover.jpg?1"></a>
-                    </div>
-                </div>
+
+<!--                                        FB.login(function(response) {-->
+<!--                                                    if(response.authResponse) {-->
+<!--                                                        // Logged in-->
+<!--                                                        fbLoginRedirect("ctaPlayNowFB", "https://web.archive.org/web/20120311002458/https://secure.runescape.com/m=sn-integration/a=12/facebook/gamelogin.ws?","https://web.archive.org/web/20120311002458/http://www.runescape.com/a=12/game.ws","","");-->
+<!--                                                    }else{-->
+<!--                                                        // No session notification-->
+
+<!--                                                        alert("Authentication with Facebook failed. Please try again.");-->
+<!--                                                    }-->
+<!--                                                }-->
+
+<!--                                                , {scope:''});-->
+
+<!--                                    }else{-->
+<!--                                        // Already has all settings-->
+<!--                                        fbLoginRedirect("ctaPlayNowFB", "https://web.archive.org/web/20120311002458/https://secure.runescape.com/m=sn-integration/a=12/facebook/gamelogin.ws?", "https://web.archive.org/web/20120311002458/http://www.runescape.com/a=12/game.ws","","");-->
+<!--                                    }-->
+<!--                                });-->
+<!--                            </script>-->
+
+
+<!--                        </div>-->
+<!--                        <script type="text/javascript">-->
+<!--                            $("#SN_links").css("display","block");-->
+<!--                        </script>-->
+<!--                    </div>-->
+<!--                    <div id="ctaInnerContainer">-->
+<!--                        <a class="ctaHover" id="ctaMembers" href=""><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/cta-members-hover.jpg?1"></a>-->
+<!--                        <a class="ctaHover" id="ctaClans" href=""><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/cta-clans-hover.jpg?1"></a>-->
+<!--                        <a class="ctaHover" id="ctaCombat" href=""><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/cta-combat-hover.jpg?1"></a>-->
+<!--                        <a class="ctaHover" id="ctaMembership" href=""><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/cta-membership-hover.jpg?1"></a>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
 
             <div id="MainContentOuter">
@@ -170,6 +172,7 @@ __wm.rw(1);
 </span>
                                         <span class="leftUnderscore"><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/underscore_flourish_left.png" class="left" alt=""></span>
                                     </h3>
+                                    <a href="/edit-news" class="Button Button29"><span><span><span class=""><b>Edit News</b></span></span></span></a>
                                     <a href="/news/list" class="Button Button29"><span><span><span class=""><b>View All News</b></span></span></span></a>
                                     {{> news/IndexNewsArticles}}
                                 </div>

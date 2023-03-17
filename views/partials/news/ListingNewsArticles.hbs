@@ -14,11 +14,11 @@
         <div class="Content">
             {{this.description}}
         </div>
-        <a class="More HoverImgJs" href="news/{{this.slug}}"><img src="https://web.archive.org/web/20120711064917im_/http://www.runescape.com/img/global/news/ReadMore.png" alt="" title=""><img src="https://web.archive.org/web/20120711064917im_/http://www.runescape.com/img/global/news/ReadMore.png" class="HoverImgJsFg" style=""></a>
+        <a class="More HoverImgJs" href="/news/{{this.slug}}"><img src="https://web.archive.org/web/20120711064917im_/http://www.runescape.com/img/global/news/ReadMore.png" alt="" title=""><img src="https://web.archive.org/web/20120711064917im_/http://www.runescape.com/img/global/news/ReadMore.png" class="HoverImgJsFg" style=""></a>
     </div></div>
     {{/each}}
 </div>
-<form method="post" style="display: inline;" action="list.ws&amp;cat=0">
+<form method="post" style="display: inline;" action="">
     <div class="PageControl">
         {{#if (isGreater page 1)}}
                 <a href="/news/list/{{type}}/{{showIfPositive (add page -1)}}" class="Button Button29 Prev"><span><span><span class=""><b>Prev</b></span></span></span></a>
