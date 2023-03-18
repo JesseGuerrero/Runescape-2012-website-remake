@@ -14,10 +14,13 @@
                 <div class="card-text mb-2">{{this.description}}</div>
                 <a href="news/{{this.slug}}" class="btn btn-primary">Show Article</a>
                 <a href="news/edit/{{this._id}}" class="btn btn-info">Edit</a>
-                <form target="ifrm1" onclick="setTimeout(function () { window.location.reload(); }, 500)" action="{{../webAPI}}web/delete/{{this._id}}" method="POST" class="d-inline">
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </form>
 
+                <a onclick="setTimeout(function () { document.getElementById('reallydelete{{@index}}').style.display = 'inline'; }, 2500);">
+                    <button class="btn btn-danger">Delete</button>
+                </a>
+                <form target="ifrm1" onclick="setTimeout(function () { window.location.reload(); }, 500)" action="{{../webAPI}}web/delete/{{this._id}}" method="POST" class="d-inline">
+                    <button id="reallydelete{{@index}}" type="submit" class="btn btn-danger" style="display: none">Really Delete?</button>
+                </form>
             </div>
         </div>
         {{/each}}

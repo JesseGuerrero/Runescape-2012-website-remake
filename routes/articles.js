@@ -18,15 +18,21 @@ router.get('/list/:type/:page', async (req, res) => {
 })
 
 router.get('/new', (req, res) => {
-    res.render('articles/new', { layout: "layout-writenews", webAPI: auth.webAPI, isModerator: isModerator(req) })
+    if(isModerator(req))
+        res.render('articles/new', { layout: "layout-writenews", webAPI: auth.webAPI, isModerator: isModerator(req) })
+    else
+        res.redirect('/');
 })
 
 router.get('/edit/:id', async (req, res) => {
-    axios.get(auth.webAPI + `web/get-article/${req.params.id}`)
-        .then((response) => {
-            res.render('articles/edit', { layout: "layout-writenews", isModerator: isModerator(req),
-                webAPI: auth.webAPI, article: response["data"], editArticle: true });
-        });
+    if(isModerator(req))
+        axios.get(auth.webAPI + `web/get-article/${req.params.id}`)
+            .then((response) => {
+                res.render('articles/edit', { layout: "layout-writenews", isModerator: isModerator(req),
+                    webAPI: auth.webAPI, article: response["data"], editArticle: true });
+            });
+    else
+        res.redirect('/');
 })
 
 router.get('/:slug', async (req, res) => {
