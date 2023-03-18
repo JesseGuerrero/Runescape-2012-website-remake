@@ -2,19 +2,19 @@
     {{#each articles}}
     <div class="Article"><div>
         <div class="NewsHeaderImage">
-            <img src="https://web.archive.org/web/20120711064917im_/http://www.runescape.com/img/global/news/NoImage.jpg" alt="" title="">
+            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/NoImage.jpg" alt="" title="">
             <div></div>
         </div>
         {{> news/UpdateIcon article=this}}
         <div class="Title">
             <a href="news/{{this.slug}}"><h4 class="FlatHeader">{{this.title}}</h4></a>
             <br style="clear:both">
-            <span>{{this.createdAt}}</span>
+            <span>{{formatDateForNews this.createdAt}}</span>
         </div>
         <div class="Content">
             {{this.description}}
         </div>
-        <a class="More HoverImgJs" href="/news/{{this.slug}}"><img src="https://web.archive.org/web/20120711064917im_/http://www.runescape.com/img/global/news/ReadMore.png" alt="" title=""><img src="https://web.archive.org/web/20120711064917im_/http://www.runescape.com/img/global/news/ReadMore.png" class="HoverImgJsFg" style=""></a>
+        <a class="More HoverImgJs" href="/news/{{this.slug}}"><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/ReadMore.png" alt="" title=""><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/ReadMore.png" class="HoverImgJsFg" style=""></a>
     </div></div>
     {{/each}}
 </div>
@@ -71,6 +71,6 @@
         font-family: KingthingsPetrockRegular,Times New Roman,serif;
         width: 50px;
         text-align: center;
-        background-image: url(https://web.archive.org/web/20120729031347im_/http://www.runescape.com/img/global/page_control/advanced/Input_bg_big.png);
+https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Input_bg_big.png);
     }
 </style>

@@ -340,7 +340,7 @@ var templates = {
                          <div class="gha-clear"></div>\
                        </div>',
         UserHeader: '<div class="gha-header">\
-                 <div class="gha-github-icon" style="width: 50px"><img src="https://i.imgur.com/8QIAIEG.png" style="width: 50px; height: auto;"></div>\
+                 <div class="gha-github-icon" style="width: 50px"><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/8QIAIEG.png" style="width: 50px; height: auto;"></div>\
                  <div class="gha-user-info{{withoutName}}">{{{userNameLink}}}<p>{{{userLink}}}</p></div>\
                  <div class="gha-gravatar">{{{gravatarLink}}}</div>\
                </div><div class="gha-push"></div>',

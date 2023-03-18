@@ -234,12 +234,12 @@ span.subHeading {
 .cssTableSmall .row:hover,
 .cssTableSmall .row.clickable.tableRowSelected {
   text-decoration: none;
-  background: url(https://web.archive.org/web/20120729031347im_/http://www.runescape.com/img/global/hiscore/cssTableSmallRow_hover.jpg); }
+  background-color: #111111; }
 
 .cssTableSmall .largerow:hover,
 .cssTableSmall .largerow.row.clickable.tableRowSelected {
   text-decoration: none;
-  background: url(https://web.archive.org/web/20120729031347im_/http://www.runescape.com/img/global/hiscore/cssTableLargeRow_hover.jpg); }
+  background-color: #111111; }
 
 .cssTableSmall .row.last-row {
   border: none; }

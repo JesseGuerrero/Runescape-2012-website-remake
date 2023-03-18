@@ -55,6 +55,20 @@ function hbsHelpers(hbs) {
             },
             isGreater: function(greaterNum, lesserNum) {
                 return greaterNum > lesserNum;
+            },
+            ifNotFirstArticleCollapse: function(num) {
+                if(num == 0)
+                    return ""
+                return "ArticleCollapsed"
+            },
+            formatDateForNews: function(date) {
+                let pastDate = new Date(date)
+                let nowDate = new Date()
+                const diffTime = Math.abs(nowDate - pastDate);
+                const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+                if(diffDays <= 21)
+                    return (diffDays + " days ago")
+                return new Date(date).toDateString()
             }
             // More helpers...
         }

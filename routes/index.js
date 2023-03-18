@@ -21,22 +21,18 @@ router.get('/rs-wiki', function(req, res, next) {
 });
 
 
-router.get('/downloads', function(req, res, next) { https://web.archive.org/web/20120718053538/http://www.runescape.com/downloads.ws
+router.get('/downloads', function(req, res, next) { //https://web.archive.org/web/20120718053538/http://www.runescape.com/downloads.ws
   res.render('pages/downloads', { layout: 'layout.hbs', downloads: true });
 });
 
-router.get('/customer-support', function(req, res, next) { https://web.archive.org/web/20120620024434/http://services.runescape.com:80/m=rswiki/en/Customer_Support
-    res.render('pages/customer-support', { layout: 'layout-customersupport.hbs' });
-});
-
-router.get('/hall-of-heroes', function(req, res, next) { https://web.archive.org/web/20120620024338/http://services.runescape.com/m=hiscore/heroes.ws
+router.get('/hall-of-heroes', function(req, res, next) { //https://web.archive.org/web/20120620024338/http://services.runescape.com/m=hiscore/heroes.ws
     axios.get("https://darkan.org:8443/v1/highscores?page=1&limit=10")
         .then((response) => {
             res.render('pages/hall-of-heroes', { layout: 'layout.hbs', heroes: true, highscores: response });
         });
 });
 
-router.get('/highscores', function(req, res, next) { https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+router.get('/highscores', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
     axios.get("https://darkan.org:8443/v1/highscores?page=" + 1 +"&limit=" + 22)
         .then((response) => {
             res.render('pages/highscores', { layout: 'layout.hbs', highscore: true, highscores: response, skill: "Overall", page: 1,
