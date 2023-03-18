@@ -1,24 +1,26 @@
-<div class="container">
-    <h1 class="mb-4">News Articles</h1>
-    <a href="/news/new" class="btn btn-success">New Article</a>
-    <a href="/news/admin" class="btn btn-success">Login as moderator</a>
+{{#if isModerator}}
+    <div class="container">
+        <h1 class="mb-4">News Articles</h1>
+        <a href="/news/new" class="btn btn-success">New Article</a>
+        <a href="/logout" class="btn btn-success">Logout</a>
 
-    {{#each articles}}
-    <div class="card mt-4">
-        <div class="card-body">
-            <h4 class="card-title">{{this.title}}</h4>
-            <div class="card-subtitle text-muted mb-2">
-                {{formatDate this.createdAt}}
+        {{#each articles}}
+        <div class="card mt-4">
+            <div class="card-body">
+                <h4 class="card-title">{{this.title}}</h4>
+                <div class="card-subtitle text-muted mb-2">
+                    {{formatDate this.createdAt}}
+                </div>
+                <div class="card-text mb-2">{{this.description}}</div>
+                <a href="news/{{this.slug}}" class="btn btn-primary">Show Article</a>
+                <a href="news/edit/{{this._id}}" class="btn btn-info">Edit</a>
+                <form target="ifrm1" onclick="setTimeout(function () { window.location.reload(); }, 500)" action="{{../webAPI}}web/delete/{{this._id}}" method="POST" class="d-inline">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+
             </div>
-            <div class="card-text mb-2">{{this.description}}</div>
-            <a href="news/{{this.slug}}" class="btn btn-primary">Show Article</a>
-            <a href="news/edit/{{this._id}}" class="btn btn-info">Edit</a>
-            <form target="ifrm1" onclick="setTimeout(function () { window.location.reload(); }, 500)" action="{{../webAPI}}web/delete/{{this._id}}" method="POST" class="d-inline">
-                <button type="submit" class="btn btn-danger">Delete</button>
-            </form>
-
         </div>
+        {{/each}}
+        <iframe id="ifrm1" name="ifrm1" style="display:none"></iframe>
     </div>
-    {{/each}}
-    <iframe id="ifrm1" name="ifrm1" style="display:none"></iframe>
-</div>
+{{/if}}

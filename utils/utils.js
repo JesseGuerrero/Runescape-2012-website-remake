@@ -1,4 +1,5 @@
 const auth = require("../auth.json");
+cookieParser = require('cookie-parser');
 const skills = {
     "overall": "All Skills",
     "attack": "Attack",
@@ -122,16 +123,10 @@ const fetchSkills = function (playerData, displayName) {
 };
 
 function authenticate(req, res) {
-    const reject = () => {
-        res.setHeader("www-authenticate", "Basic");
-        res.sendStatus(401);
-    };
+    res.setHeader("www-authenticate", "Basic");
+    res.sendStatus(401);
 
     const authorization = req.headers.authorization;
-
-    if (!authorization) {
-        return reject();
-    }
 
     const [username, password] = Buffer.from(
         authorization.replace("Basic ", ""),
@@ -140,24 +135,21 @@ function authenticate(req, res) {
         .toString()
         .split(":");
 
-    if (!(username === auth.username && password === auth.password))
-        return reject();
+    res.cookie('user', username)
+    res.cookie('pass', password)
+    if(req.cookie.user == username && req.cookie.pass == password) {
+        res.redirect('/edit-news');
+        return;
+    }
+    res.redirect('/');
 }
 
 function isModerator(req) {
-    const authorization = req.headers.authorization;
-    if (!authorization) {
-        return false;
+    try {
+        return (req.cookies.username == auth.username && req.cookies.password == auth.password);
+    } catch {
+        return false
     }
-    const [username, password] = Buffer.from(
-        authorization.replace("Basic ", ""),
-        "base64"
-    )
-        .toString()
-        .split(":");
-    if (!(username === auth.username && password === auth.password))
-        return false;
-    return true;
 }
 
 function getItemIdToName(id) {

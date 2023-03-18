@@ -24,6 +24,7 @@ try {
   }))
 }
 const auth = require("./auth.json")
+const {authenticate, isModerator} = require("./utils/utils");
 let app = express();
 
 mongoose.connect('mongodb://localhost/darkan-server', {
@@ -52,10 +53,36 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.get('/edit-news', async (req, res) => {
-  axios.get(auth.webAPI + "web?page=1&limit=99999&type=0")
-      .then((response) => {
-        res.render('articles/index', { layout: "layout-writenews", webAPI: auth.webAPI, articles: response["data"] });
-      });
+  // console.log(req.cookies.username)
+  // console.log(req.cookies.password)
+  // console.log(auth.username)
+  // console.log(auth.password)
+  if(isModerator(req))
+    axios.get(auth.webAPI + "web?page=1&limit=99999&type=0")
+        .then((response) => {
+          res.render('articles/index', { layout: "layout-writenews", webAPI: auth.webAPI, articles: response["data"],
+            isModerator: isModerator(req) });
+        });
+  else
+    res.redirect('/');
+})
+
+app.post('/login', async (req, res) => {
+  res.cookie("username", req.body.username)
+  res.cookie("password", req.body.password)
+  res.redirect('/edit-news');
+});
+
+app.get("/admin", (req, res) => {
+  if(isModerator(req))
+    res.redirect('/edit-news');
+  else
+    res.render('articles/auth', { layout: "layout-writenews" })
+});
+app.get('/logout', (req, res) => {
+  res.cookie("username", "")
+  res.cookie("password", "")
+  res.redirect('/');
 })
 app.use('/news', articlesRouter);
 app.use('/users', usersRouter);

@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const auth = require("../auth.json")
 const axios = require("../utils/axios");
-const { authenticate, isModerator } = require("../utils/utils");
+const { isModerator } = require("../utils/utils");
 
 
 router.get('/list', (req, res) => {
@@ -17,12 +17,8 @@ router.get('/list/:type/:page', async (req, res) => {
         });
 })
 
-router.get("/admin", (req, res) => {
-    authenticate(req, res);
-});
-
 router.get('/new', (req, res) => {
-    res.render('articles/new', { layout: "layout-writenews", webAPI: auth.webAPI })
+    res.render('articles/new', { layout: "layout-writenews", webAPI: auth.webAPI, isModerator: isModerator(req) })
 })
 
 router.get('/edit/:id', async (req, res) => {

@@ -1,4 +1,3 @@
-<a style="display:none" id="SNbuttonLink" class="thickbox"></a>
 <style>
     .Content p img {
         float: left;
@@ -65,7 +64,9 @@
                                         </div>
                                         <div class="Content">
                                             {{{article.sanitizedHtml}}}
-                                            <a href="/news/edit/{{article._id}}"><u>Edit Article</u></a>
+                                            {{#if isModerator}}
+                                                <a href="/news/edit/{{article._id}}"><u>Edit Article</u></a>
+                                            {{/if}}
                                         </div>
                                     </div>
                                 </div>
