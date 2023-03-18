@@ -1,0 +1,104 @@
+#MainContent p {
+  line-height: 20px;
+  margin: 20px auto 0; }
+
+.clearL {
+  clear: left; }
+
+.fullHr {
+  height: 9px;
+  width: 777px;
+  background: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/fullHr.png) no-repeat;
+  margin: 0 auto; }
+
+.downloadTop {
+  width: 800px;
+  margin: 50px auto; }
+
+.downloadTop .Gradient {
+  margin-bottom: 30px; }
+
+#downloadables {
+  width: 923px;
+  background: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/downloadTrim.png) no-repeat left top;
+  margin: 0 auto;
+  padding-top: 25px; }
+
+.downloadEntity {
+  width: 800px;
+  margin: 20px auto; }
+
+.orangeHeader {
+  font-size: 26px;
+  color: #f3b13f;
+  font-weight: normal;
+  font-family: KingthingsPetrockRegular,Times New Roman,serif;
+  margin: 0 5px 15px; }
+
+.image.Button56 span span span {
+  padding-left: 44px !important; }
+
+#windows.image.Button56 span span span {
+  background: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/windows.png) no-repeat left 4px !important; }
+
+#windows.image.Button56:hover span span span {
+  background: url("https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/windows_hover.png") no-repeat left 4px !important; }
+
+#mac.image.Button56 span span span {
+  background: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/mac.png) no-repeat left 4px !important; }
+
+#mac.image.Button56:hover span span span {
+  background: url("https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/mac_hover.png") no-repeat left 4px !important; }
+
+.downloadEntityContent {
+  width: 500px;
+  float: left;
+  padding-right: 30px; }
+
+.downloadEntityContent img {
+  float: left;
+  margin: 5px; }
+
+.downloadEntityContent h2 {
+  padding: 10px 0 0; }
+
+.downloadEntityContent ul {
+  float: left;
+  margin: 0 0 15px;
+  list-style-image: url("https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/listPoint.png");
+  width: 400px; }
+
+.downloadEntityContent li {
+  margin-left: 30px; }
+
+.downloadEntityContent p {
+  margin-right: 10px; }
+
+.downloadLinks {
+  float: left;
+  width: 250px;
+  margin-top: 10px; }
+
+.audioAssetCat {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #f3b13f; }
+
+.audioAsset, .duelCard {
+  clear: right; }
+
+.audioAsset a, .duelCard a {
+  float: right;
+  vertical-align: middle; }
+
+.audioAsset p, .duelCard p {
+  float: left;
+  margin: 0 !important;
+  width: 155px; }
+
+.downloadTop h2 .mask span {
+  padding: 220px; }
+
+.downloadTop h2 .rightUnderscore span {
+  margin-right: 440px; }

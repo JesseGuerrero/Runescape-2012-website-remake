@@ -12,7 +12,8 @@ router.get('/list', (req, res) => {
 router.get('/list/:type/:page', async (req, res) => {
     axios.get(auth.webAPI + `web?page=${req.params.page}&limit=6&type=${req.params.type}`)
         .then((response) => {
-            res.render('pages/news-listing', { layout: "layout", webAPI: auth.webAPI, articles: response["data"], news: true });
+            res.render('pages/news-listing', { layout: "layout", page: req.params.page, type: req.params.type,
+                webAPI: auth.webAPI, articles: response["data"], news: true });
         });
 })
 

@@ -1,0 +1,97 @@
+.OrnamentalBoxContent {
+  padding: 12px 0; }
+
+.OrnamentalBox.Width863 select {
+  left: 365px;
+  top: 38px;
+  z-index: 10;
+  position: absolute; }
+
+#hiscoresRank,
+.tableContainer {
+  width: 796px; }
+
+#hiscoresRankInner {
+  width: 765px;
+  margin: auto;
+  position: relative;
+  z-index: 2; }
+
+#hiscoresControls a,
+#hiscoresRank {
+  background: #161616;
+  border: 1px solid #303030; }
+
+#hiscoresRank {
+  position: relative;
+  padding: 12px 0;
+  margin: 0 auto 12px auto; }
+
+#hiscoresControls {
+  position: relative;
+  z-index: 2;
+  width: 798px;
+  margin: auto;
+  bottom: -1px;
+  height: 74px; }
+
+#hiscoresControls a {
+  display: block;
+  position: absolute;
+  width: 392px;
+  top: 0; }
+
+#hiscoresControls a#all {
+  left: 0; }
+
+#hiscoresControls a#friends {
+  right: 0; }
+
+div.PageControl {
+  margin: 25px auto 0 auto;
+  float: none;
+  height: 46px; }
+
+#hiscoresControls a#friends:hover,
+#hiscoresControls a#all:hover {
+  text-decoration: none; }
+
+#playerHiscores .tableContainer .hiscoresBoxTopLeft {
+  display: none; }
+
+#friendsHiscores #hiscoresControls a#friends,
+#playerHiscores #hiscoresControls a#all {
+  height: 73px;
+  border-bottom: none; }
+
+#friendsHiscores #hiscoresControls a#all h4,
+#playerHiscores #hiscoresControls a#friends h4 {
+  color: #f3b13f; }
+
+#hiscoresControls a:hover h4 {
+  color: #ffffff !important; }
+
+#friendsHiscores #hiscoresControls a#friends .hiscoresBoxBottomRight,
+#playerHiscores #hiscoresControls a#all .hiscoresBoxBottomLeft {
+  bottom: 0; }
+
+#playerHiscores #hiscoresControls a#all .hiscoresBoxBottomLeft {
+  left: 392px; }
+
+#playerHiscores #hiscoresControls a#all .hiscoresBoxBottomRight {
+  display: none; }
+
+#playerHiscores #hiscoresControls a#friends {
+  height: 59px; }
+
+#friendsHiscores .tableContainer .hiscoresBoxTopRight {
+  display: none; }
+
+#friendsHiscores #hiscoresControls a#all {
+  height: 59px; }
+
+#friendsHiscores #hiscoresControls a#friends .hiscoresBoxBottomRight {
+  left: -24px; }
+
+#friendsHiscores #hiscoresControls a#friends .hiscoresBoxBottomLeft {
+  display: none; }

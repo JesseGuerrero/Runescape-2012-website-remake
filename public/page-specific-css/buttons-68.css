@@ -1,23 +1,15 @@
-
-
-
-
-
 .Button {
   position: relative;
   top: 0;
   display: -moz-inline-grid;
   display: inline-block;
-  overflow: visible;
-}
+  overflow: visible; }
 
 .Button span {
-  float: left;
-}
+  float: left; }
 
 .Button span span {
-  padding: 0;
-}
+  padding: 0; }
 
 .Button span span span {
   position: relative;
@@ -26,26 +18,21 @@
   padding: 0 20px;
   border: 0;
   outline: 0;
-  background: none !important;
-}
+  background: none !important; }
 
 .Button:active span {
-  outline: 0;
-}
+  outline: 0; }
 
 .Button span b {
-  position: relative;
-}
+  position: relative; }
 
 .Buttondisabled span:active b,
 .Buttondisabled b:active {
   top: 0;
-  left: 0;
-}
+  left: 0; }
 
 .Button {
-  color: white;
-}
+  color: white; }
 
 .Button,
 .Button span {
@@ -53,52 +40,39 @@
   cursor: pointer;
   white-space: pre;
   text-align: center;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 .Button,
 .Button:visited,
 .Button:hover,
 .Button:active {
   color: white;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .Buttondisabled,
 .Buttondisabled span,
 .Buttondisabled b {
   cursor: auto;
-  color: gray !important;
-}
-
-
+  color: gray !important; }
 
 .Button {
-  background-position: left 0%;
-}
+  background-position: left 0%; }
 
 .Button:hover {
-  background-position: left 20%;
-}
+  background-position: left 20%; }
 
 .Button span {
-  background-position: right 40%;
-}
+  background-position: right 40%; }
 
 .Button:hover span {
-  background-position: right 60%;
-}
+  background-position: right 60%; }
 
 .Button span span {
   background-repeat: repeat-x;
-  background-position: left 80%;
-}
+  background-position: left 80%; }
 
 .Button:hover span span {
-  background-position: left 100%;
-}
-
-
+  background-position: left 100%; }
 
 .Button input, .WoodenPanel input {
   position: absolute;
@@ -112,139 +86,117 @@
   color: transparent;
   cursor: pointer;
   border: 0 !important;
-  background:yellow;
-  opacity: 0.0; filter: alpha(opacity=0);
-
-}
+  background: yellow;
+  opacity: 0.0;
+  filter: alpha(opacity=0); }
 
 .Buttondisabled input {
-  display: none;
-}
+  display: none; }
 
 .Button input::-moz-focus-inner {
   border: 0;
-  padding: 0;
-}
-
-
+  padding: 0; }
 
 .Button31Help,
 .Button31Help span,
 .Button31Help input {
   background-image: url("https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Button31Help.png?0");
   height: 31px;
-  line-height: 24px;
-}
+  line-height: 24px; }
+
 .Button31Help {
-  padding-left: 27px;
-}
+  padding-left: 27px; }
+
 .Button31Help span {
-  padding-right: 27px;
-}
+  padding-right: 27px; }
+
 .Button31Help span span span {
   margin-left: -54px;
   left: 27px;
-  padding-left: 30px;
-
-}
+  padding-left: 30px; }
 
 .Button31Error,
 .Button31Error span,
 .Button31Error input {
   background-image: url("https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Button31Error.png?0");
   height: 31px;
-  line-height: 24px;
-}
+  line-height: 24px; }
+
 .Button31Error {
-  padding-left: 27px;
-}
+  padding-left: 27px; }
+
 .Button31Error span {
-  padding-right: 27px;
-}
+  padding-right: 27px; }
+
 .Button31Error span span span {
   margin-left: -54px;
   left: 27px;
-  padding-left: 30px;
-
-}
+  padding-left: 30px; }
 
 .Button31Search,
 .Button31Search span,
 .Button31Search input {
   background-image: url("https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Button31Search.png?0");
   height: 31px;
-  line-height: 24px;
-}
+  line-height: 24px; }
+
 .Button31Search {
-  padding-left: 27px;
-}
+  padding-left: 27px; }
+
 .Button31Search span {
-  padding-right: 27px;
-}
+  padding-right: 27px; }
+
 .Button31Search span span span {
   margin-left: -54px;
   left: 27px;
-  padding-left: 30px;
-
-}
-
+  padding-left: 30px; }
 
 .Button31Help,
 .Button31Error,
 .Button31Search {
-  color: #eaeaea;
-}
+  color: #eaeaea; }
 
 .Button29,
 .Button29 span,
 .Button29 input {
   background-image: url("https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Button29.png?0");
   height: 29px;
-  line-height: 28px;
-}
+  line-height: 28px; }
+
 .Button29 {
-  padding-left: 13px;
-}
+  padding-left: 13px; }
+
 .Button29 span {
-  padding-right: 13px;
-}
+  padding-right: 13px; }
+
 .Button29 span span span {
   margin-left: -26px;
-  left: 13px;
-
-
-}
+  left: 13px; }
 
 .Button29disabled,
 .Button29disabled span,
 .Button29disabled input {
   background-image: url("https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Button29disabled.png?0");
   height: 29px;
-  line-height: 28px;
-}
+  line-height: 28px; }
+
 .Button29disabled {
-  padding-left: 13px;
-}
+  padding-left: 13px; }
+
 .Button29disabled span {
-  padding-right: 13px;
-}
+  padding-right: 13px; }
+
 .Button29disabled span span span {
   margin-left: -26px;
-  left: 13px;
-
-
-}
-
+  left: 13px; }
 
 .Button29,
 .Button29 b {
-  color: #f0b166;
-}
+  color: #f0b166; }
 
 .Button29:hover,
 .Button29:hover b {
-  color: #f3b13f;
-}
+  color: #f3b13f; }
 
 .Button29 b,
 .Button29disabled b {
@@ -252,38 +204,31 @@
   font-family: MuseoSans500,Arial,Times New Roman,serif;
   font-size: 11px;
   line-height: 21px;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 .Button29disabled b,
 .Button29disabled:hover b {
-  color: #B8B8B8;
-}
+  color: #B8B8B8; }
 
 .Button29disabled, .Button29disabled span, .Button29disabled input {
-  cursor: default;
-}
+  cursor: default; }
 
 .Button46,
 .Button46 span,
 .Button46 input {
   background-image: url("https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Button46.png?0");
   height: 46px;
-  line-height: 42px;
-}
+  line-height: 42px; }
+
 .Button46 {
-  padding-left: 27px;
-}
+  padding-left: 27px; }
+
 .Button46 span {
-  padding-right: 27px;
-}
+  padding-right: 27px; }
+
 .Button46 span span span {
   margin-left: -54px;
-  left: 27px;
-
-
-}
-
+  left: 27px; }
 
 .Button46 .Gradient_link2 *,
 .Button46 .Gradient_link2 .g1,
@@ -291,29 +236,24 @@
 .Button46 .Gradient_link2 .g3,
 .Button46 .Gradient_link2 .g4,
 .Button46 .Gradient_link2 .g5 {
-  left: -48px;
-}
+  left: -48px; }
 
 .Button56,
 .Button56 span,
 .Button56 input {
   background-image: url("https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Button56.png?0");
   height: 56px;
-  line-height: 41px;
-}
+  line-height: 41px; }
+
 .Button56 {
-  padding-left: 31px;
-}
+  padding-left: 31px; }
+
 .Button56 span {
-  padding-right: 31px;
-}
+  padding-right: 31px; }
+
 .Button56 span span span {
   margin-left: -62px;
-  left: 31px;
-
-
-}
-
+  left: 31px; }
 
 .Button56 b {
   display: block;
@@ -321,7 +261,4 @@
   font-size: 36px;
   font-weight: normal;
   top: 5px;
-  /*cursor: pointer;*/
-}
-
-
+  /*cursor: pointer;*/ }
