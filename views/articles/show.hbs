@@ -60,7 +60,7 @@
                                         <div class="Title">
                                             <h4 class="FlatHeader">{{article.title}}</h4>
                                             <br style="clear:both">
-                                            <span>{{article.createdAt}}</span>
+                                            <span>{{formatDateForNews article.createdAt}}</span>
                                         </div>
                                         <div class="Content">
                                             {{{article.sanitizedHtml}}}
