@@ -56,7 +56,8 @@
   padding: 0 0 10px; }
 
 #MainContent p {
-  font-size: 10px;
+  font-size: 13.5px;
+  font-family: MuseoSans500,Arial,Times New Roman,serif;
   color: #b8b8b8;
   line-height: 15px; }
 
@@ -342,10 +343,10 @@
   background: url("https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/mainContentTopBg.png") no-repeat scroll 10px 0 transparent; }
 
 .MainContentBg {
-  background: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/MainContentCentreBg.png) repeat-y scroll 34px 0 transparent; }
+  background: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/mainContentCentreBg.png) repeat-y scroll 34px 0 transparent; }
 
 .MainContentBottomBg {
-  background: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/MainContentBottomBg.png) no-repeat scroll -26px bottom transparent; }
+  background: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/mainContentBottomBg.png) no-repeat scroll -26px bottom transparent; }
 
 #MainTitle {
   left: 10px; }
@@ -360,11 +361,12 @@
   height: 28px; }
 
 .headerRow > span {
-  font-size: 8px;
+  font-family: KingthingsPetrockRegular,Times New Roman,serif;
+  font-size: 24px;
   color: #D4D4D4;
   display: block;
   float: left;
-  margin-top: 10px;
+  margin-top: 0px;
   text-align: left; }
 
 .locationTable .headerRow .name,

@@ -75,14 +75,14 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
             initialise: function(){
                 if(swfobject.hasFlashPlayerVersion(community.memory.flash)){
                     swfobject.embedSWF(
-                        'https://web.archive.org/web/20120627163940/http://www.runescape.com/l=3/img/main/community/cta-play-free-now.swf',
+                        '',
                         'ctaPlayNow',
                         '208',
                         '37',
                         community.memory.flash,
                         '',
                         {
-                            click_url: 'https://web.archive.org/web/20120627163940/http://www.runescape.com/l=3/game.ws?j=1'
+                            click_url: ''
                         },
                         {
                             wmode: 'opaque',

@@ -172,7 +172,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
 
 
         $.ajax({
-            url: "https://web.archive.org/web/20120627163932/http://services.runescape.com/m=website-data/l=3/playerDetails.ws?names=" + JSON.stringify(playernames),
+            url: "" + JSON.stringify(playernames),
             dataType: "jsonp",
             success: function(response) {
                 process(response);
@@ -372,7 +372,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
 
     function TrackingPixel(strTag){
         $.ajax({
-            url: 'https://web.archive.org/web/20120627163932/http://www.runescape.com/l=3/track/'+strTag,
+            url: ''+strTag,
             dataType: 'jsonp',
             success: function(){
             }
@@ -592,7 +592,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
 
         function PollPlayerCount(){
             $.ajax({
-                url: 'https://web.archive.org/web/20120627163932/http://www.runescape.com/l=3/player_count.js?varname=iPlayerCount',
+                url: '',
                 dataType: 'jsonp',
                 success: function(iPlayerCount){
                     if (iPlayerCount > 0 ){

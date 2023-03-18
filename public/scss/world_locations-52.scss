@@ -67,12 +67,13 @@
   font-size: 18px;
   color: #f3b13f;
   font-weight: normal;
-  font-family: KingthingsPetrockRegular,Times New Roman,serif;;
+  font-family: KingthingsPetrockRegular,Times New Roman,serif;
   padding: 0 0 10px;
 }
 
 #MainContent p {
-  font-size: 10px;
+  font-size: 13.5px;
+  font-family: MuseoSans500,Arial,Times New Roman,serif;
   color: #b8b8b8;
   line-height: 15px;
 }
@@ -431,12 +432,14 @@
   border-bottom: 1px solid #635035;
   height: 28px;
 }
+
 .headerRow>span {
-  font-size: 8px;
+  font-family: KingthingsPetrockRegular,Times New Roman,serif;
+  font-size: 24px;
   color: #D4D4D4;
   display: block;
   float: left;
-  margin-top: 10px;
+  margin-top: 0px;
   text-align: left;
 }
 .locationTable .headerRow .name,
