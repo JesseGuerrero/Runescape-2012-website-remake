@@ -11,6 +11,18 @@ let indexRouter = require('./routes/index');
 let articlesRouter = require('./routes/articles')
 let usersRouter = require('./routes/users');
 const axios = require("./utils/axios");
+const fs = require('fs')
+try {
+  if (fs.existsSync("./auth.json"))
+    ;
+} catch(err) {
+  fs.writeFile("./auth.json", JSON.stringify({
+    "username": "admin",
+    "password": "test",
+    "uploadToken": "meme",
+    "webAPI": "http://localhost:8443/v1/"
+  }))
+}
 const auth = require("./auth.json")
 let app = express();
 
