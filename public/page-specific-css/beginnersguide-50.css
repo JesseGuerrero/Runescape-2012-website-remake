@@ -43,7 +43,7 @@
   letter-spacing: 0.02em; }
 
 #maintop, #maintop2, #maintop3 {
-  background: url("https://web.archive.org/web/20120516010859im_/http://www.runescape.com/img/main/beginnersguide/heroes.png") right top no-repeat scroll transparent;
+  background: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/heroes.png) right top no-repeat scroll transparent;
   margin: 0px 45px;
   padding: 30px 0px 10px;
   width: 910px; }
@@ -75,7 +75,7 @@
   font-family: KingthingsPetrockRegular, "Times New Roman", serif; }
 
 .relatedtopics {
-  background: url("https://web.archive.org/web/20120516010859im_/http://www.runescape.com/img/main/beginnersguide/sword.png") 40px center no-repeat scroll transparent;
+  background: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/sword.png) 40px center no-repeat scroll transparent;
   padding: 0px 40px 0px 450px; }
 
 .videoplayerbutton {
@@ -112,7 +112,7 @@
   padding: 20px 0px 0px; }
 
 #mainbottom, #mainbottom2 {
-  background: url("https://web.archive.org/web/20120516010859im_/http://www.runescape.com/img/main/beginnersguide/bg-bottom.jpg") left bottom no-repeat scroll transparent;
+  background: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/bg-bottom.jpg) left bottom no-repeat scroll transparent;
   margin: 0px 45px;
   clear: both; }
 
@@ -145,7 +145,7 @@
   clear: both; }
 
 .navBottomNext .WoodenPanel {
-  background: url("https://web.archive.org/web/20120516010859im_/http://www.runescape.com/img/main/beginnersguide/nextBG.png") 8px 2px no-repeat scroll transparent;
+  background: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/nextBG.png) 8px 2px no-repeat scroll transparent;
   padding: 10px 10px 10px 0px; }
 
 .navBottomPrev .WoodenPanel {

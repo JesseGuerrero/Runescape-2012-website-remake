@@ -12,17 +12,17 @@
 
 #skillStats.OrnamentalBox.Width923.SegmentTwo .OrnamentalBoxBg,
 #activityStats.OrnamentalBox.Width923.SegmentTwo .OrnamentalBoxBg {
-  background-image: url(https://web.archive.org/web/20120729031347im_/http://www.runescape.com/img/global/hiscore/ornamentalBox923_middle.png);
+  background-image: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/ornamentalBox923_middle.png);
   top: 150px;
   margin-top: 0; }
 
 #clanSkillStats.OrnamentalBox.Width923.SegmentTwo .OrnamentalBoxBg {
-  background-image: url(https://web.archive.org/web/20120729031347im_/http://www.runescape.com/img/global/hiscore/ornamentalBox923_middle.png); }
+  background-image: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/ornamentalBox923_middle.png); }
 
 #clanSkillStats.OrnamentalBox.Width923.SegmentTwo .OrnamentalBoxBottom,
 #skillStats.OrnamentalBox.Width923.SegmentTwo .OrnamentalBoxBottom,
 #activityStats.OrnamentalBox.Width923.SegmentTwo .OrnamentalBoxBottom {
-  background-image: url(https://web.archive.org/web/20120729031347im_/http://www.runescape.com/img/global/hiscore/ornamentalBox923_bottom.png); }
+  background-image: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/ornamentalBox923_bottom.png); }
 
 .OrnamentalBox.Width863 {
   margin: 20px auto; }
@@ -74,7 +74,7 @@
   width: 24px;
   height: 23px;
   z-index: 1;
-  background-image: url(https://web.archive.org/web/20120729031347im_/http://www.runescape.com/img/hiscore/borders.png);
+  background-image: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/borders.png);
   position: absolute; }
 
 .hiscoresBoxTopLeft,
@@ -252,14 +252,14 @@ div.PageControlAdvanced {
 div.PageControlAdvancedMiddle {
   margin: 0;
   width: 580px;
-  background-image: url(https://web.archive.org/web/20120729031347im_/http://www.runescape.com/img/global/page_control/advanced/List_bg_big.png); }
+  background-image: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/List_bg_big.png); }
 
 div.PageControlAdvancedMiddle ul li {
   width: 60px; }
 
 div.PageControlAdvancedMiddle ul li .PageInput {
   width: 50px;
-  background-image: url(https://web.archive.org/web/20120729031347im_/http://www.runescape.com/img/global/page_control/advanced/Input_bg_big.png); }
+  background-image: url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Input_bg_big.png); }
 
 div.PageControlAdvancedMiddle ul li.InputField {
   width: 50px; }

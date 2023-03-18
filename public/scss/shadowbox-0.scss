@@ -11,7 +11,7 @@
 #sb-body img{border:none;}
 #sb-loading{position:relative;height:100%;}
 #sb-loading-inner{position:absolute;font-size:14px;line-height:24px;height:24px;top:50%;margin-top:-12px;width:100%;text-align:center;}
-#sb-loading-inner span{background:url(https://web.archive.org/web/20120528022234im_/http://www.jagex.com/l=3/img/shadowbox/loading.gif) no-repeat;padding-left:34px;display:inline-block;}
+#sb-loading-inner span{background:url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/loading.gif) no-repeat;padding-left:34px;display:inline-block;}
 #sb-body,#sb-loading{background-color:#060606;}
 #sb-title,#sb-info{position:relative;margin:0;padding:0;overflow:hidden;}
 #sb-title,#sb-title-inner{height:26px;line-height:26px;}
@@ -20,11 +20,11 @@
 #sb-info-inner{font-size:12px;}
 #sb-nav{float:right;height:16px;padding:2px 0;width:45%;}
 #sb-nav a{display:block;float:right;height:16px;width:16px;margin-left:3px;cursor:pointer;background-repeat:no-repeat;}
-#sb-nav-close{background-image:url(https://web.archive.org/web/20120528022234im_/http://www.jagex.com/l=3/img/shadowbox/close.png);}
-#sb-nav-next{background-image:url(https://web.archive.org/web/20120528022234im_/http://www.jagex.com/l=3/img/shadowbox/next.png);}
-#sb-nav-previous{background-image:url(https://web.archive.org/web/20120528022234im_/http://www.jagex.com/l=3/img/shadowbox/previous.png);}
-#sb-nav-play{background-image:url(https://web.archive.org/web/20120528022234im_/http://www.jagex.com/l=3/img/shadowbox/play.png);}
-#sb-nav-pause{background-image:url(https://web.archive.org/web/20120528022234im_/http://www.jagex.com/l=3/img/shadowbox/pause.png);}
+#sb-nav-close{background-image:url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/close.png);}
+#sb-nav-next{background-image:url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/next.png);}
+#sb-nav-previous{background-image:url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/previous.png);}
+#sb-nav-play{background-image:url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/play.png);}
+#sb-nav-pause{background-image:url(https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/pause.png);}
 #sb-counter{float:left;width:45%;}
 #sb-counter a{padding:0 4px 0 0;text-decoration:none;cursor:pointer;color:#fff;}
 #sb-counter a.sb-counter-current{text-decoration:underline;}
