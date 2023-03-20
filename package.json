@@ -44,6 +44,7 @@
     "morgan": "~1.9.1",
     "node-sass": "^8.0.0",
     "node-sass-middleware": "^1.0.1",
+    "puppeteer": "^19.7.5",
     "slugify": "^1.4.0"
   },
   "devDependencies": {
