@@ -10,6 +10,7 @@ let mongoose = require('mongoose');
 let indexRouter = require('./routes/index');
 let articlesRouter = require('./routes/articles')
 let usersRouter = require('./routes/users');
+const compression = require('compression');
 const axios = require("./utils/axios");
 const fs = require('fs')
 try {
@@ -26,6 +27,9 @@ try {
 const auth = require("./auth.json")
 const {authenticate, isModerator} = require("./utils/utils");
 let app = express();
+
+//compress
+app.use(compression());
 
 mongoose.connect('mongodb://localhost/darkan-server', {
   useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
@@ -49,7 +53,7 @@ app.use(sassMiddleware({
   indentedSyntax: true, // true = .sass and false = .scss
   sourceMap: true
 }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'), {maxAge: '1d'}));
 
 app.use('/', indexRouter);
 app.get('/edit-news', async (req, res) => {
