@@ -6,26 +6,26 @@
 <head>
     {{> Globals}}
     {{#if news}}
-        <link href="/page-specific-css/news-50.css" rel="stylesheet">
-        <link href="/page-specific-css/article-50.css" rel="stylesheet">
+        <link async href="/page-specific-css/news-50.css" rel="stylesheet">
+        <link async href="/page-specific-css/article-50.css" rel="stylesheet">
         {{else if world}}
-            <link rel="stylesheet" type="text/css" href="/page-specific-css/world_locations-52.css">
-            <script src="/javascripts/world.js" type="text/javascript"></script>
+            <link async rel="stylesheet" type="text/css" href="/page-specific-css/world_locations-52.css">
+            <script defer src="/javascripts/world.js" type="text/javascript"></script>
         {{else if heroes}}
-            <link href="/page-specific-css/highscores_global-54.css" rel="stylesheet">
-            <link href="/page-specific-css/highscores_heroes-54.css" rel="stylesheet">
+            <link async href="/page-specific-css/highscores_global-54.css" rel="stylesheet">
+            <link async href="/page-specific-css/highscores_heroes-54.css" rel="stylesheet">
         {{else if downloads}}
-            <link rel="stylesheet" type="text/css" href="/page-specific-css/downloads-50.css">
+            <link async rel="stylesheet" type="text/css" href="/page-specific-css/downloads-50.css">
         {{else if highscore}}
-            <link href="/page-specific-css/highscores_global-54.css" rel="stylesheet">
-            <link href="/page-specific-css/hiscores-54.css" rel="stylesheet">
+            <link async href="/page-specific-css/highscores_global-54.css" rel="stylesheet">
+            <link async href="/page-specific-css/hiscores-54.css" rel="stylesheet">
         {{else if playerHighscore}}
-            <link href="/page-specific-css/highscores_global-54.css" rel="stylesheet">
-            <link href="/page-specific-css/hiscores_compare-51.css" rel="stylesheet">
+            <link async href="/page-specific-css/highscores_global-54.css" rel="stylesheet">
+            <link async href="/page-specific-css/hiscores_compare-51.css" rel="stylesheet">
             <script defer src="/javascripts/hiscores_global-50.js"></script>
         {{else}}
-            <link href="/page-specific-css/community-63.css" rel="stylesheet">
-            <script src="/javascripts/community.js" type="text/javascript"></script>
+            <link async href="/page-specific-css/community-63.css" rel="stylesheet">
+            <script defer src="/javascripts/community.js" type="text/javascript"></script>
     {{/if}}
 </head>
   <body>
