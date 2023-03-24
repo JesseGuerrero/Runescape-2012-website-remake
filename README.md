@@ -35,6 +35,7 @@ The project uses a number of technologies, including
 - Handlebars template engine
 - Express.js
 - MongoDB
+- Example API uses Typscript & NestJS
 
 ## Credits
 
