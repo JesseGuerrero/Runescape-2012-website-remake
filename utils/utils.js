@@ -165,3 +165,4 @@ exports.formatRSNickName = formatRSNickName;
 exports.fetchSkills = fetchSkills;
 exports.authenticate = authenticate;
 exports.isModerator = isModerator;
+exports.getItemIdToName = getItemIdToName;

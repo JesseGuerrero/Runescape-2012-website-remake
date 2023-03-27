@@ -1,0 +1,85 @@
+<div id="Background">
+    <div id="TopBackground">
+        <div id="BottomBackground">
+            {{> Header}}
+            <div id="MainContentOuter">
+                <div class="MainContentBg">
+                    <div class="MainContentTopBg">
+                        <div class="MainContentBottomBg">
+                            <div id="MainContent">
+                                {{> grandexchange/HeaderGE}}
+                                <div id="rankingWrapper">
+
+                                    <style>
+                                        #skillsDropDown.InPageDropDownNew.NoJS:hover .DropListWrapper,
+                                        #skillsDropDown.InPageDropDownNew.CSS3:hover .DropListWrapper {
+                                            top: -8px;
+                                        }
+
+                                        #skillsDropDown.InPageDropDownNew.NoJS .DropListWrapper,
+                                        #skillsDropDown.InPageDropDownNew.CSS3 .DropListWrapper {
+                                            top: -460px;
+                                        }
+
+                                        #skillsDropDown:hover {
+                                            height: 488px;
+                                        }
+                                    </style>
+                                    {{> grandexchange/GEDropDown}}
+
+                                    <div class="OrnamentalBox Width863 SegmentOne" id="playerHiscores">
+                                        <div class="OrnamentalBoxTop"></div>
+                                        <div class="OrnamentalBoxTitle">
+                                            <div class="Centre1">
+                                                <div class="Centre2"><h3 class="Gradient NoFlourish Centre"><span
+                                                        class="spacing" aria-hidden="true">Items Listing</span>
+                                                    <span class="G0">Items Listing</span>
+                                                    <span class="G1" aria-hidden="true">Items Listing</span>
+                                                    <span class="G2" aria-hidden="true">Items Listing</span>
+                                                    <span class="G3" aria-hidden="true">Items Listing</span>
+                                                    <span class="G4" aria-hidden="true">Items Listing</span>
+                                                    <span class="G5" aria-hidden="true">Items Listing</span>
+                                                    <span class="G6" aria-hidden="true">Items Listing</span>
+                                                </h3></div>
+                                            </div>
+                                        </div>
+                                        <div class="OrnamentalBoxBg">
+                                            <div class="OrnamentalBoxContent">
+                                                <div id="hiscoresControls">
+                                                    <a id="all" href="overall.ws?category_type=0">
+                                                        <div class="hiscoresBoxTopLeft"></div>
+                                                        <div class="hiscoresBoxTopRight"></div>
+                                                        <h4>All Items</h4>
+                                                        <span class="subHeading">A listing of all Grand Exchange items</span>
+                                                        <div class="hiscoresBoxBottomLeft"></div>
+                                                        <div class="hiscoresBoxBottomRight"></div>
+                                                    </a>
+<!--                                                    <a id="friends" class="OpenShadowbox"-->
+<!--                                                       href="hiscorefriends_all.ws?category_type=0&amp;table=0"-->
+<!--                                                       style="display: block;">-->
+<!--                                                        <div class="hiscoresBoxTopLeft"></div>-->
+<!--                                                        <div class="hiscoresBoxTopRight"></div>-->
+<!--                                                        <h4>Friends</h4>-->
+<!--                                                        <span class="subHeading">A ranking of players on your Friends List</span>-->
+<!--                                                        <div class="hiscoresBoxBottomLeft"></div>-->
+<!--                                                        <div class="hiscoresBoxBottomRight"></div>-->
+<!--                                                    </a>-->
+                                                </div>
+                                                {{> grandexchange/GETable}}
+                                            </div>
+                                        </div>
+                                        <div class="OrnamentalBoxBottom"></div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{> Footer}}
+            </div>
+        </div>
+    </div>
+</div>

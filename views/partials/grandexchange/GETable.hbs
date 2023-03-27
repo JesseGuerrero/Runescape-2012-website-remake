@@ -1,0 +1,39 @@
+<div class="tableContainer cssTableSmall">
+    <div class="hiscoresBoxTopLeft"></div>
+    <div class="hiscoresBoxTopRight"></div>
+    <div class="tableInnerContainer">
+        <div class="header">
+            <span class="columnRank">Item No.</span>
+            <span class="columnName">
+                <span>Item</span>
+            </span>
+            <span class="columnLevel">
+                <span>Amount Left</span>
+            </span>
+            <span class="columnXp">
+                <span>Price Each</span>
+            </span>
+        </div>
+        {{#each itemListing.data}}
+
+            <a name="1"></a>
+            <a class="row">
+                <span class="columnRank">
+                    <span>{{formatNum (getRank @index ../page ../limit)}}</span>
+                </span>
+                <span class="columnName">
+                    <span style="vertical-align: center; display: flex"><img style="width: 25px" src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/ge-icons/{{this.itemId}}.png">{{getItemIdToName this.itemId}}</span>
+                </span>
+                <span class="columnLevel">
+                    <span>{{formatNum (subtract this.amount this.completedAmount)}}</span>
+                </span>
+                <span class="columnXp">
+                    <span>{{formatNum this.price}}</span>
+                </span>
+            </a>
+        {{/each}}
+        {{> grandexchange/GENavigation}}
+    </div>
+    <div class="hiscoresBoxBottomLeft"></div>
+    <div class="hiscoresBoxBottomRight"></div>
+</div>

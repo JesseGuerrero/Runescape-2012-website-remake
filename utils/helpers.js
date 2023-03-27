@@ -1,6 +1,6 @@
 const Handlebars = require('handlebars')
 let { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
-let {getSkillIDByName, getSkillLevelByXP} = require("./utils");
+let {getSkillIDByName, getSkillLevelByXP, getItemIdToName} = require("./utils");
 
 function hbsHelpers(hbs) {
     return hbs.create({
@@ -15,6 +15,9 @@ function hbsHelpers(hbs) {
             },
             add: function (value1, value2) {
                 return (parseInt(value1) + parseInt(value2)).toString();
+            },
+            subtract: function (value1, value2) {
+                return (parseInt(value1) - parseInt(value2)).toString();
             },
             multiply: function(value1, value2) {
                 return (parseInt(value1) * parseInt(value2)).toString();
@@ -69,6 +72,12 @@ function hbsHelpers(hbs) {
                 if(diffDays <= 21)
                     return (diffDays + " days ago")
                 return new Date(date).toDateString()
+            },
+            getItemIdToName: function(itemId) {
+                return getItemIdToName(itemId)
+            },
+            isBuy: function(type) {
+                return type == "buy"
             }
             // More helpers...
         }

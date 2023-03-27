@@ -40,6 +40,35 @@ router.get('/highscores', function(req, res, next) { //https://web.archive.org/w
         });
 });
 
+router.get('/grandexchange', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    res.redirect('grandexchange/buy/1');
+});
+
+router.get('/grandexchange/buy/:page', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get("https://darkan.org:8443/v1/ge/buy?page=" + req.params.page +"&limit=" + 22)
+        .then((response) => {
+            filteredList = { "data": [] }
+            for(let i = 0; i < response['data'].length; i++)
+                if(response['data'][i].state != 'FINISHED')
+                    filteredList["data"].push(response['data'][i])
+            console.log(response)
+            res.render('pages/grandexchange', { layout: 'layout.hbs', highscore: true, itemListing: response, type: "buy", page: req.params.page,
+                limit: 22});
+        });
+});
+
+router.get('/grandexchange/sell/:page', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get("https://darkan.org:8443/v1/ge/sell?page=" + req.params.page +"&limit=" + 22)
+        .then((response) => {
+            filteredList = { "data": [] }
+            for(let i = 0; i < response['data'].length; i++)
+                if(response['data'][i].state != 'FINISHED')
+                    filteredList["data"].push(response['data'][i])
+            res.render('pages/grandexchange', { layout: 'layout.hbs', highscore: true, itemListing: filteredList, type: "sell", page: req.params.page,
+                limit: 22});
+        });
+});
+
 router.get('/highscores/Overall/:page', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
     axios.get("https://darkan.org:8443/v1/highscores?page=" + req.params.page +"&limit=" + 22)
         .then((response) => {
