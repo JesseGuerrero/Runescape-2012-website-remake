@@ -32,6 +32,13 @@ router.get('/hall-of-heroes', function(req, res, next) { //https://web.archive.o
         });
 });
 
+router.get('/temporal-hall-of-heroes', function(req, res, next) { //https://web.archive.org/web/20120620024338/http://services.runescape.com/m=hiscore/heroes.ws
+    axios.get("http://localhost:8443/v1/temporal?page=1&limit=10")
+        .then((response) => {
+            res.render('pages/temporal-hall-of-heroes', { layout: 'layout.hbs', heroes: true, highscores: response });
+        });
+});
+
 router.get('/highscores', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
     axios.get("https://darkan.org:8443/v1/highscores?page=" + 1 +"&limit=" + 22)
         .then((response) => {
@@ -39,6 +46,41 @@ router.get('/highscores', function(req, res, next) { //https://web.archive.org/w
                 limit: 22});
         });
 });
+
+router.get('/temporal-highscores', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get("http://localhost:8443/v1/temporal?page=" + 1 +"&limit=" + 10)
+        .then((response) => {
+            res.render('pages/temporal-highscores', { layout: 'layout.hbs', highscore: true, highscores: response, skill: "Overall", page: 1,
+                limit: 10, daysBack: 1});
+        });
+});
+
+router.get('/temporal-highscores/overall/:days/:page/', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get("http://localhost:8443/v1/temporal?page=" + req.params.page +"&limit=" + 10 + "&daysBack=" + req.params.days)
+        .then((response) => {
+            res.render('pages/temporal-highscores', { layout: 'layout.hbs', highscore: true, highscores: response, skill: "Overall", page: req.params.page,
+                limit: 10, daysBack: req.params.days });
+        });
+});
+
+router.get('/temporal-highscores/:skill/:days/:page/', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get("http://localhost:8443/v1/temporal?page=" + req.params.page +"&limit=" + 10 + "&skill=" + getSkillIDByName(req.params.skill) + "&daysBack=" + req.params.days)
+        .then((response) => {
+            res.render('pages/temporal-highscores', { layout: 'layout.hbs', highscore: true, highscores: response, skill: req.params.skill,
+                page: req.params.page, limit: 10, daysBack: req.params.days });
+        });
+});
+
+router.get('/temporal-highscores-player/:user', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get(`http://localhost:8443/v1/temporal/player?username=${req.params.user}`)
+        .then((response) => {
+            let username = formatRSNickName(req.params.user)
+            response = response['data']
+            res.render('pages/temporal-player-highscores', { layout: 'layout.hbs', displayName: username, totalLevel: response.totalLevel,
+                totalXP: response.totalXp, skillXPs: response.xpDifferential, playerHighscore: true });
+        })
+});
+
 
 router.get('/grandexchange', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
     res.redirect('grandexchange/buy/1');

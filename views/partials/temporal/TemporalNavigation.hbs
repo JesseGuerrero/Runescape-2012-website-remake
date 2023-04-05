@@ -1,0 +1,60 @@
+<div class="PageControlAdvanced">
+    <div class="PageControlAdvancedLeft">
+        <a class="PageControlAdvancedLast HoverImgJs" href="/temporal-highscores/{{skill}}/{{daysBack}}/1">
+            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Arrow_left.webp">
+            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Arrow_left.webp"
+                 class="HoverImgJsFg">
+        </a>
+        <a class="HoverImgJs" href="/temporal-highscores/{{skill}}/{{daysBack}}/{{showIfPositive (add page -1)}}">
+            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Arrow_left.webp">
+            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Arrow_left.webp"
+                 class="HoverImgJsFg">
+        </a>
+    </div>
+    <div class="PageControlAdvancedMiddle ">
+        <ul>
+            <li class="PageControlAdvancedEllipse">
+                <a href="/temporal-highscores/{{skill}}/{{daysBack}}/{{showIfPositive (add page -5)}}">...</a>
+            </li>
+            <li><a href="/temporal-highscores/{{skill}}/{{daysBack}}/{{showIfPositive (add page -4)}}" >{{showIfPositive (add page -4)}}</a></li>
+            <li><a href="/temporal-highscores/{{skill}}/{{daysBack}}/{{showIfPositive (add page -3)}}">{{showIfPositive (add page -3)}}</a></li>
+            <li><a href="/temporal-highscores/{{skill}}/{{daysBack}}/{{showIfPositive (add page -2)}}">{{showIfPositive (add page -2)}}</a></li>
+            <li><a href="/temporal-highscores/{{skill}}/{{daysBack}}/{{showIfPositive (add page -1)}}">{{showIfPositive (add page -1)}}</a></li>
+            <li class="InputField">
+                <form onsubmit="window.location='/temporal-highscores/{{skill}}/{{daysBack}}/' + document.getElementById('pageQuery').value; return false;">
+                    <div class="PageInput">
+                        <input id="pageQuery" placeholder="{{page}}" type="text" value="" maxlength="6">
+                        <input type="submit" style="width:0px;height:0px;padding:0px;margin:0px;font-size:0px;border:0px;float: left;">
+                    </div>
+                </form>
+            </li>
+            <li>
+                <a href="/temporal-highscores/{{skill}}/{{daysBack}}/{{add page 1}}">{{add page 1}}</a>
+            </li>
+            <li>
+                <a href="/temporal-highscores/{{skill}}/{{daysBack}}/{{add page 2}}">{{add page 2}}</a>
+            </li>
+            <li>
+                <a href="/temporal-highscores/{{skill}}/{{daysBack}}/{{add page 3}}">{{add page 3}}</a>
+            </li>
+            <li>
+                <a href="/temporal-highscores/{{skill}}/{{daysBack}}/{{add page 4}}">{{add page 4}}</a>
+            </li>
+            <li class="PageControlAdvancedEllipse">
+                <a href="/temporal-highscores/{{skill}}/{{daysBack}}/{{add page 5}}">...</a>
+            </li>
+        </ul>
+    </div>
+    <div class="PageControlAdvancedRight">
+        <a class="PageControlAdvancedLast HoverImgJs" href="/temporal-highscores/{{skill}}/{{daysBack}}/{{add page 10}}">
+            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Arrow_right.webp">
+            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Arrow_right.webp"
+                class="HoverImgJsFg">
+        </a>
+        <a class="HoverImgJs" href="/temporal-highscores/{{skill}}/{{daysBack}}/{{add page 1}}">
+            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Arrow_right.webp">
+            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Arrow_right.webp"
+                class="HoverImgJsFg">
+        </a>
+    </div>
+</div>

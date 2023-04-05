@@ -1,0 +1,39 @@
+<div class="tableContainer cssTableSmall">
+    <div class="hiscoresBoxTopLeft"></div>
+    <div class="hiscoresBoxTopRight"></div>
+    <div class="tableInnerContainer">
+        <div class="header">
+            <span class="columnRank">Rank</span>
+            <span class="columnName">
+                <span>Name</span>
+            </span>
+            <span class="columnLevel">
+                <span>Level</span>
+            </span>
+            <span class="columnXp">
+                <span>XP</span>
+            </span>
+        </div>
+        {{#each highscores.data.snapshot}}
+            <a name="1"></a>
+            <a href="/temporal-highscores-player/{{getKeyFromTemporal this}}"
+               class="row">
+                <span class="columnRank">
+                    <span>{{formatNum (getRank @index ../page ../limit)}}</span>
+                </span>
+                <span class="columnName">
+                    <span>{{getKeyFromTemporal this}}</span>
+                </span>
+                <span class="columnLevel">
+                    <span>{{getLevelDiffenceFromTemporal this}}</span>
+                </span>
+                <span class="columnXp">
+                    <span>{{getXPDiffenceFromTemporal this}}</span>
+                </span>
+            </a>
+        {{/each}}
+        {{> temporal/TemporalNavigation}}
+    </div>
+    <div class="hiscoresBoxBottomLeft"></div>
+    <div class="hiscoresBoxBottomRight"></div>
+</div>

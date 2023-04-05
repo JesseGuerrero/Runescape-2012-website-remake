@@ -78,6 +78,15 @@ function hbsHelpers(hbs) {
             },
             isBuy: function(type) {
                 return type == "buy"
+            },
+            getKeyFromTemporal: function(obj) {
+                return Object.keys(obj)[0]
+            },
+            getXPDiffenceFromTemporal: function(obj) {
+                return obj[Object.keys(obj)[0]].xpDifference
+            },
+            getLevelDiffenceFromTemporal: function(obj) {
+                return obj[Object.keys(obj)[0]].levelDifference
             }
             // More helpers...
         }

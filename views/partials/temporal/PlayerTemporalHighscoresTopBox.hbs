@@ -1,0 +1,402 @@
+<div class="OrnamentalBox Width923 SegmentTwo" id="skillStats">
+    <div class="OrnamentalBoxTop"></div>
+    <div class="OrnamentalBoxTitle"><div class="Centre1"><div class="Centre2"><h3 class="Gradient NoFlourish Centre"><span class="spacing" aria-hidden="true">Skill Stats</span>
+        <span class="G0">Skill Stats</span>
+        <span class="G1" aria-hidden="true">Skill Stats</span>
+        <span class="G2" aria-hidden="true">Skill Stats</span>
+        <span class="G3" aria-hidden="true">Skill Stats</span>
+        <span class="G4" aria-hidden="true">Skill Stats</span>
+        <span class="G5" aria-hidden="true">Skill Stats</span>
+        <span class="G6" aria-hidden="true">Skill Stats</span>
+    </h3></div></div></div>
+    <div class="FlatHeader playerNames">
+        <div class="left">
+            {{displayName}}
+        </div>
+    </div>
+    <div class="playerAvatars">
+        <div class="left">
+            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/default_chat.webp" alt="" title="">
+        </div>
+    </div>
+    <style>
+        #categorySelector.InPageDropDownNew.NoJS:hover .DropListWrapper,
+        #categorySelector.InPageDropDownNew.CSS3:hover .DropListWrapper{ top: -8px; }
+        #categorySelector.InPageDropDownNew.NoJS .DropListWrapper,
+        #categorySelector.InPageDropDownNew.CSS3 .DropListWrapper{ top: -100px; }
+        #categorySelector:hover { height: 128px; }
+    </style>
+    <div class="InPageDropDownNew NoJS CSS3 categorySelect" id="categorySelector" data-expand="128px" style="display: block;">
+        <div class="Mask"></div>
+        <div class="DropListWrapper" data-retract="-100px">
+            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/DropDownFlourish.webp" class="Flourish" alt="">
+            <span class="firstValue">All</span>
+            <ul>
+
+                <li><a href="#gathering">Gathering</a></li>
+
+                <li><a href="#combat">Combat</a></li>
+
+                <li><a href="#support">Support</a></li>
+
+                <li><a href="#artisan">Artisan</a></li>
+
+                <li><a href="#members">Members Only</a></li>
+
+                <li><a href="#all">All</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="OrnamentalBoxBg"><div class="OrnamentalBoxContent">
+        <div class="header">
+            <div class="left">
+                <span class="columnLevel">.</span>
+                <span class="columnTotal">Total XP</span>
+                <span class="columnRank">.</span>
+            </div>
+        </div>
+        <div class="row" data-skill="combat" data-member="false">
+            <div class="left">
+                <a href="#">
+                    <span class="columnLevel"></span>
+                </a>
+                <a href="#">
+                    <span class="columnTotal">{{formatNum totalXP}}</span>
+                </a>
+                <a href="#">
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/overall.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Overall</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="combat" data-member="false">
+            <div class="left">
+                <a href="/highscores/Attack">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[0]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_attack_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Attack</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="combat" data-member="false">
+            <div class="left">
+                <a href="/highscores/Defence">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[1]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_defence_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Defence</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="combat" data-member="false">
+            <div class="left">
+                <a href="/highscores/Strength">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[2]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_strength_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Strength</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="combat" data-member="false">
+            <div class="left">
+                <a href="/highscores/Constitution">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[3]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_constit_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Constitution</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="combat" data-member="false">
+            <div class="left">
+                <a href="/highscores/Ranged">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[4]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_ranged_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Ranged</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="combat" data-member="false">
+            <div class="left">
+                <a href="/highscores/Prayer">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[5]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_prayer_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Prayer</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="combat" data-member="false">
+            <div class="left">
+                <a href="/highscores/Magic">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[6]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_magic_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Magic</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="artisan" data-member="false">
+            <div class="left">
+                <a href="/highscores/Cooking">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[7]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_cooking_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Cooking</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="gathering" data-member="false">
+            <div class="left">
+                <a href="/highscores/Woodcutting">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[8]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_woodcutting_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Woodcutting</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="artisan" data-member="true">
+            <div class="left">
+                <a href="/highscores/Fletching">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[9]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_fletching_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Fletching</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="gathering" data-member="false">
+            <div class="left">
+                <a href="/highscores/Fishing">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[10]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_fishing_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Fishing</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="artisan" data-member="false">
+            <div class="left">
+                <a href="/highscores/Firemaking">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[11]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_firemaking_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Firemaking</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="artisan" data-member="false">
+            <div class="left">
+                <a href="/highscores/Crafting">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[12]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_crafting_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Crafting</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="artisan" data-member="false">
+            <div class="left">
+                <a href="/highscores/Smithing">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[13]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_smithing_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Smithing</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="gathering" data-member="false">
+            <div class="left">
+                <a href="/highscores/Mining">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[14]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_mining_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Mining</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="artisan" data-member="true">
+            <div class="left">
+                <a href="/highscores/Herblore">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[15]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_herblore_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Herblore</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="support" data-member="true">
+            <div class="left">
+                <a href="/highscores/Agility">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[16]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_agility_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Agility</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="support" data-member="true">
+            <div class="left">
+                <a href="/highscores/Thieving">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[17]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_thieving_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Thieving</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="support" data-member="true">
+            <div class="left">
+                <a href="/highscores/Slayer">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[18]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_slayer_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Slayer</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="gathering" data-member="true">
+            <div class="left">
+                <a href="/highscores/Farming">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[19]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_farming_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Farming</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="artisan" data-member="false">
+            <div class="left">
+                <a href="/highscores/Runecrafting">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[20]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_runecraft_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Runecrafting</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="gathering" data-member="true">
+            <div class="left">
+                <a href="/highscores/Hunter">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[21]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_hunter_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Hunter</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="artisan" data-member="true">
+            <div class="left">
+                <a href="/highscores/Construction">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[22]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_construct_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Construction</span></span></span></span>
+            </div>
+        </div>
+        <div class="row" data-skill="combat" data-member="true">
+            <div class="left">
+                <a href="/highscores/Summoning">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[23]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_summoning_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Summoning</span></span></span></span>
+            </div>
+        </div>
+        <div class="row last-row" data-skill="support" data-member="false">
+            <div class="left">
+                <a href="/highscores/Dungeoneering">
+                    <span class="columnLevel"></span>
+                    <span class="columnTotal">{{formatNum skillXPs.[24]}}</span>
+                    <span class="columnRank"></span>
+                </a>
+            </div>
+            <div class="middle">
+                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/xp_dungeon_total.png?2" alt="" title="">
+                <span class="statName"><span><span><span>Dungeoneering</span></span></span></span>
+            </div>
+        </div>
+    </div></div>
+    <div class="OrnamentalBoxBottom"></div>
+</div>
