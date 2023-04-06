@@ -50,21 +50,21 @@
     <div class="OrnamentalBoxBg"><div class="OrnamentalBoxContent">
         <div class="header">
             <div class="left">
-                <span class="columnLevel">.</span>
+                <span class="columnLevel">Levels</span>
                 <span class="columnTotal">Total XP</span>
-                <span class="columnRank">.</span>
+                <span class="columnRank">Rank</span>
             </div>
         </div>
         <div class="row" data-skill="combat" data-member="false">
             <div class="left">
                 <a href="#">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum overallLevelsUp}}</span>
                 </a>
                 <a href="#">
                     <span class="columnTotal">{{formatNum totalXP}}</span>
                 </a>
                 <a href="#">
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum overallRank}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -75,9 +75,9 @@
         <div class="row" data-skill="combat" data-member="false">
             <div class="left">
                 <a href="/highscores/Attack">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[0]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[0]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[0]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -88,9 +88,9 @@
         <div class="row" data-skill="combat" data-member="false">
             <div class="left">
                 <a href="/highscores/Defence">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[1]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[1]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[1]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -101,9 +101,9 @@
         <div class="row" data-skill="combat" data-member="false">
             <div class="left">
                 <a href="/highscores/Strength">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[2]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[2]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[2]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -114,9 +114,9 @@
         <div class="row" data-skill="combat" data-member="false">
             <div class="left">
                 <a href="/highscores/Constitution">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[3]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[3]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[3]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -127,9 +127,9 @@
         <div class="row" data-skill="combat" data-member="false">
             <div class="left">
                 <a href="/highscores/Ranged">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[4]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[4]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[4]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -140,9 +140,9 @@
         <div class="row" data-skill="combat" data-member="false">
             <div class="left">
                 <a href="/highscores/Prayer">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[5]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[5]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[5]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -153,9 +153,9 @@
         <div class="row" data-skill="combat" data-member="false">
             <div class="left">
                 <a href="/highscores/Magic">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[6]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[6]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[6]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -166,9 +166,9 @@
         <div class="row" data-skill="artisan" data-member="false">
             <div class="left">
                 <a href="/highscores/Cooking">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[7]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[7]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[7]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -179,9 +179,9 @@
         <div class="row" data-skill="gathering" data-member="false">
             <div class="left">
                 <a href="/highscores/Woodcutting">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[8]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[8]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[8]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -192,9 +192,9 @@
         <div class="row" data-skill="artisan" data-member="true">
             <div class="left">
                 <a href="/highscores/Fletching">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[9]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[9]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[9]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -205,9 +205,9 @@
         <div class="row" data-skill="gathering" data-member="false">
             <div class="left">
                 <a href="/highscores/Fishing">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[10]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[10]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[10]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -218,9 +218,9 @@
         <div class="row" data-skill="artisan" data-member="false">
             <div class="left">
                 <a href="/highscores/Firemaking">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[11]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[11]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[11]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -231,9 +231,9 @@
         <div class="row" data-skill="artisan" data-member="false">
             <div class="left">
                 <a href="/highscores/Crafting">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[12]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[12]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[12]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -244,9 +244,9 @@
         <div class="row" data-skill="artisan" data-member="false">
             <div class="left">
                 <a href="/highscores/Smithing">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[13]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[13]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[13]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -257,9 +257,9 @@
         <div class="row" data-skill="gathering" data-member="false">
             <div class="left">
                 <a href="/highscores/Mining">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[14]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[14]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[14]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -270,9 +270,9 @@
         <div class="row" data-skill="artisan" data-member="true">
             <div class="left">
                 <a href="/highscores/Herblore">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[15]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[15]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[15]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -283,9 +283,9 @@
         <div class="row" data-skill="support" data-member="true">
             <div class="left">
                 <a href="/highscores/Agility">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[16]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[16]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[16]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -296,9 +296,9 @@
         <div class="row" data-skill="support" data-member="true">
             <div class="left">
                 <a href="/highscores/Thieving">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[17]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[17]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[17]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -309,9 +309,9 @@
         <div class="row" data-skill="support" data-member="true">
             <div class="left">
                 <a href="/highscores/Slayer">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[18]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[18]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[18]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -322,9 +322,9 @@
         <div class="row" data-skill="gathering" data-member="true">
             <div class="left">
                 <a href="/highscores/Farming">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[19]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[19]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[19]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -335,9 +335,9 @@
         <div class="row" data-skill="artisan" data-member="false">
             <div class="left">
                 <a href="/highscores/Runecrafting">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[20]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[20]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[20]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -348,9 +348,9 @@
         <div class="row" data-skill="gathering" data-member="true">
             <div class="left">
                 <a href="/highscores/Hunter">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[21]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[21]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[21]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -361,9 +361,9 @@
         <div class="row" data-skill="artisan" data-member="true">
             <div class="left">
                 <a href="/highscores/Construction">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[22]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[22]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[22]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -374,9 +374,9 @@
         <div class="row" data-skill="combat" data-member="true">
             <div class="left">
                 <a href="/highscores/Summoning">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[23]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[23]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[23]}}</span>
                 </a>
             </div>
             <div class="middle">
@@ -387,9 +387,9 @@
         <div class="row last-row" data-skill="support" data-member="false">
             <div class="left">
                 <a href="/highscores/Dungeoneering">
-                    <span class="columnLevel"></span>
+                    <span class="columnLevel">{{formatNum levelsUp.[24]}}</span>
                     <span class="columnTotal">{{formatNum skillXPs.[24]}}</span>
-                    <span class="columnRank"></span>
+                    <span class="columnRank">{{formatNum xpRanks.[24]}}</span>
                 </a>
             </div>
             <div class="middle">

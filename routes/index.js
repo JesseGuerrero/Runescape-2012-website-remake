@@ -76,8 +76,9 @@ router.get('/temporal-highscores-player/:user', function(req, res, next) { //htt
         .then((response) => {
             let username = formatRSNickName(req.params.user)
             response = response['data']
-            res.render('pages/temporal-player-highscores', { layout: 'layout.hbs', displayName: username, totalLevel: response.totalLevel,
-                totalXP: response.totalXp, skillXPs: response.xpDifferential, playerHighscore: true });
+            res.render('pages/temporal-player-highscores', { layout: 'layout.hbs', displayName: username, overallLevelsUp: response.overallLevelsUp,
+                totalXP: response.totalXp, skillXPs: response.xpDifferential, overallRank: response.overallRank, levelsUp: response.levelsUp, xpRanks: response.xpRanks,
+                playerHighscore: true });
         })
 });
 
