@@ -35,7 +35,14 @@ router.get('/hall-of-heroes', function(req, res, next) { //https://web.archive.o
 router.get('/temporal-hall-of-heroes', function(req, res, next) { //https://web.archive.org/web/20120620024338/http://services.runescape.com/m=hiscore/heroes.ws
     axios.get("http://localhost:8443/v1/temporal?page=1&limit=10")
         .then((response) => {
-            res.render('pages/temporal-hall-of-heroes', { layout: 'layout.hbs', heroes: true, highscores: response });
+            res.render('pages/temporal-hall-of-heroes', { layout: 'layout.hbs', heroes: true, highscores: response, daysBack: req.params.days });
+        });
+});
+
+router.get('/temporal-hall-of-heroes/:days', function(req, res, next) { //https://web.archive.org/web/20120620024338/http://services.runescape.com/m=hiscore/heroes.ws
+    axios.get(`http://localhost:8443/v1/temporal?page=1&limit=10&daysBack=${req.params.days}`)
+        .then((response) => {
+            res.render('pages/temporal-hall-of-heroes', { layout: 'layout.hbs', heroes: true, highscores: response, daysBack: req.params.days });
         });
 });
 

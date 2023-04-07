@@ -30,28 +30,27 @@
     {{else}}
         {{> temporal/TemporalNav}}
 {{/if}}
-{{#if heroes}}
-    <div></div>
-{{else}}
-    <div id="hiscoresSearch">
-        {{#if highscore}}
+<div id="hiscoresSearch">
+{{#if highscore}}
         <form onsubmit="window.location='/temporal-highscores/{{skill}}/' + document.getElementById('compare').value + '/1'; return false;">
-        {{else}}
-        <form onsubmit="window.location='/temporal-highscores-player/{{displayName}}/' + document.getElementById('compare').value; return false;">
-        {{/if}}
-        <div class="EncrustedInputBoxWrapper">
-            <div class="InputBoxLeft"><input type="text" title="Days"
-                                             name="user1" maxlength="3" size="5"
-                                             value="" id="compare" autocomplete="off"
-                                             class="placeholder"></div>
-            <div class="InputBoxRight"></div>
-        </div>
-        <span class="Button Button29"><span><span><span
-                class=""><b>Find</b></span><input type="submit"
-                                                  title="Go"></span></span></span>
-    </form>
-    </div>
+    {{else if heroes}}
+        <form onsubmit="window.location='/temporal-hall-of-heroes/' + document.getElementById('compare').value; return false;">
+    {{else}}
 {{/if}}
+    <form onsubmit="window.location='/temporal-highscores-player/{{displayName}}/' + document.getElementById('compare').value; return false;">
+    <div class="EncrustedInputBoxWrapper">
+        <div class="InputBoxLeft"><input type="text" title="Days"
+                                         name="user1" maxlength="3" size="5"
+                                         value="" id="compare" autocomplete="off"
+                                         class="placeholder"></div>
+        <div class="InputBoxRight"></div>
+    </div>
+    <span class="Button Button29"><span><span><span
+            class=""><b>Find</b></span><input type="submit"
+                                              title="Go"></span></span></span>
+    </form>
+</div>
+
 
 
 
