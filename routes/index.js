@@ -72,13 +72,24 @@ router.get('/temporal-highscores/:skill/:days/:page/', function(req, res, next) 
 });
 
 router.get('/temporal-highscores-player/:user', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
-    axios.get(`http://localhost:8443/v1/temporal/player?username=${req.params.user}`)
+    axios.get(`http://localhost:8443/v1/temporal/player?username=${req.params.user}&daysBack=1`)
         .then((response) => {
             let username = formatRSNickName(req.params.user)
             response = response['data']
             res.render('pages/temporal-player-highscores', { layout: 'layout.hbs', displayName: username, overallLevelsUp: response.overallLevelsUp,
                 totalXP: response.totalXp, skillXPs: response.xpDifferential, overallRank: response.overallRank, levelsUp: response.levelsUp, xpRanks: response.xpRanks,
-                playerHighscore: true });
+                playerHighscore: true, daysBack: 1 });
+        })
+});
+
+router.get('/temporal-highscores-player/:user/:days', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get(`http://localhost:8443/v1/temporal/player?username=${req.params.user}&daysBack=${req.params.days}`)
+        .then((response) => {
+            let username = formatRSNickName(req.params.user)
+            response = response['data']
+            res.render('pages/temporal-player-highscores', { layout: 'layout.hbs', displayName: username, overallLevelsUp: response.overallLevelsUp,
+                totalXP: response.totalXp, skillXPs: response.xpDifferential, overallRank: response.overallRank, levelsUp: response.levelsUp, xpRanks: response.xpRanks,
+                playerHighscore: true, daysBack: req.params.days });
         })
 });
 
