@@ -36,7 +36,8 @@ function hbsHelpers(hbs) {
             getHSSkillLevel: function (data, skill) {
                 if(skill == "Overall")
                     return data.totalLevel
-                return getSkillLevelByXP(data['xp'][getSkillIDByName(skill)])
+                const skillId = getSkillIDByName(skill)
+                return getSkillLevelByXP(data['xp'][skillId], skillId)
             },
             getHSSkillXP: function (data, skill) {
                 if(skill == "Overall")
@@ -45,6 +46,9 @@ function hbsHelpers(hbs) {
             },
             getLevelFromXP: function (xp) {
                 return getSkillLevelByXP(parseInt(xp));
+            },
+            getLevelFromXPDungeoneering: function (xp) {
+                return getSkillLevelByXP(parseInt(xp), 24);
             },
             formatDate: function(date) {
                 return new Date(date).toLocaleDateString();
