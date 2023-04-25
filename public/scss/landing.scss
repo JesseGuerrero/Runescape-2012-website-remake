@@ -1,0 +1,106 @@
+#serverplayers-list {
+  padding: 0px;
+  list-style: none;
+}
+
+#serverplayers-list>li {
+  padding: 4px;
+  list-style: none;
+}
+
+#latest-commit {
+	margin-top: 1rem;
+}
+
+#latest-commit>p {
+	margin-bottom: 0;
+}
+
+.serverplayers-text {
+  margin-bottom: 1px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border: 2px solid #282828;
+}
+
+.discord-widget {
+  position: relative;
+}
+
+.discord-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.discord-tree {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.discord-channel {
+  font-weight: bold;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.discord-user {
+  position: relative;
+  margin-left: -30px;
+  margin-bottom: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.discord-user span {
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+
+.discord-user-status {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: pink;
+  border-radius: 50%;
+  border: solid thin #fff;
+  top: 14px;
+  left: 14px;
+}
+
+.discord-online {
+  background-color: #43B581;
+}
+
+.discord-idle {
+  background-color: #FAA61A;
+}
+
+.discord-avatar {
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  border: solid 2px #fff;
+  display: inline;
+  margin-right: 5px;
+}
+
+.discord-users-online {
+  font-size: 0.75em;
+  margin: 10px 10px 0 0;
+  text-align: left;
+}
+
+.discord-join {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.discord-join a {
+  color: #fff;
+}
