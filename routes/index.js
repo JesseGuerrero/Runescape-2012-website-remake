@@ -39,10 +39,10 @@ router.get('/temporal-hall-of-heroes', function(req, res, next) { //https://web.
         });
 });
 
-router.get('/temporal-hall-of-heroes/:days', function(req, res, next) { //https://web.archive.org/web/20120620024338/http://services.runescape.com/m=hiscore/heroes.ws
-    axios.get(`http://localhost:8443/v1/temporal?page=1&limit=10&daysBack=${req.params.days}`)
+router.get('/temporal-hall-of-heroes/:pastday/:secondpastday', function(req, res, next) { //https://web.archive.org/web/20120620024338/http://services.runescape.com/m=hiscore/heroes.ws
+    axios.get(`http://localhost:8443/v1/temporal?page=1&limit=10&firstDayPast=${req.params.pastday}&secondDayPast=${req.params.secondpastday}`)
         .then((response) => {
-            res.render('pages/temporal-hall-of-heroes', { layout: 'layout.hbs', heroes: true, highscores: response, daysBack: req.params.days });
+            res.render('pages/temporal-hall-of-heroes', { layout: 'layout.hbs', heroes: true, highscores: response, firstDayPast: req.params.pastday, secondDayPast: req.params.secondpastday });
         });
 });
 
@@ -58,45 +58,45 @@ router.get('/temporal-highscores', function(req, res, next) { //https://web.arch
     axios.get("http://localhost:8443/v1/temporal?page=" + 1 +"&limit=" + 10)
         .then((response) => {
             res.render('pages/temporal-highscores', { layout: 'layout.hbs', highscore: true, highscores: response, skill: "Overall", page: 1,
-                limit: 10, daysBack: 1});
+                limit: 10, firstDayPast: 0, secondDayPast: 1});
         });
 });
 
-router.get('/temporal-highscores/overall/:days/:page/', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
-    axios.get("http://localhost:8443/v1/temporal?page=" + req.params.page +"&limit=" + 10 + "&daysBack=" + req.params.days)
+router.get('/temporal-highscores/overall/:pastday/:secondpastday/:page', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get(`http://localhost:8443/v1/temporal?page=${req.params.page}&limit=10&firstDayPast=${req.params.pastday}&secondDayPast=${req.params.secondpastday}`)
         .then((response) => {
             res.render('pages/temporal-highscores', { layout: 'layout.hbs', highscore: true, highscores: response, skill: "Overall", page: req.params.page,
-                limit: 10, daysBack: req.params.days });
+                limit: 10, firstDayPast: req.params.pastday, secondDayPast: req.params.secondpastday });
         });
 });
 
-router.get('/temporal-highscores/:skill/:days/:page/', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
-    axios.get("http://localhost:8443/v1/temporal?page=" + req.params.page +"&limit=" + 10 + "&skill=" + getSkillIDByName(req.params.skill) + "&daysBack=" + req.params.days)
+router.get('/temporal-highscores/:skill/:pastday/:secondpastday/:page/', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get(`http://localhost:8443/v1/temporal?page=${req.params.page}&skill=${getSkillIDByName(req.params.skill)}&limit=10&firstDayPast=${req.params.pastday}&secondDayPast=${req.params.secondpastday}`)
         .then((response) => {
             res.render('pages/temporal-highscores', { layout: 'layout.hbs', highscore: true, highscores: response, skill: req.params.skill,
-                page: req.params.page, limit: 10, daysBack: req.params.days });
+                page: req.params.page, limit: 10, firstDayPast: req.params.pastday, secondDayPast: req.params.secondpastday });
         });
 });
 
 router.get('/temporal-highscores-player/:user', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
-    axios.get(`http://localhost:8443/v1/temporal/player?username=${req.params.user}&daysBack=1`)
+    axios.get(`http://localhost:8443/v1/temporal/player?username=${req.params.user}`)
         .then((response) => {
             let username = formatRSNickName(req.params.user)
             response = response['data']
             res.render('pages/temporal-player-highscores', { layout: 'layout.hbs', displayName: username, overallLevelsUp: response.overallLevelsUp,
                 totalXP: response.totalXp, skillXPs: response.xpDifferential, overallRank: response.overallRank, levelsUp: response.levelsUp, xpRanks: response.xpRanks,
-                playerHighscore: true, daysBack: 1 });
+                playerHighscore: true, firstDayPast: 0, secondDayPast: 1});
         })
 });
 
-router.get('/temporal-highscores-player/:user/:days', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
-    axios.get(`http://localhost:8443/v1/temporal/player?username=${req.params.user}&daysBack=${req.params.days}`)
+router.get('/temporal-highscores-player/:user/:pastday/:secondpastday', function(req, res, next) { //https://web.archive.org/web/20120608083454/http://services.runescape.com:80/m=hiscore/overall.ws?category_type=0&table=0
+    axios.get(`http://localhost:8443/v1/temporal/player?username=${req.params.user}&firstDayPast=${req.params.pastday}&secondDayPast=${req.params.secondpastday}`)
         .then((response) => {
             let username = formatRSNickName(req.params.user)
             response = response['data']
             res.render('pages/temporal-player-highscores', { layout: 'layout.hbs', displayName: username, overallLevelsUp: response.overallLevelsUp,
                 totalXP: response.totalXp, skillXPs: response.xpDifferential, overallRank: response.overallRank, levelsUp: response.levelsUp, xpRanks: response.xpRanks,
-                playerHighscore: true, daysBack: req.params.days });
+                playerHighscore: true, firstDayPast: req.params.pastday, secondDayPast: req.params.secondpastday });
         })
 });
 

@@ -32,19 +32,28 @@
 {{/if}}
 <div id="hiscoresSearch">
 {{#if highscore}}
-        <form onsubmit="window.location='/temporal-highscores/{{skill}}/' + document.getElementById('compare').value + '/1'; return false;">
+        <form onsubmit="window.location='/temporal-highscores/{{skill}}/' + document.getElementById('compare').value + '/' + document.getElementById('compare2').value + '/1'; return false;">
     {{else if heroes}}
-        <form onsubmit="window.location='/temporal-hall-of-heroes/' + document.getElementById('compare').value; return false;">
+        <form onsubmit="window.location='/temporal-hall-of-heroes/' + document.getElementById('compare').value + '/' + document.getElementById('compare2').value; return false;">
     {{else}}
 {{/if}}
-    <form onsubmit="window.location='/temporal-highscores-player/{{displayName}}/' + document.getElementById('compare').value; return false;">
+    <form onsubmit="window.location='/temporal-highscores-player/{{displayName}}/' + document.getElementById('compare').value + '/' + document.getElementById('compare2').value; return false;">
     <div class="EncrustedInputBoxWrapper">
-        <div class="InputBoxLeft"><input type="text" title="Days"
+        <div class="InputBoxLeft"><input type="text" title="Start"
                                          name="user1" maxlength="3" size="5"
                                          value="" id="compare" autocomplete="off"
-                                         class="placeholder"></div>
+                                         class="placeholder" required>
+                                </div>
         <div class="InputBoxRight"></div>
     </div>
+        <div class="EncrustedInputBoxWrapper">
+            <div class="InputBoxLeft"><input type="text" title="End"
+                                             name="user1" maxlength="3" size="5"
+                                             value="" id="compare2" autocomplete="off"
+                                             class="placeholder" required>
+            </div>
+            <div class="InputBoxRight"></div>
+        </div>
     <span class="Button Button29"><span><span><span
             class=""><b>Find</b></span><input type="submit"
                                               title="Go"></span></span></span>
